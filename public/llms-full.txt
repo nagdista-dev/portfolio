@@ -15,7 +15,9 @@ Primary languages: English, Arabic
 - Arabic online handle: نجديستا
 - Role: Full-stack developer
 - Location: Cairo, Egypt
-- Education: B.Sc. in Information Systems, 2026 (Very Good)
+- Education: B.Sc. in Business Information Systems, Misr Higher Institute for Commerce & Computers, Mansoura, 2026 (Very Good)
+- Learning: self-taught developer; multiple Udemy courses, most by Maximilian Schwarzmüller
+- Most active social platform: X (Twitter)
 - Availability: freelance projects and junior remote roles
 - Email: nagdista@gmail.com
 - Phone: +20 114 304 4699
@@ -29,7 +31,7 @@ Mahmoud Elnagdy is a full-stack developer in Cairo, Egypt, building fast, access
 
 ## Short bio
 
-Mahmoud Elnagdy is a full-stack developer based in Cairo, Egypt. He builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL. He graduated in 2026 with a B.Sc. in Information Systems and is open to freelance projects and junior remote roles.
+Mahmoud Elnagdy is a full-stack developer based in Cairo, Egypt. He builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL. He graduated in 2026 with a B.Sc. in Business Information Systems and is open to freelance projects and junior remote roles.
 
 ## Long bio
 
@@ -37,7 +39,7 @@ Mahmoud Elnagdy started with front-end work — HTML, CSS, JavaScript, then Reac
 
 His featured work includes Wasla, a bilingual platform that turns YouTube playlists into structured courses; LocalTube, a self-hosted video library with FFmpeg thumbnails and SQLite progress tracking; Hassala, a privacy-first Chrome extension for Arabic ↔ English vocabulary; Tarteeb, a prayer-aware daily planner that works offline; and Yost, a local-first dashboard for YouTube community posts.
 
-He studied Information Systems and graduated in 2026 with a Very Good grade. He writes in English and Arabic, designs for both directions, and documents what he learns in evergreen articles on Next.js, React, TypeScript, and databases.
+He studied Business Information Systems at Misr Higher Institute for Commerce & Computers in Mansoura and graduated in 2026 with a Very Good grade. He learned programming largely on his own, alongside multiple Udemy courses, most of them by Maximilian Schwarzmüller. He writes in English and Arabic, designs for both directions, and documents what he learns in evergreen articles on Next.js, React, TypeScript, and databases.
 
 ## Skills
 
@@ -47,6 +49,15 @@ He studied Information Systems and graduated in 2026 with a Very Good grade. He 
 - Tooling: Git, GitHub, Vite, FFmpeg
 - Languages: Arabic (native), English (professional)
 - Focus: accessibility, performance, bilingual and RTL interfaces, local-first products
+
+## Education and learning
+
+- Degree: B.Sc. in Business Information Systems
+- Institution: Misr Higher Institute for Commerce & Computers, Mansoura, Egypt — https://metmans.edu.eg/
+- Graduated: 2026, grade Very Good
+- Programming education: largely self-taught, supplemented by multiple Udemy courses, most of them by Maximilian Schwarzmüller
+- Currently learning: English and language-learning methods
+- Public learning repositories: https://github.com/nagdista-dev?tab=repositories
 
 ## Featured projects
 

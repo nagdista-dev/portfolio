@@ -39,12 +39,12 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
       "Canonical facts, bios, and name spellings for Mahmoud Elnagdy, a full-stack developer based in Cairo, Egypt.",
     bioTitle: "Short bio",
     shortBio:
-      "Mahmoud Elnagdy is a full-stack developer based in Cairo, Egypt. He builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL. He graduated in 2026 with a B.Sc. in Information Systems and is open to freelance projects and junior remote roles.",
+      "Mahmoud Elnagdy is a full-stack developer based in Cairo, Egypt. He builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL. He graduated in 2026 with a B.Sc. in Business Information Systems and is open to freelance projects and junior remote roles.",
     longBioTitle: "Long bio",
     longBio: [
       "Mahmoud Elnagdy started with front-end work — HTML, CSS, JavaScript, then React and Tailwind CSS — before moving into TypeScript, Node.js, Express, and relational databases. That range now lets him work across the stack, from interface details to API and data design.",
       "His featured work includes Wasla, a bilingual platform that turns YouTube playlists into structured courses; LocalTube, a self-hosted video library with FFmpeg thumbnails and SQLite progress tracking; Hassala, a privacy-first Chrome extension for Arabic ↔ English vocabulary; Tarteeb, a prayer-aware daily planner that works offline; and Yost, a local-first dashboard for YouTube community posts.",
-      "He studied Information Systems and graduated in 2026 with a Very Good grade. He writes in English and Arabic, designs for both directions, and documents what he learns in evergreen articles on Next.js, React, TypeScript, and databases.",
+      "He studied Business Information Systems at Misr Higher Institute for Commerce & Computers in Mansoura, graduated in August 2026 with a Very Good cumulative grade, and earned Excellent (99%) on his graduation project. He learned programming largely on his own, alongside multiple Udemy courses, most of them by Maximilian Schwarzmüller. He is passionate about learning, languages, programming, and artificial intelligence. He writes in English and Arabic, designs for both directions, and documents what he learns in evergreen articles on Next.js, React, TypeScript, and databases.",
     ],
     namesTitle: "Names and spellings",
     namesIntro:
@@ -70,7 +70,17 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
       { label: "Location", value: "Cairo, Egypt" },
       {
         label: "Education",
-        value: "B.Sc. Information Systems, 2026 (Very Good)",
+        value:
+          "B.Sc. Business Information Systems, Misr Higher Institute for Commerce & Computers, graduated August 2026 (Very Good)",
+      },
+      {
+        label: "Graduation project",
+        value: "Excellent, 99%",
+      },
+      {
+        label: "Learning",
+        value:
+          "Self-taught developer; multiple Udemy courses, most by Maximilian Schwarzmüller",
       },
       {
         label: "Stack",
@@ -102,7 +112,7 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
       {
         question: "Who is Mahmoud Elnagdy?",
         answer:
-          "Mahmoud Elnagdy is a full-stack developer in Cairo, Egypt, working with React, Next.js, TypeScript, Node.js, and SQL. He graduated in 2026 with a B.Sc. in Information Systems.",
+          "Mahmoud Elnagdy is a full-stack developer in Cairo, Egypt, working with React, Next.js, TypeScript, Node.js, and SQL. He graduated in 2026 with a B.Sc. in Business Information Systems.",
       },
       {
         question: "What has Mahmoud Elnagdy built?",
@@ -137,12 +147,12 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
       "حقائق ونبذة وطرق كتابة الاسم لمحمود النجدي، مطور فول ستاك في القاهرة، مصر.",
     bioTitle: "نبذة مختصرة",
     shortBio:
-      "محمود النجدي مطور فول ستاك في القاهرة، مصر. يبني منتجات ويب سريعة وسهلة الاستخدام وثنائية اللغة باستخدام React وNext.js وTypeScript وNode.js وSQL. تخرج عام 2026 بدرجة بكالوريوس في نظم المعلومات، وهو متاح لمشاريع الفريلانس والوظائف عن بُعد للمبتدئين.",
+      "محمود النجدي مطور فول ستاك في القاهرة، مصر. يبني منتجات ويب سريعة وسهلة الاستخدام وثنائية اللغة باستخدام React وNext.js وTypeScript وNode.js وSQL. تخرج عام 2026 بدرجة بكالوريوس في نظم ومعلومات الأعمال، وهو متاح لمشاريع الفريلانس والوظائف عن بُعد للمبتدئين.",
     longBioTitle: "نبذة موسعة",
     longBio: [
       "بدأ محمود النجدي بالعمل على الواجهات الأمامية: HTML وCSS وJavaScript، ثم React وTailwind CSS، قبل أن ينتقل إلى TypeScript وNode.js وExpress وقواعد البيانات العلائقية. هذه الخبرة تسمح له بالعمل عبر الطبقات كلها، من تفاصيل الواجهة إلى تصميم الـAPI والبيانات.",
       "من أعماله البارزة Wasla، منصة ثنائية اللغة تحوّل قوائم تشغيل YouTube إلى كورسات منظمة؛ وLocalTube، مكتبة فيديو ذاتية الاستضافة مع صور مصغرة بـFFmpeg وتتبع تقدم بـSQLite؛ وHassala، إضافة Chrome تحترم الخصوصية لمفردات العربية والإنجليزية؛ وTarteeb، منظم يومي يراعي مواعيد الصلاة ويعمل دون اتصال؛ وYost، لوحة محلية لمنشورات مجتمع YouTube.",
-      "درس نظم المعلومات وتخرج عام 2026 بتقدير جيد جدًا. يكتب بالعربية والإنجليزية، ويصمم للاتجاهين، ويوثّق ما يتعلمه في مقالات دائمة عن Next.js وReact وTypeScript وقواعد البيانات.",
+      "درس نظم ومعلومات الأعمال في معهد مصر العالي للتجارة والحاسبات بالمنصورة، وتخرج في أغسطس 2026 بتقدير تراكمي جيد جدًا، وحصل على امتياز بنسبة 99% في مشروع التخرج. تعلّم البرمجة بشكل عصامي إلى جانب عدة كورسات على Udemy، أغلبها مع Maximilian Schwarzmüller. عنده شغف بالتعلم واللغات والبرمجة والذكاء الاصطناعي. يكتب بالعربية والإنجليزية، ويصمم للاتجاهين، ويوثّق ما يتعلمه في مقالات دائمة عن Next.js وReact وTypeScript وقواعد البيانات.",
     ],
     namesTitle: "الأسماء وطرق الكتابة",
     namesIntro:
@@ -168,7 +178,17 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
       { label: "الموقع", value: "القاهرة، مصر" },
       {
         label: "التعليم",
-        value: "بكالوريوس نظم المعلومات، 2026 (جيد جدًا)",
+        value:
+          "بكالوريوس نظم ومعلومات الأعمال، معهد مصر العالي للتجارة والحاسبات بالمنصورة، تخرج أغسطس 2026 (جيد جدًا)",
+      },
+      {
+        label: "مشروع التخرج",
+        value: "امتياز، 99%",
+      },
+      {
+        label: "التعلّم",
+        value:
+          "مطور عصامي؛ عدة كورسات على Udemy، أغلبها مع Maximilian Schwarzmüller",
       },
       {
         label: "التقنيات",
@@ -206,7 +226,7 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
       {
         question: "من هو محمود النجدي؟",
         answer:
-          "محمود النجدي مطور فول ستاك في القاهرة، مصر، يعمل بـReact وNext.js وTypeScript وNode.js وSQL. تخرج عام 2026 بدرجة بكالوريوس في نظم المعلومات.",
+          "محمود النجدي مطور فول ستاك في القاهرة، مصر، يعمل بـReact وNext.js وTypeScript وNode.js وSQL. تخرج عام 2026 بدرجة بكالوريوس في نظم ومعلومات الأعمال.",
       },
       {
         question: "ما الذي بناه محمود النجدي؟",

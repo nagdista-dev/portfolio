@@ -175,6 +175,32 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
       addressCountry: "EG",
     },
     nationality: { "@type": "Country", name: "Egypt" },
+    alumniOf: {
+      "@type": "CollegeOrUniversity",
+      name: "Misr Higher Institute for Commerce & Computers, Mansoura",
+      alternateName: "معهد مصر العالي للتجارة والحاسبات بالمنصورة",
+      url: "https://metmans.edu.eg/",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Mansoura",
+        addressRegion: "Dakahlia Governorate",
+        addressCountry: "EG",
+      },
+    },
+    hasCredential: {
+      "@type": "EducationalOccupationalCredential",
+      credentialCategory: "degree",
+      name:
+        locale === "ar"
+          ? "بكالوريوس نظم ومعلومات الأعمال"
+          : "B.Sc. in Business Information Systems",
+      educationalLevel: "Bachelor's degree",
+      dateCreated: "2026",
+      recognizedBy: {
+        "@type": "CollegeOrUniversity",
+        name: "Misr Higher Institute for Commerce & Computers, Mansoura",
+      },
+    },
     hasOccupation: {
       "@type": "Occupation",
       name: locale === "ar" ? "مطور فول ستاك" : "Full-Stack Developer",
@@ -192,6 +218,8 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
       "Tailwind CSS",
       "Web accessibility",
       "Search engine optimization",
+      "Self-taught programming",
+      "Language learning",
     ],
     knowsLanguage: ["ar", "en"],
     worksFor: {

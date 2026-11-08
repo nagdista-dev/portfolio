@@ -83,13 +83,16 @@ export const TIMELINE: TimelineItem[] = [
   {
     period: { en: "2026", ar: "2026" },
     title: {
-      en: "B.Sc. Information Systems",
-      ar: "بكالوريوس نظم المعلومات",
+      en: "B.Sc. Business Information Systems",
+      ar: "بكالوريوس نظم ومعلومات الأعمال",
     },
-    org: { en: "Graduated · Very Good", ar: "تخرج · جيد جدًا" },
+    org: {
+      en: "Misr Higher Institute for Commerce & Computers, Mansoura · Graduated August 2026 · Very Good",
+      ar: "معهد مصر العالي للتجارة والحاسبات بالمنصورة · تخرج أغسطس 2026 · جيد جدًا",
+    },
     description: {
-      en: "Finished a degree focused on databases, systems analysis, and software development — then turned the theory into shipped products.",
-      ar: "خلصت دراسة مركزة على قواعد البيانات وتحليل النظم وتطوير السوفتوير — وبعدها حوّلت النظري لمنتجات حقيقية.",
+      en: "Graduated in August 2026 with a Very Good cumulative grade. The graduation project was graded Excellent (99%) and focused on databases, systems analysis, and software development.",
+      ar: "تخرج في أغسطس 2026 بتقدير تراكمي جيد جدًا. مشروع التخرج حصل على امتياز بنسبة 99% وكان مركزًا على قواعد البيانات وتحليل النظم وتطوير السوفتوير.",
     },
     kind: "education",
   },
