@@ -854,19 +854,20 @@ html.js [data-reveal].is-visible {
   color: var(--accent);
 }
 
-.hero__title-brand {
+.hero__alias {
+  margin: 0.85rem 0 0;
   font-family: var(--font-mono);
   font-size: clamp(0.62rem, 1.1vw, 0.82rem);
   font-weight: 500;
   letter-spacing: 0.14em;
   color: var(--muted);
-  text-transform: none;
-  white-space: nowrap;
+  text-transform: uppercase;
 }
 
-[dir="rtl"] .hero__title-brand {
+[dir="rtl"] .hero__alias {
   font-family: var(--font-body);
   letter-spacing: 0;
+  text-transform: none;
 }
 
 .hero__grid {

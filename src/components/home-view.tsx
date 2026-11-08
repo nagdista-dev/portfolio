@@ -45,10 +45,7 @@ export function HomeView({ locale, repoCount }: HomeViewProps) {
           </div>
 
           <h1 className="hero__title">
-            <span className="hero__title-line">
-              {t.hero.titleLine1}
-              <span className="hero__title-brand">({t.hero.brand})</span>
-            </span>
+            <span className="hero__title-line">{t.hero.titleLine1}</span>
             <span className="hero__title-line hero__title-line--indent">
               {t.hero.titleLine2}
               <span className="hero__title-accent" aria-hidden="true">
@@ -56,6 +53,7 @@ export function HomeView({ locale, repoCount }: HomeViewProps) {
               </span>
             </span>
           </h1>
+          <p className="hero__alias">{t.hero.brand}</p>
 
           <div className="hero__grid">
             <div>
