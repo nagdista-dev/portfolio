@@ -1,5 +1,6 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
 /**
@@ -8,6 +9,8 @@ import { useEffect } from "react";
  * so content stays visible when JavaScript is unavailable.
  */
 export function ScrollReveal() {
+  const pathname = usePathname();
+
   useEffect(() => {
     const elements = Array.from(
       document.querySelectorAll<HTMLElement>("[data-reveal]"),
@@ -24,6 +27,15 @@ export function ScrollReveal() {
       return;
     }
 
+    // Reveal everything already in the viewport immediately, so client-side
+    // navigation never paints a blank page while the observer warms up.
+    elements.forEach((element) => {
+      const rect = element.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        element.classList.add("is-visible");
+      }
+    });
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -38,7 +50,7 @@ export function ScrollReveal() {
     elements.forEach((element) => observer.observe(element));
 
     return () => observer.disconnect();
-  }, []);
+  }, [pathname]);
 
   return null;
 }

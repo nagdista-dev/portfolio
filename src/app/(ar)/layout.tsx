@@ -5,14 +5,14 @@ import { SiteFooter } from "@/components/site-footer";
 import { ScrollReveal } from "@/components/scroll-reveal";
 import { JsonLd } from "@/components/json-ld";
 import { SITE } from "@/content/site";
-import { personJsonLd, websiteJsonLd } from "@/lib/seo";
+import { personJsonLd, siteNavigationJsonLd, websiteJsonLd } from "@/lib/seo";
 import { Analytics } from "@vercel/analytics/next";
 import { alexandria, ibmPlexSansArabic } from "@/lib/fonts-ar";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: "محمود النجدي — مطور فول ستاك في القاهرة",
+    default: "محمود النجدي",
     template: "%s — محمود النجدي",
   },
   description:
@@ -88,6 +88,8 @@ export default function ArabicLayout({
       lang="ar"
       dir="rtl"
       className={`locale-ar ${alexandria.variable} ${ibmPlexSansArabic.variable}`}
+      suppressHydrationWarning
+      data-scroll-behavior="smooth"
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: bootScript }} />
@@ -102,6 +104,7 @@ export default function ArabicLayout({
         <ScrollReveal />
         <JsonLd data={personJsonLd("ar")} />
         <JsonLd data={websiteJsonLd("ar")} />
+        <JsonLd data={siteNavigationJsonLd("ar")} />
         <Analytics />
       </body>
     </html>

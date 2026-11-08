@@ -37,11 +37,6 @@ export function HomeView({ locale, repoCount }: HomeViewProps) {
               <span className="status-dot status-dot--accent" aria-hidden="true" />
               {t.hero.available}
             </p>
-            <p className="hero__meta">
-              <span>{t.hero.cardLocation}</span>
-              <span aria-hidden="true">/</span>
-              <span>{t.hero.cardStatus}</span>
-            </p>
           </div>
 
           <h1 className="hero__title">
@@ -53,7 +48,6 @@ export function HomeView({ locale, repoCount }: HomeViewProps) {
               </span>
             </span>
           </h1>
-          <p className="hero__alias">{t.hero.brand}</p>
 
           <div className="hero__grid">
             <div>
@@ -92,7 +86,7 @@ export function HomeView({ locale, repoCount }: HomeViewProps) {
               <div className="hero__stat">
                 <dt className="hero__stat-label">{t.hero.statLocation}</dt>
                 <dd className="hero__stat-value">
-                  {locale === "ar" ? "القاهرة" : "CAI"}
+                  {locale === "ar" ? "القاهرة" : "Cairo"}
                 </dd>
               </div>
             </dl>

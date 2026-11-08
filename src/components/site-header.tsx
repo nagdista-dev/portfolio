@@ -46,6 +46,11 @@ export function SiteHeader({ locale }: { locale: Locale }) {
       match: isArabic ? "/ar/blog" : "/blog",
     },
     {
+      label: t.nav.press,
+      href: isArabic ? "/ar/press/" : "/press/",
+      match: isArabic ? "/ar/press" : "/press",
+    },
+    {
       label: t.nav.contact,
       href: isArabic ? "/ar/#contact" : "/#contact",
       match: null,

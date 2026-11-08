@@ -6,9 +6,9 @@ import { buildMetadata, pageUrl, personJsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
   locale: "en",
-  title: "Mahmoud Elnagdy — Full-Stack Developer in Cairo",
+  title: "Mahmoud Elnagdy",
   description:
-    "Mahmoud Elnagdy is a full-stack developer in Cairo, Egypt. He builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL.",
+    "Mahmoud Elnagdy is a full-stack developer in Cairo, Egypt, with a B.Sc. in Business Information Systems (2026). He builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL.",
   path: "/",
   image: "/og/home-en.png",
   absoluteTitle: true,

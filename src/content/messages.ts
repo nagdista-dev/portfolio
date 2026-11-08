@@ -3,6 +3,7 @@ const en = {
     work: "Work",
     about: "About",
     writing: "Writing",
+    press: "Press",
     contact: "Contact",
     cv: "CV",
     menu: "Menu",
@@ -78,7 +79,7 @@ const en = {
     aboutLabel: "01 — About",
     aboutTitle: "A developer with an editor's eye.",
     aboutIntro:
-      "I'm Mahmoud Elnagdy (Mahmoud Alnagdy), a full-stack developer based in Cairo. My work sits between engineering and design: calm interfaces on top, dependable systems underneath.",
+      "I'm Mahmoud Elnagdy, a full-stack developer based in Cairo. My work sits between engineering and design: calm interfaces on top, dependable systems underneath.",
     aboutBody:
       "I studied Business Information Systems at Misr Higher Institute for Commerce & Computers in Mansoura and graduated in 2026 with a Very Good grade. Since then I've been building bilingual learning tools, local-first video libraries, browser extensions, and daily planning apps. I'm available for freelance work until January 2027, before military service.",
     aboutQuote:
@@ -271,6 +272,7 @@ const ar: typeof en = {
     work: "أعمالي",
     about: "عني",
     writing: "مقالات",
+    press: "ملف صحفي",
     contact: "تواصل",
     cv: "السيرة",
     menu: "القائمة",

@@ -5,14 +5,14 @@ import { SiteFooter } from "@/components/site-footer";
 import { ScrollReveal } from "@/components/scroll-reveal";
 import { JsonLd } from "@/components/json-ld";
 import { SITE } from "@/content/site";
-import { personJsonLd, websiteJsonLd } from "@/lib/seo";
+import { personJsonLd, siteNavigationJsonLd, websiteJsonLd } from "@/lib/seo";
 import { Analytics } from "@vercel/analytics/next";
 import { inter, spaceGrotesk } from "@/lib/fonts-en";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: "Mahmoud Elnagdy — Full-Stack Developer in Cairo",
+    default: "Mahmoud Elnagdy",
     template: "%s — Mahmoud Elnagdy",
   },
   description:
@@ -90,6 +90,8 @@ export default function EnglishLayout({
       lang="en"
       dir="ltr"
       className={`locale-en ${inter.variable} ${spaceGrotesk.variable}`}
+      suppressHydrationWarning
+      data-scroll-behavior="smooth"
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: bootScript }} />
@@ -104,6 +106,7 @@ export default function EnglishLayout({
         <ScrollReveal />
         <JsonLd data={personJsonLd("en")} />
         <JsonLd data={websiteJsonLd("en")} />
+        <JsonLd data={siteNavigationJsonLd("en")} />
         <Analytics />
       </body>
     </html>

@@ -77,7 +77,7 @@ export function buildMetadata({
           title: fullTitle,
           description,
           url: canonical,
-          siteName: "Nagdista",
+          siteName: "Mahmoud Elnagdy",
           locale: locale === "ar" ? "ar_EG" : "en_US",
           alternateLocale: locale === "ar" ? ["en_US"] : ["ar_EG"],
           publishedTime,
@@ -98,7 +98,7 @@ export function buildMetadata({
           title: fullTitle,
           description,
           url: canonical,
-          siteName: "Nagdista",
+          siteName: "Mahmoud Elnagdy",
           locale: locale === "ar" ? "ar_EG" : "en_US",
           alternateLocale: locale === "ar" ? ["en_US"] : ["ar_EG"],
           images: [
@@ -166,6 +166,10 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
       locale === "ar"
         ? "مطور فول ستاك في القاهرة، مصر. يبني منتجات ويب ثنائية اللغة بـ React وNext.js وTypeScript وNode.js."
         : "Full-stack developer in Cairo, Egypt. Builds bilingual web products with React, Next.js, TypeScript, and Node.js.",
+    disambiguatingDescription:
+      locale === "ar"
+        ? "مطور فول ستاك في القاهرة وصاحب مشاريع Wasla وLocalTube وHassala وTarteeb وYost؛ بكالوريوس نظم ومعلومات الأعمال 2026."
+        : "Cairo-based full-stack developer and creator of Wasla, LocalTube, Hassala, Tarteeb, and Yost; B.Sc. in Business Information Systems, 2026.",
     email: `mailto:${SITE.email}`,
     telephone: SITE.phoneHref,
     address: {
@@ -191,7 +195,6 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
         addressCountry: "EG",
       },
     },
-    award: "Graduation project graded Excellent (99%)",
     hasCredential: {
       "@type": "EducationalOccupationalCredential",
       credentialCategory: "degree",
@@ -231,7 +234,7 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
     knowsLanguage: ["ar", "en"],
     worksFor: {
       "@type": "Organization",
-      name: "Nagdista",
+      name: locale === "ar" ? "مستقل" : "Independent",
       url: SITE.url,
     },
   };
@@ -295,12 +298,36 @@ export function websiteJsonLd(locale: Locale): Record<string, unknown> {
     "@id": `${SITE.url}/#website`,
     url: SITE.url,
     name: "Mahmoud Elnagdy",
+    alternateName: ["Nagdista", "نجديستا"],
     description:
       locale === "ar"
         ? "بورتفوليو محمود النجدي، مطور فول ستاك في القاهرة."
         : "The portfolio of Mahmoud Elnagdy, a full-stack developer in Cairo.",
     inLanguage: ["en", "ar"],
     publisher: { "@id": `${SITE.url}/#person` },
+  };
+}
+
+export function siteNavigationJsonLd(
+  locale: Locale,
+): Record<string, unknown> {
+  const ar = locale === "ar";
+  const items = [
+    { name: ar ? "أعمالي" : "Work", path: "/projects/" },
+    { name: ar ? "عني" : "About", path: "/about/" },
+    { name: ar ? "مقالات" : "Writing", path: "/blog/" },
+    { name: ar ? "ملف صحفي" : "Press", path: "/press/" },
+  ];
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: ar ? "روابط الموقع الأساسية" : "Primary site navigation",
+    itemListElement: items.map((item, index) => ({
+      "@type": "SiteNavigationElement",
+      position: index + 1,
+      name: item.name,
+      url: pageUrl(locale, item.path),
+    })),
   };
 }
 
