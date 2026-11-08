@@ -1,15 +1,55 @@
 import Link from "next/link";
-import { PRESS } from "@/content/press";
+import { PRESS, type PressRow } from "@/content/press";
 import { SITE, SOCIAL_LINKS } from "@/content/site";
 import type { Locale } from "@/content/types";
 import { PageIntro } from "./page-intro";
 import { ArrowRight, ExternalLinkIcon, MailIcon } from "./icons";
+
+function Row({ row }: { row: PressRow }) {
+  return (
+    <div className="press-table__row">
+      <dt>{row.label}</dt>
+      <dd>
+        {row.href ? (
+          <a href={row.href} target="_blank" rel="noreferrer">
+            {row.value}
+            <ExternalLinkIcon size={12} />
+          </a>
+        ) : (
+          row.value
+        )}
+      </dd>
+    </div>
+  );
+}
 
 export function PressView({ locale }: { locale: Locale }) {
   const content = PRESS[locale];
   const isArabic = locale === "ar";
   const homeHref = isArabic ? "/ar/" : "/";
   const workHref = isArabic ? "/ar/projects/" : "/projects/";
+
+  const officialLinks = [
+    { label: isArabic ? "الموقع الرسمي" : "Official website", href: homeHref },
+    {
+      label: isArabic ? "الموقع بالعربية" : "Website in Arabic",
+      href: "/ar/",
+    },
+    { label: isArabic ? "عنّي" : "About", href: isArabic ? "/ar/about/" : "/about/" },
+    {
+      label: isArabic ? "المشاريع" : "Projects",
+      href: isArabic ? "/ar/projects/" : "/projects/",
+    },
+    {
+      label: isArabic ? "المقالات" : "Writing",
+      href: isArabic ? "/ar/blog/" : "/blog/",
+    },
+    ...SOCIAL_LINKS.map((link) => ({
+      label: link.label,
+      href: link.href,
+    })),
+    { label: isArabic ? "السيرة الذاتية" : "CV", href: SITE.cvUrl },
+  ];
 
   return (
     <>
@@ -37,16 +77,78 @@ export function PressView({ locale }: { locale: Locale }) {
       </div>
 
       <div className="container">
-        <div className="about-page__body">
-          <div className="about-page__prose" data-reveal>
+        <article className="press-page">
+          <section className="press-section" data-reveal>
+            <h2>{content.snapshotTitle}</h2>
+            <dl className="press-table">
+              {content.snapshot.map((row) => (
+                <Row row={row} key={row.label} />
+              ))}
+            </dl>
+          </section>
+
+          <section className="press-section" data-reveal>
             <h2>{content.bioTitle}</h2>
-            <p>{content.shortBio}</p>
+            <p className="press-lead">{content.shortBio}</p>
+          </section>
 
-            <h2>{content.longBioTitle}</h2>
-            {content.longBio.map((paragraph) => (
-              <p key={paragraph.slice(0, 24)}>{paragraph}</p>
-            ))}
+          <section className="press-section" data-reveal>
+            <h2>{content.educationTitle}</h2>
+            <dl className="press-table">
+              {content.education.map((row) => (
+                <Row row={row} key={row.label} />
+              ))}
+            </dl>
+          </section>
 
+          <section className="press-section" data-reveal>
+            <h2>{content.learningTitle}</h2>
+            <ul className="press-list">
+              {content.learning.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </section>
+
+          <section className="press-section" data-reveal>
+            <h2>{content.skillsTitle}</h2>
+            <dl className="press-table">
+              {content.skills.map((row) => (
+                <Row row={row} key={row.label} />
+              ))}
+            </dl>
+          </section>
+
+          <section className="press-section" data-reveal>
+            <h2>{content.workTitle}</h2>
+            <p>{content.workIntro}</p>
+            <div className="press-cards">
+              {content.work.map((project) => (
+                <article className="press-card" key={project.name}>
+                  <h3>{project.name}</h3>
+                  <p>{project.description}</p>
+                  <a href={project.href} target="_blank" rel="noreferrer">
+                    {project.linkLabel}
+                    <ExternalLinkIcon size={12} />
+                  </a>
+                </article>
+              ))}
+            </div>
+          </section>
+
+          <section className="press-section" data-reveal>
+            <h2>{content.writingTitle}</h2>
+            <ul className="press-list press-list--links">
+              {content.writing.map((article) => (
+                <li key={article.href}>
+                  <a href={article.href}>{article.title}</a>
+                  <ExternalLinkIcon size={12} />
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          <section className="press-section" data-reveal>
             <h2>{content.namesTitle}</h2>
             <p>{content.namesIntro}</p>
             <ul className="press-names">
@@ -57,14 +159,30 @@ export function PressView({ locale }: { locale: Locale }) {
                 </li>
               ))}
             </ul>
+          </section>
 
+          <section className="press-section" data-reveal>
             <h2>{content.usageTitle}</h2>
-            <ul className="press-list">
+            <ol className="press-list">
               {content.usage.map((item) => (
                 <li key={item}>{item}</li>
               ))}
-            </ul>
+            </ol>
+          </section>
 
+          <section className="press-section" data-reveal>
+            <h2>{content.linksTitle}</h2>
+            <ul className="press-list press-list--links">
+              {officialLinks.map((link) => (
+                <li key={link.label}>
+                  <a href={link.href}>{link.label}</a>
+                  <ExternalLinkIcon size={12} />
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          <section className="press-section" data-reveal>
             <h2>{content.faqTitle}</h2>
             <dl className="press-faq">
               {content.faq.map((item) => (
@@ -74,59 +192,14 @@ export function PressView({ locale }: { locale: Locale }) {
                 </div>
               ))}
             </dl>
+          </section>
 
+          <section className="press-section press-contact" data-reveal>
+            <h2>{content.contactTitle}</h2>
+            <p>{content.contactBody}</p>
             <p className="press-updated">{content.updated}</p>
-          </div>
-
-          <aside className="about-page__aside" data-reveal>
-            <div className="fact-sheet">
-              <h2 className="fact-sheet__title">{content.factsTitle}</h2>
-              <dl>
-                {content.facts.map((fact) => (
-                  <div className="fact-sheet__row" key={fact.label}>
-                    <dt>{fact.label}</dt>
-                    <dd>
-                      {fact.href ? (
-                        <a href={fact.href} target="_blank" rel="noreferrer">
-                          {fact.value}
-                          <ExternalLinkIcon size={12} />
-                        </a>
-                      ) : (
-                        fact.value
-                      )}
-                    </dd>
-                  </div>
-                ))}
-              </dl>
-            </div>
-
-            <div className="currently">
-              <h3>{content.linksTitle}</h3>
-              <ul>
-                <li>
-                  <a href={homeHref}>{isArabic ? "الموقع الرسمي" : "Official website"}</a>
-                </li>
-                {SOCIAL_LINKS.map((link) => (
-                  <li key={link.label}>
-                    <a href={link.href} target="_blank" rel="noreferrer">
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
-                <li>
-                  <a href={SITE.cvUrl} target="_blank" rel="noreferrer">
-                    {isArabic ? "السيرة الذاتية" : "CV"}
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="currently">
-              <h3>{content.contactTitle}</h3>
-              <p>{content.contactBody}</p>
-            </div>
-          </aside>
-        </div>
+          </section>
+        </article>
       </div>
     </>
   );

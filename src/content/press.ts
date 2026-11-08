@@ -1,3 +1,9 @@
+export type PressRow = {
+  label: string;
+  value: string;
+  href?: string;
+};
+
 export type PressName = {
   name: string;
   note: string;
@@ -8,19 +14,40 @@ export type PressFaq = {
   answer: string;
 };
 
+export type PressWork = {
+  name: string;
+  description: string;
+  href: string;
+  linkLabel: string;
+};
+
+export type PressArticle = {
+  title: string;
+  href: string;
+};
+
 export type PressContent = {
   eyebrow: string;
   title: string;
   intro: string;
+  snapshotTitle: string;
+  snapshot: PressRow[];
   bioTitle: string;
   shortBio: string;
-  longBioTitle: string;
-  longBio: string[];
+  educationTitle: string;
+  education: PressRow[];
+  learningTitle: string;
+  learning: string[];
+  skillsTitle: string;
+  skills: PressRow[];
+  workTitle: string;
+  workIntro: string;
+  work: PressWork[];
+  writingTitle: string;
+  writing: PressArticle[];
   namesTitle: string;
   namesIntro: string;
   names: PressName[];
-  factsTitle: string;
-  facts: { label: string; value: string; href?: string }[];
   usageTitle: string;
   usage: string[];
   linksTitle: string;
@@ -33,18 +60,174 @@ export type PressContent = {
 
 export const PRESS: Record<"en" | "ar", PressContent> = {
   en: {
-    eyebrow: "Press & identity",
+    eyebrow: "Profile & press kit",
     title: "Mahmoud Elnagdy",
     intro:
-      "Canonical facts, bios, and name spellings for Mahmoud Elnagdy, a full-stack developer based in Cairo, Egypt.",
+      "The canonical profile of Mahmoud Elnagdy, a full-stack developer based in Cairo, Egypt. Facts, education, skills, selected work, and official links — in one place.",
+    snapshotTitle: "At a glance",
+    snapshot: [
+      { label: "Role", value: "Full-stack developer" },
+      { label: "Location", value: "Cairo, Egypt" },
+      {
+        label: "Education",
+        value: "B.Sc. Business Information Systems, 2026",
+      },
+      {
+        label: "Availability",
+        value: "Freelance projects and junior remote roles",
+      },
+      {
+        label: "Languages",
+        value: "Arabic (native), English (professional)",
+      },
+      {
+        label: "Email",
+        value: "nagdista@gmail.com",
+        href: "mailto:nagdista@gmail.com",
+      },
+      {
+        label: "Website",
+        value: "nagdista.com",
+        href: "https://nagdista.com/",
+      },
+      {
+        label: "Most active on",
+        value: "X (@nagdista)",
+        href: "https://x.com/nagdista",
+      },
+    ],
     bioTitle: "Short bio",
     shortBio:
       "Mahmoud Elnagdy is a full-stack developer based in Cairo, Egypt. He builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL. He graduated in 2026 with a B.Sc. in Business Information Systems and is open to freelance projects and junior remote roles.",
-    longBioTitle: "Long bio",
-    longBio: [
-      "Mahmoud Elnagdy started with front-end work — HTML, CSS, JavaScript, then React and Tailwind CSS — before moving into TypeScript, Node.js, Express, and relational databases. That range now lets him work across the stack, from interface details to API and data design.",
-      "His featured work includes Wasla, a bilingual platform that turns YouTube playlists into structured courses; LocalTube, a self-hosted video library with FFmpeg thumbnails and SQLite progress tracking; Hassala, a privacy-first Chrome extension for Arabic ↔ English vocabulary; Tarteeb, a prayer-aware daily planner that works offline; and Yost, a local-first dashboard for YouTube community posts.",
-      "He studied Business Information Systems at Misr Higher Institute for Commerce & Computers in Mansoura, graduated in August 2026 with a Very Good cumulative grade, and earned Excellent (99%) on his graduation project. He learned programming largely on his own, alongside multiple Udemy courses, most of them by Maximilian Schwarzmüller. He is passionate about learning, languages, programming, and artificial intelligence. He writes in English and Arabic, designs for both directions, and documents what he learns in evergreen articles on Next.js, React, TypeScript, and databases.",
+    educationTitle: "Education",
+    education: [
+      {
+        label: "Degree",
+        value: "B.Sc. in Business Information Systems",
+      },
+      {
+        label: "Institution",
+        value:
+          "Misr Higher Institute for Commerce & Computers, Mansoura — also known locally as El-Sallab Higher Institute",
+        href: "https://metmans.edu.eg/",
+      },
+      { label: "Graduated", value: "August 2026" },
+      { label: "Cumulative grade", value: "Very Good" },
+      {
+        label: "Graduation project",
+        value:
+          "EduSwap — an educational tools exchange platform, graded Excellent (99%)",
+        href: "https://github.com/nagdista-dev/new-edu-swap",
+      },
+      {
+        label: "Project stack",
+        value: "React, Node.js, MongoDB, Socket.io",
+      },
+    ],
+    learningTitle: "Learning path",
+    learning: [
+      "Self-taught programmer since the first day of university in 2022: learned by building, reading documentation, and shipping real projects.",
+      "Studying English and building AI-assisted tools for learning languages.",
+      "Learns by trial and error, and is open to feedback and advice from more experienced engineers.",
+      "Public learning repositories document the path: Python fundamentals, GitHub CLI, animation, and frontend interview preparation.",
+    ],
+    skillsTitle: "Skills",
+    skills: [
+      {
+        label: "Front end",
+        value: "React, Next.js, TypeScript, JavaScript, HTML, CSS, Tailwind CSS",
+      },
+      {
+        label: "Back end",
+        value: "Node.js, Express, REST APIs, Socket.io",
+      },
+      {
+        label: "Data",
+        value: "SQL, SQLite, MongoDB, Mongoose",
+      },
+      {
+        label: "Tooling",
+        value: "Git, GitHub, Vite, FFmpeg, Vercel, Netlify",
+      },
+      {
+        label: "Focus",
+        value:
+          "Accessibility, performance, bilingual and RTL interfaces, local-first products",
+      },
+    ],
+    workTitle: "Selected work",
+    workIntro:
+      "Five featured case studies, plus the graduation project. Each project links to the full write-up.",
+    work: [
+      {
+        name: "Wasla",
+        description:
+          "Bilingual platform that turns YouTube playlists into structured courses.",
+        href: "https://nagdista.com/projects/wasla/",
+        linkLabel: "Case study",
+      },
+      {
+        name: "LocalTube",
+        description:
+          "Self-hosted video library with SQLite progress tracking and FFmpeg thumbnails. Runs locally.",
+        href: "https://nagdista.com/projects/localtube/",
+        linkLabel: "Case study",
+      },
+      {
+        name: "Hassala",
+        description:
+          "Privacy-first Chrome extension for Arabic ↔ English vocabulary.",
+        href: "https://nagdista.com/projects/hassala/",
+        linkLabel: "Case study",
+      },
+      {
+        name: "Tarteeb",
+        description:
+          "Prayer-aware daily planner that works offline.",
+        href: "https://nagdista.com/projects/tarteeb/",
+        linkLabel: "Case study",
+      },
+      {
+        name: "Yost",
+        description:
+          "Local-first dashboard for YouTube community posts.",
+        href: "https://nagdista.com/projects/yost/",
+        linkLabel: "Case study",
+      },
+      {
+        name: "EduSwap",
+        description:
+          "Graduation project: educational tools exchange platform with real-time chat.",
+        href: "https://github.com/nagdista-dev/new-edu-swap",
+        linkLabel: "Repository",
+      },
+    ],
+    writingTitle: "Writing",
+    writing: [
+      {
+        title: "How I Built a Bilingual Portfolio with Next.js and TypeScript",
+        href: "https://nagdista.com/blog/bilingual-portfolio-nextjs-typescript/",
+      },
+      {
+        title: "MERN vs Next.js: Choosing the Right Stack",
+        href: "https://nagdista.com/blog/mern-vs-nextjs/",
+      },
+      {
+        title: "SQL vs MongoDB: A Practical Guide for Full-Stack Developers",
+        href: "https://nagdista.com/blog/sql-vs-mongodb/",
+      },
+      {
+        title: "إزاي تبني بورتفوليو احترافي بـ Next.js وTypeScript",
+        href: "https://nagdista.com/ar/blog/build-portfolio-nextjs-typescript-ar/",
+      },
+      {
+        title: "React vs Next.js: امتى تختار كل واحد؟",
+        href: "https://nagdista.com/ar/blog/react-vs-nextjs-ar/",
+      },
+      {
+        title: "أفضل ممارسات TypeScript في مشاريع React",
+        href: "https://nagdista.com/ar/blog/typescript-best-practices-react-ar/",
+      },
     ],
     namesTitle: "Names and spellings",
     namesIntro:
@@ -64,40 +247,6 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
       },
       { name: "نجديستا", note: "Arabic form of the online handle." },
     ],
-    factsTitle: "Canonical facts",
-    facts: [
-      { label: "Role", value: "Full-stack developer" },
-      { label: "Location", value: "Cairo, Egypt" },
-      {
-        label: "Education",
-        value:
-          "B.Sc. Business Information Systems, Misr Higher Institute for Commerce & Computers, graduated August 2026 (Very Good)",
-      },
-      {
-        label: "Graduation project",
-        value: "Excellent, 99%",
-      },
-      {
-        label: "Learning",
-        value:
-          "Self-taught developer; multiple Udemy courses, most by Maximilian Schwarzmüller",
-      },
-      {
-        label: "Stack",
-        value: "React, Next.js, TypeScript, Node.js, Express, SQL",
-      },
-      { label: "Languages", value: "Arabic (native), English (professional)" },
-      {
-        label: "Availability",
-        value: "Freelance projects and junior remote roles",
-      },
-      { label: "Website", value: "nagdista.com", href: "https://nagdista.com/" },
-      {
-        label: "Email",
-        value: "nagdista@gmail.com",
-        href: "mailto:nagdista@gmail.com",
-      },
-    ],
     usageTitle: "How to refer to me",
     usage: [
       "On first mention, use the full name: Mahmoud Elnagdy.",
@@ -113,6 +262,16 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
         question: "Who is Mahmoud Elnagdy?",
         answer:
           "Mahmoud Elnagdy is a full-stack developer in Cairo, Egypt, working with React, Next.js, TypeScript, Node.js, and SQL. He graduated in 2026 with a B.Sc. in Business Information Systems.",
+      },
+      {
+        question: "Where did Mahmoud Elnagdy study?",
+        answer:
+          "He studied Business Information Systems at Misr Higher Institute for Commerce & Computers in Mansoura, also known locally as El-Sallab Higher Institute. He graduated in August 2026 with a Very Good cumulative grade.",
+      },
+      {
+        question: "What was Mahmoud Elnagdy's graduation project?",
+        answer:
+          "EduSwap, an educational tools exchange platform built with React, Node.js, MongoDB, and Socket.io. It was graded Excellent (99%).",
       },
       {
         question: "What has Mahmoud Elnagdy built?",
@@ -141,18 +300,174 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
     updated: "Last updated: 8 November 2026",
   },
   ar: {
-    eyebrow: "ملف صحفي وتعريفي",
+    eyebrow: "الملف التعريفي والصحفي",
     title: "محمود النجدي",
     intro:
-      "حقائق ونبذة وطرق كتابة الاسم لمحمود النجدي، مطور فول ستاك في القاهرة، مصر.",
+      "الملف الرسمي لمحمود النجدي، مطور فول ستاك في القاهرة، مصر. الحقائق والتعليم والمهارات والأعمال والروابط الرسمية في مكان واحد.",
+    snapshotTitle: "نظرة سريعة",
+    snapshot: [
+      { label: "الدور", value: "مطور فول ستاك" },
+      { label: "الموقع", value: "القاهرة، مصر" },
+      {
+        label: "التعليم",
+        value: "بكالوريوس نظم ومعلومات الأعمال، 2026",
+      },
+      {
+        label: "الإتاحة",
+        value: "مشاريع فريلانس ووظائف عن بُعد للمبتدئين",
+      },
+      {
+        label: "اللغات",
+        value: "العربية (أساسية)، الإنجليزية (احترافية)",
+      },
+      {
+        label: "البريد",
+        value: "nagdista@gmail.com",
+        href: "mailto:nagdista@gmail.com",
+      },
+      {
+        label: "الموقع الإلكتروني",
+        value: "nagdista.com/ar",
+        href: "https://nagdista.com/ar/",
+      },
+      {
+        label: "أنشط منصة",
+        value: "X (@nagdista)",
+        href: "https://x.com/nagdista",
+      },
+    ],
     bioTitle: "نبذة مختصرة",
     shortBio:
       "محمود النجدي مطور فول ستاك في القاهرة، مصر. يبني منتجات ويب سريعة وسهلة الاستخدام وثنائية اللغة باستخدام React وNext.js وTypeScript وNode.js وSQL. تخرج عام 2026 بدرجة بكالوريوس في نظم ومعلومات الأعمال، وهو متاح لمشاريع الفريلانس والوظائف عن بُعد للمبتدئين.",
-    longBioTitle: "نبذة موسعة",
-    longBio: [
-      "بدأ محمود النجدي بالعمل على الواجهات الأمامية: HTML وCSS وJavaScript، ثم React وTailwind CSS، قبل أن ينتقل إلى TypeScript وNode.js وExpress وقواعد البيانات العلائقية. هذه الخبرة تسمح له بالعمل عبر الطبقات كلها، من تفاصيل الواجهة إلى تصميم الـAPI والبيانات.",
-      "من أعماله البارزة Wasla، منصة ثنائية اللغة تحوّل قوائم تشغيل YouTube إلى كورسات منظمة؛ وLocalTube، مكتبة فيديو ذاتية الاستضافة مع صور مصغرة بـFFmpeg وتتبع تقدم بـSQLite؛ وHassala، إضافة Chrome تحترم الخصوصية لمفردات العربية والإنجليزية؛ وTarteeb، منظم يومي يراعي مواعيد الصلاة ويعمل دون اتصال؛ وYost، لوحة محلية لمنشورات مجتمع YouTube.",
-      "درس نظم ومعلومات الأعمال في معهد مصر العالي للتجارة والحاسبات بالمنصورة، وتخرج في أغسطس 2026 بتقدير تراكمي جيد جدًا، وحصل على امتياز بنسبة 99% في مشروع التخرج. تعلّم البرمجة بشكل عصامي إلى جانب عدة كورسات على Udemy، أغلبها مع Maximilian Schwarzmüller. عنده شغف بالتعلم واللغات والبرمجة والذكاء الاصطناعي. يكتب بالعربية والإنجليزية، ويصمم للاتجاهين، ويوثّق ما يتعلمه في مقالات دائمة عن Next.js وReact وTypeScript وقواعد البيانات.",
+    educationTitle: "التعليم",
+    education: [
+      {
+        label: "الدرجة",
+        value: "بكالوريوس نظم ومعلومات الأعمال",
+      },
+      {
+        label: "المعهد",
+        value:
+          "معهد مصر العالي للتجارة والحاسبات بالمنصورة — المعروف محليًا بمعهد السلاب",
+        href: "https://metmans.edu.eg/",
+      },
+      { label: "التخرج", value: "أغسطس 2026" },
+      { label: "التقدير التراكمي", value: "جيد جدًا" },
+      {
+        label: "مشروع التخرج",
+        value:
+          "EduSwap — منصة لتبادل الأدوات التعليمية، بتقدير امتياز 99%",
+        href: "https://github.com/nagdista-dev/new-edu-swap",
+      },
+      {
+        label: "تقنيات المشروع",
+        value: "React وNode.js وMongoDB وSocket.io",
+      },
+    ],
+    learningTitle: "مسار التعلّم",
+    learning: [
+      "مطور عصامي من أول يوم في الجامعة سنة 2022: تعلّم بالبناء وقراءة التوثيق وتسليم مشاريع حقيقية.",
+      "يدرس الإنجليزية ويبني أدوات مدعومة بالذكاء الاصطناعي لتعلّم اللغات.",
+      "يتعلم بالتجربة والخطأ، ومنفتح على الملاحظات والنصايح من المهندسين الأكثر خبرة.",
+      "مستودعات التعلّم العامة توثّق المسار: أساسيات Python، وGitHub CLI، والأنيميشن، والتحضير لمقابلات الواجهات.",
+    ],
+    skillsTitle: "المهارات",
+    skills: [
+      {
+        label: "الواجهة الأمامية",
+        value: "React وNext.js وTypeScript وJavaScript وHTML وCSS وTailwind CSS",
+      },
+      {
+        label: "الواجهة الخلفية",
+        value: "Node.js وExpress وREST APIs وSocket.io",
+      },
+      {
+        label: "البيانات",
+        value: "SQL وSQLite وMongoDB وMongoose",
+      },
+      {
+        label: "الأدوات",
+        value: "Git وGitHub وVite وFFmpeg وVercel وNetlify",
+      },
+      {
+        label: "التركيز",
+        value:
+          "الإتاحة والأداء والواجهات ثنائية اللغة وRTL والمنتجات المحلية أولًا",
+      },
+    ],
+    workTitle: "أعمال مختارة",
+    workIntro:
+      "خمس دراسات حالة مميزة، بالإضافة إلى مشروع التخرج. كل مشروع مرتبط بالتفاصيل الكاملة.",
+    work: [
+      {
+        name: "Wasla",
+        description:
+          "منصة ثنائية اللغة تحوّل قوائم تشغيل YouTube إلى كورسات منظمة.",
+        href: "https://nagdista.com/ar/projects/wasla/",
+        linkLabel: "دراسة الحالة",
+      },
+      {
+        name: "LocalTube",
+        description:
+          "مكتبة فيديو ذاتية الاستضافة مع تتبع تقدم بـSQLite وصور مصغرة بـFFmpeg. تعمل محليًا.",
+        href: "https://nagdista.com/ar/projects/localtube/",
+        linkLabel: "دراسة الحالة",
+      },
+      {
+        name: "Hassala",
+        description:
+          "إضافة Chrome تحترم الخصوصية لمفردات العربية والإنجليزية.",
+        href: "https://nagdista.com/ar/projects/hassala/",
+        linkLabel: "دراسة الحالة",
+      },
+      {
+        name: "Tarteeb",
+        description:
+          "منظم يومي يراعي مواعيد الصلاة ويعمل دون اتصال.",
+        href: "https://nagdista.com/ar/projects/tarteeb/",
+        linkLabel: "دراسة الحالة",
+      },
+      {
+        name: "Yost",
+        description:
+          "لوحة محلية لمنشورات مجتمع YouTube.",
+        href: "https://nagdista.com/ar/projects/yost/",
+        linkLabel: "دراسة الحالة",
+      },
+      {
+        name: "EduSwap",
+        description:
+          "مشروع التخرج: منصة لتبادل الأدوات التعليمية مع محادثة فورية.",
+        href: "https://github.com/nagdista-dev/new-edu-swap",
+        linkLabel: "المستودع",
+      },
+    ],
+    writingTitle: "الكتابة",
+    writing: [
+      {
+        title: "إزاي تبني بورتفوليو احترافي بـ Next.js وTypeScript",
+        href: "https://nagdista.com/ar/blog/build-portfolio-nextjs-typescript-ar/",
+      },
+      {
+        title: "React vs Next.js: امتى تختار كل واحد؟",
+        href: "https://nagdista.com/ar/blog/react-vs-nextjs-ar/",
+      },
+      {
+        title: "أفضل ممارسات TypeScript في مشاريع React",
+        href: "https://nagdista.com/ar/blog/typescript-best-practices-react-ar/",
+      },
+      {
+        title: "How I Built a Bilingual Portfolio with Next.js and TypeScript",
+        href: "https://nagdista.com/blog/bilingual-portfolio-nextjs-typescript/",
+      },
+      {
+        title: "MERN vs Next.js: Choosing the Right Stack",
+        href: "https://nagdista.com/blog/mern-vs-nextjs/",
+      },
+      {
+        title: "SQL vs MongoDB: A Practical Guide for Full-Stack Developers",
+        href: "https://nagdista.com/blog/sql-vs-mongodb/",
+      },
     ],
     namesTitle: "الأسماء وطرق الكتابة",
     namesIntro:
@@ -172,47 +487,6 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
       },
       { name: "نجديستا", note: "الصيغة العربية للاسم المستعار." },
     ],
-    factsTitle: "حقائق أساسية",
-    facts: [
-      { label: "الدور", value: "مطور فول ستاك" },
-      { label: "الموقع", value: "القاهرة، مصر" },
-      {
-        label: "التعليم",
-        value:
-          "بكالوريوس نظم ومعلومات الأعمال، معهد مصر العالي للتجارة والحاسبات بالمنصورة، تخرج أغسطس 2026 (جيد جدًا)",
-      },
-      {
-        label: "مشروع التخرج",
-        value: "امتياز، 99%",
-      },
-      {
-        label: "التعلّم",
-        value:
-          "مطور عصامي؛ عدة كورسات على Udemy، أغلبها مع Maximilian Schwarzmüller",
-      },
-      {
-        label: "التقنيات",
-        value: "React وNext.js وTypeScript وNode.js وExpress وSQL",
-      },
-      {
-        label: "اللغات",
-        value: "العربية (أساسية)، الإنجليزية (احترافية)",
-      },
-      {
-        label: "الإتاحة",
-        value: "مشاريع فريلانس ووظائف عن بُعد للمبتدئين",
-      },
-      {
-        label: "الموقع الإلكتروني",
-        value: "nagdista.com/ar",
-        href: "https://nagdista.com/ar/",
-      },
-      {
-        label: "البريد",
-        value: "nagdista@gmail.com",
-        href: "mailto:nagdista@gmail.com",
-      },
-    ],
     usageTitle: "طريقة الإشارة إليّ",
     usage: [
       "عند أول ذكر، استخدم الاسم الكامل: محمود النجدي.",
@@ -227,6 +501,16 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
         question: "من هو محمود النجدي؟",
         answer:
           "محمود النجدي مطور فول ستاك في القاهرة، مصر، يعمل بـReact وNext.js وTypeScript وNode.js وSQL. تخرج عام 2026 بدرجة بكالوريوس في نظم ومعلومات الأعمال.",
+      },
+      {
+        question: "أين درس محمود النجدي؟",
+        answer:
+          "درس نظم ومعلومات الأعمال في معهد مصر العالي للتجارة والحاسبات بالمنصورة، المعروف محليًا بمعهد السلاب. تخرج في أغسطس 2026 بتقدير تراكمي جيد جدًا.",
+      },
+      {
+        question: "ما هو مشروع تخرج محمود النجدي؟",
+        answer:
+          "EduSwap، منصة لتبادل الأدوات التعليمية بُنيت بـReact وNode.js وMongoDB وSocket.io، وحصلت على امتياز بنسبة 99%.",
       },
       {
         question: "ما الذي بناه محمود النجدي؟",

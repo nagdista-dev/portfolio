@@ -132,7 +132,7 @@ const en = {
     body: [
       "My path started with front-end work: HTML, CSS, JavaScript, then React and Tailwind CSS. The more I built, the more I wanted to understand what happened behind the interface. That curiosity pulled me into TypeScript, Node.js, Express, databases, and the decisions that make an application fast and maintainable.",
       "Today I work across the stack. I've built Wasla, a bilingual platform that turns YouTube playlists into structured courses; LocalTube, a self-hosted video library with FFmpeg thumbnails and SQLite; Hassala, a privacy-first Chrome extension for Arabic ↔ English learners; Tarteeb, a planner built around prayer times; and Yost, a local dashboard for YouTube community posts.",
-      "I studied Business Information Systems at Misr Higher Institute for Commerce & Computers in Mansoura and graduated in 2026 with a Very Good grade. I'm based in Cairo and open to freelance projects and junior remote roles where I can keep learning from strong engineers while shipping work that matters.",
+      "I studied Business Information Systems at Misr Higher Institute for Commerce & Computers in Mansoura and graduated in August 2026 with a Very Good grade. My graduation project, EduSwap, earned Excellent (99%). I'm based in Cairo and open to freelance projects and junior remote roles where I can keep learning from strong engineers while shipping work that matters.",
     ],
     principlesTitle: "How I work",
     principles: [
@@ -397,7 +397,7 @@ const ar: typeof en = {
     body: [
       "بدأت من الواجهات: HTML وCSS وJavaScript، بعدين React وTailwind CSS. كل ما بنيت أكتر، كل ما حبيت أفهم اللي بيحصل وراء الواجهة. الفضول ده سحبني لـ TypeScript وNode.js وExpress وقواعد البيانات والقرارات اللي بتخلي التطبيق سريع وسهل الصيانة.",
       "اليوم بشتغل على الستاك كله. بنيت Wasla، منصة ثنائية اللغة بتحول قوائم تشغيل يوتيوب لكورسات منظمة؛ وLocalTube، مكتبة فيديو self-hosted بتستخدم FFmpeg وSQLite؛ وHassala، إكستنشن Chrome بيحترم الخصوصية لمتعلمي العربي ↔ الإنجليزي؛ وTarteeb، منظم يومي مبني حول مواعيد الصلاة؛ وYost، داشبورد محلي لبوستات مجتمع يوتيوب.",
-      "درست نظم ومعلومات الأعمال في معهد مصر العالي للتجارة والحاسبات بالمنصورة وتخرجت سنة 2026 بتقدير جيد جدًا. مقيم في القاهرة ومتاح للفريلانس والوظائف عن بُعد، عشان أتعلم من مهندسين قويين وأسلّم شغل يستاهل.",
+      "درست نظم ومعلومات الأعمال في معهد مصر العالي للتجارة والحاسبات بالمنصورة وتخرجت في أغسطس 2026 بتقدير جيد جدًا. مشروع التخرج، EduSwap، حصل على امتياز بنسبة 99%. مقيم في القاهرة ومتاح للفريلانس والوظائف عن بُعد، عشان أتعلم من مهندسين قويين وأسلّم شغل يستاهل.",
     ],
     principlesTitle: "طريقة شغلي",
     principles: [

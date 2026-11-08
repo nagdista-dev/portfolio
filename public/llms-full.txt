@@ -15,8 +15,9 @@ Primary languages: English, Arabic
 - Arabic online handle: نجديستا
 - Role: Full-stack developer
 - Location: Cairo, Egypt
-- Education: B.Sc. in Business Information Systems, Misr Higher Institute for Commerce & Computers, Mansoura, 2026 (Very Good)
-- Learning: self-taught developer; multiple Udemy courses, most by Maximilian Schwarzmüller
+- Education: B.Sc. in Business Information Systems, Misr Higher Institute for Commerce & Computers (El-Sallab), Mansoura, 2026 (Very Good)
+- Graduation project: EduSwap — Excellent (99%)
+- Learning: self-taught developer; currently learning English and AI-assisted language learning
 - Most active social platform: X (Twitter)
 - Availability: freelance projects and junior remote roles
 - Email: nagdista@gmail.com
@@ -39,7 +40,7 @@ Mahmoud Elnagdy started with front-end work — HTML, CSS, JavaScript, then Reac
 
 His featured work includes Wasla, a bilingual platform that turns YouTube playlists into structured courses; LocalTube, a self-hosted video library with FFmpeg thumbnails and SQLite progress tracking; Hassala, a privacy-first Chrome extension for Arabic ↔ English vocabulary; Tarteeb, a prayer-aware daily planner that works offline; and Yost, a local-first dashboard for YouTube community posts.
 
-He studied Business Information Systems at Misr Higher Institute for Commerce & Computers in Mansoura and graduated in 2026 with a Very Good grade. He learned programming largely on his own, alongside multiple Udemy courses, most of them by Maximilian Schwarzmüller. He writes in English and Arabic, designs for both directions, and documents what he learns in evergreen articles on Next.js, React, TypeScript, and databases.
+He studied Business Information Systems at Misr Higher Institute for Commerce & Computers in Mansoura and graduated in August 2026 with a Very Good cumulative grade. His graduation project, EduSwap, earned Excellent (99%) and is an educational tools exchange platform built with React, Node.js, MongoDB, and Socket.io. He learned programming largely on his own and is passionate about learning, languages, programming, and artificial intelligence. He writes in English and Arabic, designs for both directions, and documents what he learns in evergreen articles on Next.js, React, TypeScript, and databases.
 
 ## Skills
 
@@ -54,9 +55,11 @@ He studied Business Information Systems at Misr Higher Institute for Commerce & 
 
 - Degree: B.Sc. in Business Information Systems
 - Institution: Misr Higher Institute for Commerce & Computers, Mansoura, Egypt — https://metmans.edu.eg/
-- Graduated: 2026, grade Very Good
-- Programming education: largely self-taught, supplemented by multiple Udemy courses, most of them by Maximilian Schwarzmüller
-- Currently learning: English and language-learning methods
+- Institution alternate names: El-Sallab Higher Institute; معهد مصر العالي للتجارة والحاسبات بالمنصورة; السلاب
+- Graduated: August 2026, cumulative grade Very Good
+- Graduation project: EduSwap, educational tools exchange platform — Excellent (99%) — https://github.com/nagdista-dev/new-edu-swap
+- Programming education: largely self-taught, starting from the first day of university in 2022
+- Currently learning: English and AI-assisted language-learning methods
 - Public learning repositories: https://github.com/nagdista-dev?tab=repositories
 
 ## Featured projects

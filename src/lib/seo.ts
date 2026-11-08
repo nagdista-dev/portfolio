@@ -178,7 +178,11 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
     alumniOf: {
       "@type": "CollegeOrUniversity",
       name: "Misr Higher Institute for Commerce & Computers, Mansoura",
-      alternateName: "معهد مصر العالي للتجارة والحاسبات بالمنصورة",
+      alternateName: [
+        "معهد مصر العالي للتجارة والحاسبات بالمنصورة",
+        "El-Sallab Higher Institute for Commerce & Computers",
+        "السلاب",
+      ],
       url: "https://metmans.edu.eg/",
       address: {
         "@type": "PostalAddress",
@@ -187,6 +191,7 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
         addressCountry: "EG",
       },
     },
+    award: "Graduation project graded Excellent (99%)",
     hasCredential: {
       "@type": "EducationalOccupationalCredential",
       credentialCategory: "degree",
@@ -220,6 +225,8 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
       "Search engine optimization",
       "Self-taught programming",
       "Language learning",
+      "Artificial Intelligence",
+      "AI-assisted language learning",
     ],
     knowsLanguage: ["ar", "en"],
     worksFor: {
