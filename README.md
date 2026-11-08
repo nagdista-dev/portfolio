@@ -13,7 +13,7 @@ metadata, and RTL-aware layouts. The site is a fully static export, so it can be
 - **React 19** + **TypeScript**
 - **Tailwind CSS v4** with a small custom design system
 - **pnpm**
-- Web3Forms for contact (falls back to `mailto:` when no key is configured)
+- WebForms.to for the contact form
 - GitHub REST API at build time for the public-repository section
 
 ## Local development
@@ -41,15 +41,23 @@ pnpm lint
 Create a `.env.local` file (both variables are optional):
 
 ```bash
-# Public CV link. When empty, the CV button opens an email draft instead.
+# Public CV link. Defaults to the Drive folder configured in src/content/site.ts.
 NEXT_PUBLIC_CV_URL="https://drive.google.com/..."
 
-# Web3Forms access key. When empty, the contact form opens the user's email app.
-NEXT_PUBLIC_WEB3FORMS_KEY=""
+# Contact form endpoint. Defaults to the WebForms.to endpoint in src/content/site.ts.
+NEXT_PUBLIC_CONTACT_ENDPOINT="https://send.webforms.to/..."
 ```
 
 A `GITHUB_TOKEN` can be provided at build time to raise the GitHub API rate limit while generating
 the repository list. The build falls back to a checked-in snapshot if the API is unavailable.
+
+## Deployment
+
+Production runs on **Vercel** at <https://nagdista.com>. Pushes to `main` deploy automatically; the
+project is a static export, so any static host works too.
+
+The old Vercel project and the old GitHub repository are kept as `portfolio-legacy`. The GitHub
+Pages workflow remains available as a static preview/backup.
 
 ## Structure
 
