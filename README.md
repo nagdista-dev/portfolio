@@ -2,6 +2,8 @@
 
 Personal portfolio for **Mahmoud Elnagdy (Nagdista)** — a full-stack developer in Cairo, Egypt.
 
+![Portfolio preview](public/og/home-en.png)
+
 Bilingual by design: English lives at `/`, Arabic at `/ar`, with proper `lang`/`dir` roots, localized
 metadata, and RTL-aware layouts. The site is a fully static export, so it can be hosted anywhere.
 
