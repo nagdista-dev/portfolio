@@ -3,8 +3,8 @@ import { NAME_VARIANTS, SITE } from "@/content/site";
 import type { Article, Locale, Project } from "@/content/types";
 
 const BRAND: Record<Locale, string> = {
-  en: "Mahmoud Elnagdy (Nagdista)",
-  ar: "محمود النجدي (نجديستا)",
+  en: "Mahmoud Elnagdy",
+  ar: "محمود النجدي",
 };
 
 function normalizePath(path: string): string {
@@ -155,6 +155,8 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
     "@type": "Person",
     "@id": `${SITE.url}/#person`,
     name: SITE.name,
+    givenName: "Mahmoud",
+    familyName: "Elnagdy",
     alternateName: NAME_VARIANTS,
     url: SITE.url,
     image: `${SITE.url}/og/home-${locale}.png`,
@@ -168,8 +170,15 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
     address: {
       "@type": "PostalAddress",
       addressLocality: "Cairo",
+      addressRegion: "Cairo Governorate",
       addressCountry: "EG",
     },
+    nationality: { "@type": "Country", name: "Egypt" },
+    hasOccupation: {
+      "@type": "Occupation",
+      name: locale === "ar" ? "مطور فول ستاك" : "Full-Stack Developer",
+    },
+    mainEntityOfPage: pageUrl(locale, "/about/"),
     sameAs: [SITE.github, SITE.linkedin, SITE.x, SITE.topmate],
     knowsAbout: [
       "React",
@@ -192,17 +201,33 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
   };
 }
 
+export function profilePageJsonLd(locale: Locale): Record<string, unknown> {
+  const url = pageUrl(locale, "/about/");
+  return {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": `${url}#profile`,
+    url,
+    name:
+      locale === "ar"
+        ? "عن محمود النجدي"
+        : "About Mahmoud Elnagdy",
+    inLanguage: locale === "ar" ? "ar" : "en",
+    mainEntity: personJsonLd(locale),
+  };
+}
+
 export function websiteJsonLd(locale: Locale): Record<string, unknown> {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "@id": `${SITE.url}/#website`,
     url: SITE.url,
-    name: "Mahmoud Elnagdy — Nagdista",
+    name: "Mahmoud Elnagdy",
     description:
       locale === "ar"
-        ? "بورتفوليو محمود النجدي (نجديستا)، مطور فول ستاك في القاهرة."
-        : "The portfolio of Mahmoud Elnagdy (Nagdista), a full-stack developer in Cairo.",
+        ? "بورتفوليو محمود النجدي، مطور فول ستاك في القاهرة."
+        : "The portfolio of Mahmoud Elnagdy, a full-stack developer in Cairo.",
     inLanguage: ["en", "ar"],
     publisher: { "@id": `${SITE.url}/#person` },
   };

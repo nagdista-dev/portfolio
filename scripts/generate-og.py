@@ -226,7 +226,7 @@ def generate_home(locale: str) -> None:
         )
         draw.rectangle((W - 268, 500, W - 72, 504), fill=ACCENT)
 
-    footer(draw, INK, MUTED, "Mahmoud Elnagdy · Nagdista", "Cairo, EG / 2026", locale)
+    footer(draw, INK, MUTED, "Mahmoud Elnagdy", "Cairo, EG / 2026", locale)
     image.save(OUT / f"home-{locale}.png", optimize=True)
 
 
@@ -269,7 +269,7 @@ def generate_section(
         language="ar" if locale == "ar" else "en",
     )
 
-    footer(draw, INK, MUTED, "Mahmoud Elnagdy · Nagdista", "Cairo, EG / 2026", locale)
+    footer(draw, INK, MUTED, "Mahmoud Elnagdy", "Cairo, EG / 2026", locale)
     image.save(OUT / f"{slug}-{locale}.png", optimize=True)
 
 
@@ -356,7 +356,7 @@ def generate_article(slug: str, locale: str, title: str, category: str) -> None:
             draw.text((72, y), line, font=f, fill=INK)
         y += lh
 
-    footer(draw, INK, MUTED, "Mahmoud Elnagdy · Nagdista", "nagdista.com/blog", locale)
+    footer(draw, INK, MUTED, "Mahmoud Elnagdy", "nagdista.com/blog", locale)
     image.save(OUT / f"article-{slug}.png", optimize=True)
 
 

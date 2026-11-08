@@ -8,7 +8,7 @@ export const metadata: Metadata = buildMetadata({
   locale: "ar",
   title: "مشاريع مختارة — تطبيقات ويب ومفتوحة المصدر",
   description:
-    "دراسات حالة ومشاريع مفتوحة المصدر لمحمود النجدي (نجديستا): Wasla وLocalTube وHassala وTarteeb وYost، وكل مستودعات GitHub العامة.",
+    "دراسات حالة ومشاريع مفتوحة المصدر لمحمود النجدي: Wasla وLocalTube وHassala وTarteeb وYost، وكل مستودعات GitHub العامة.",
   path: "/projects/",
   image: "/og/projects-ar.png",
   keywords: [

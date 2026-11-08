@@ -1,6 +1,6 @@
 # nagdista.com
 
-Personal portfolio for **Mahmoud Elnagdy (Nagdista)** — a full-stack developer in Cairo, Egypt.
+Personal portfolio for **Mahmoud Elnagdy** — a full-stack developer in Cairo, Egypt.
 
 ![Portfolio preview](public/og/home-en.png)
 

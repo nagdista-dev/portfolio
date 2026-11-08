@@ -6,9 +6,9 @@ import { buildMetadata, pageUrl, personJsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
   locale: "ar",
-  title: "محمود النجدي (نجديستا) — مطور فول ستاك في القاهرة",
+  title: "محمود النجدي — مطور فول ستاك في القاهرة",
   description:
-    "محمود النجدي (نجديستا) مطور فول ستاك في القاهرة، مصر. يبني منتجات ويب سريعة وسهلة الاستخدام وثنائية اللغة بـ React وNext.js وTypeScript وNode.js وSQL.",
+    "محمود النجدي مطور فول ستاك في القاهرة، مصر. يبني منتجات ويب سريعة وسهلة الاستخدام وثنائية اللغة بـ React وNext.js وTypeScript وNode.js وSQL.",
   path: "/",
   image: "/og/home-ar.png",
   absoluteTitle: true,

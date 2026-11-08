@@ -6,16 +6,17 @@ import { ScrollReveal } from "@/components/scroll-reveal";
 import { JsonLd } from "@/components/json-ld";
 import { SITE } from "@/content/site";
 import { personJsonLd, websiteJsonLd } from "@/lib/seo";
+import { Analytics } from "@vercel/analytics/next";
 import { alexandria, ibmPlexSansArabic } from "@/lib/fonts-ar";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: "محمود النجدي (نجديستا) — مطور فول ستاك في القاهرة",
-    template: "%s — محمود النجدي (نجديستا)",
+    default: "محمود النجدي — مطور فول ستاك في القاهرة",
+    template: "%s — محمود النجدي",
   },
   description:
-    "محمود النجدي (نجديستا) مطور فول ستاك في القاهرة، مصر. يبني منتجات ويب سريعة وسهلة الاستخدام وثنائية اللغة بـ React وNext.js وTypeScript وNode.js وSQL.",
+    "محمود النجدي مطور فول ستاك في القاهرة، مصر. يبني منتجات ويب سريعة وسهلة الاستخدام وثنائية اللغة بـ React وNext.js وTypeScript وNode.js وSQL.",
   applicationName: "نجديستا",
   authors: [{ name: SITE.nameAr, url: SITE.url }],
   creator: SITE.nameAr,
@@ -45,7 +46,7 @@ export const metadata: Metadata = {
     locale: "ar_EG",
     alternateLocale: ["en_US"],
     url: `${SITE.url}/ar/`,
-    title: "محمود النجدي (نجديستا) — مطور فول ستاك",
+    title: "محمود النجدي — مطور فول ستاك",
     description:
       "منتجات ويب ثنائية اللغة بـ React وNext.js وTypeScript وNode.js وSQL. من القاهرة، مصر.",
     images: [{ url: "/og/home-ar.png", width: 1200, height: 630 }],
@@ -101,6 +102,7 @@ export default function ArabicLayout({
         <ScrollReveal />
         <JsonLd data={personJsonLd("ar")} />
         <JsonLd data={websiteJsonLd("ar")} />
+        <Analytics />
       </body>
     </html>
   );

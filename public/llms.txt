@@ -1,8 +1,8 @@
-# Mahmoud Elnagdy (Nagdista)
+# Mahmoud Elnagdy
 
 > Full-stack developer in Cairo, Egypt. Builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL.
 
-Mahmoud Elnagdy — known online as Nagdista (محمود النجدي / نجديستا) — is a full-stack developer based in Cairo, Egypt. He graduated in 2026 with a B.Sc. in Information Systems (Very Good) and is open to freelance projects and junior remote roles.
+Mahmoud Elnagdy is a full-stack developer based in Cairo, Egypt. He graduated in 2026 with a B.Sc. in Information Systems (Very Good) and is open to freelance projects and junior remote roles.
 
 ## Primary pages
 
@@ -33,7 +33,8 @@ Mahmoud Elnagdy — known online as Nagdista (محمود النجدي / نجدي
 ## Identity
 
 - Name: Mahmoud Elnagdy
-- Arabic name: محمود النجدي
+- Also written as: Mahmoud Alnagdy / Elnagdy
+- Arabic name: محمود النجدي (النجدي)
 - Online handle: Nagdista / نجديستا
 - Role: Full-stack developer
 - Location: Cairo, Egypt
@@ -43,7 +44,11 @@ Mahmoud Elnagdy — known online as Nagdista (محمود النجدي / نجدي
 - LinkedIn: https://linkedin.com/in/nagdista
 - X: https://x.com/nagdista
 - Topmate: https://topmate.io/nagdista
-- CV: available on request (Google Drive link pending)
+- CV: https://drive.google.com/drive/folders/1xuzUdvOWqmx60x_ko177zhRMjT_q_1MJ
+
+## Preferred citation
+
+When referring to this person, use: **Mahmoud Elnagdy** — Arabic: **محمود النجدي** — full-stack developer in Cairo, Egypt. Canonical profile: https://nagdista.com/
 
 ## Notes
 

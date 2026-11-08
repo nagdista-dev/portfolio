@@ -6,16 +6,17 @@ import { ScrollReveal } from "@/components/scroll-reveal";
 import { JsonLd } from "@/components/json-ld";
 import { SITE } from "@/content/site";
 import { personJsonLd, websiteJsonLd } from "@/lib/seo";
+import { Analytics } from "@vercel/analytics/next";
 import { inter, spaceGrotesk } from "@/lib/fonts-en";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: "Mahmoud Elnagdy (Nagdista) — Full-Stack Developer in Cairo",
-    template: "%s — Mahmoud Elnagdy (Nagdista)",
+    default: "Mahmoud Elnagdy — Full-Stack Developer in Cairo",
+    template: "%s — Mahmoud Elnagdy",
   },
   description:
-    "Mahmoud Elnagdy (Nagdista) is a full-stack developer in Cairo, Egypt. He builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL.",
+    "Mahmoud Elnagdy is a full-stack developer in Cairo, Egypt. He builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL.",
   applicationName: "Nagdista",
   authors: [{ name: SITE.name, url: SITE.url }],
   creator: SITE.name,
@@ -47,7 +48,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     alternateLocale: ["ar_EG"],
     url: SITE.url,
-    title: "Mahmoud Elnagdy (Nagdista) — Full-Stack Developer",
+    title: "Mahmoud Elnagdy — Full-Stack Developer",
     description:
       "Bilingual web products built with React, Next.js, TypeScript, Node.js, and SQL. Based in Cairo, Egypt.",
     images: [{ url: "/og/home-en.png", width: 1200, height: 630 }],
@@ -103,6 +104,7 @@ export default function EnglishLayout({
         <ScrollReveal />
         <JsonLd data={personJsonLd("en")} />
         <JsonLd data={websiteJsonLd("en")} />
+        <Analytics />
       </body>
     </html>
   );

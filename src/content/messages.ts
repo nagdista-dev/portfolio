@@ -49,7 +49,7 @@ const en = {
     titleLine1: "MAHMOUD",
     titleLine2: "ELNAGDY",
     brand: "Nagdista",
-    bio: "I'm Mahmoud Elnagdy — known online as Nagdista. I design and build fast, accessible web products with React, Next.js, TypeScript, and Node.js. I care about the details that make software feel effortless.",
+    bio: "I'm Mahmoud Elnagdy. I design and build fast, accessible web products with React, Next.js, TypeScript, and Node.js. I care about the details that make software feel effortless.",
     ctaWork: "See selected work",
     ctaContact: "Let's talk",
     available: "Available for freelance & remote roles",
@@ -128,7 +128,7 @@ const en = {
     eyebrow: "About",
     title: "Engineering with an editor's eye.",
     intro:
-      "I'm Mahmoud Elnagdy — a full-stack developer from Cairo, known online as Nagdista. I build web products that feel considered from the first pixel to the last API call.",
+      "I'm Mahmoud Elnagdy — a full-stack developer from Cairo. I build web products that feel considered from the first pixel to the last API call.",
     body: [
       "My path started with front-end work: HTML, CSS, JavaScript, then React and Tailwind CSS. The more I built, the more I wanted to understand what happened behind the interface. That curiosity pulled me into TypeScript, Node.js, Express, databases, and the decisions that make an application fast and maintainable.",
       "Today I work across the stack. I've built Wasla, a bilingual platform that turns YouTube playlists into structured courses; LocalTube, a self-hosted video library with FFmpeg thumbnails and SQLite; Hassala, a privacy-first Chrome extension for Arabic ↔ English learners; Tarteeb, a planner built around prayer times; and Yost, a local dashboard for YouTube community posts.",
@@ -209,7 +209,7 @@ const en = {
     related: "Keep reading",
     authorRole: "Full-stack developer in Cairo, Egypt",
     authorBio:
-      "Mahmoud Elnagdy (Nagdista) builds bilingual web products with React, Next.js, TypeScript, and Node.js. He writes about the decisions behind the code.",
+      "Mahmoud Elnagdy builds bilingual web products with React, Next.js, TypeScript, and Node.js. He writes about the decisions behind the code.",
     ctaTitle: "Building something similar?",
     ctaBody:
       "I'm always happy to talk through architecture, trade-offs, or a project you're stuck on.",
@@ -314,7 +314,7 @@ const ar: typeof en = {
     titleLine1: "محمود",
     titleLine2: "النجدي",
     brand: "نجديستا",
-    bio: "أنا محمود النجدي، معروف أونلاين باسم نجديستا. ببني منتجات ويب سريعة وسهلة الاستخدام بـ React وNext.js وTypeScript وNode.js، وبهتم بالتفاصيل اللي بتخلي التجربة طبيعية ومريحة.",
+    bio: "أنا محمود النجدي. ببني منتجات ويب سريعة وسهلة الاستخدام بـ React وNext.js وTypeScript وNode.js، وبهتم بالتفاصيل اللي بتخلي التجربة طبيعية ومريحة.",
     ctaWork: "شوف أعمالي المختارة",
     ctaContact: "كلمني",
     available: "متاح للفريلانس والوظائف عن بُعد",
@@ -392,7 +392,7 @@ const ar: typeof en = {
     eyebrow: "عني",
     title: "هندسة بعين محرر.",
     intro:
-      "أنا محمود النجدي — مطور فول ستاك من القاهرة، معروف أونلاين باسم نجديستا. ببني منتجات ويب محسوبة من أول بكسل لآخر API call.",
+      "أنا محمود النجدي — مطور فول ستاك من القاهرة. ببني منتجات ويب محسوبة من أول بكسل لآخر API call.",
     body: [
       "بدأت من الواجهات: HTML وCSS وJavaScript، بعدين React وTailwind CSS. كل ما بنيت أكتر، كل ما حبيت أفهم اللي بيحصل وراء الواجهة. الفضول ده سحبني لـ TypeScript وNode.js وExpress وقواعد البيانات والقرارات اللي بتخلي التطبيق سريع وسهل الصيانة.",
       "اليوم بشتغل على الستاك كله. بنيت Wasla، منصة ثنائية اللغة بتحول قوائم تشغيل يوتيوب لكورسات منظمة؛ وLocalTube، مكتبة فيديو self-hosted بتستخدم FFmpeg وSQLite؛ وHassala، إكستنشن Chrome بيحترم الخصوصية لمتعلمي العربي ↔ الإنجليزي؛ وTarteeb، منظم يومي مبني حول مواعيد الصلاة؛ وYost، داشبورد محلي لبوستات مجتمع يوتيوب.",
@@ -473,7 +473,7 @@ const ar: typeof en = {
     related: "اقرأ كمان",
     authorRole: "مطور فول ستاك في القاهرة، مصر",
     authorBio:
-      "محمود النجدي (نجديستا) بيبني منتجات ويب ثنائية اللغة بـ React وNext.js وTypeScript وNode.js. بيكتب عن القرارات اللي وراء الكود.",
+      "محمود النجدي بيبني منتجات ويب ثنائية اللغة بـ React وNext.js وTypeScript وNode.js. بيكتب عن القرارات اللي وراء الكود.",
     ctaTitle: "بتبني حاجة شبه دي؟",
     ctaBody:
       "دايمًا مبسوط أتكلم عن المعمارية أو المقارنات أو مشروع واقف فيه.",

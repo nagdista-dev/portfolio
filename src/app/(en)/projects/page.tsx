@@ -8,7 +8,7 @@ export const metadata: Metadata = buildMetadata({
   locale: "en",
   title: "Projects — Web Apps & Open Source",
   description:
-    "Case studies and open-source projects by Mahmoud Elnagdy (Nagdista): Wasla, LocalTube, Hassala, Tarteeb, Yost, and every public GitHub repository.",
+    "Case studies and open-source projects by Mahmoud Elnagdy: Wasla, LocalTube, Hassala, Tarteeb, Yost, and every public GitHub repository.",
   path: "/projects/",
   image: "/og/projects-en.png",
   keywords: [
