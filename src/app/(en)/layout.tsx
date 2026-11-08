@@ -1,0 +1,109 @@
+import type { Metadata, Viewport } from "next";
+import "../globals.css";
+import { SiteHeader } from "@/components/site-header";
+import { SiteFooter } from "@/components/site-footer";
+import { ScrollReveal } from "@/components/scroll-reveal";
+import { JsonLd } from "@/components/json-ld";
+import { SITE } from "@/content/site";
+import { personJsonLd, websiteJsonLd } from "@/lib/seo";
+import { inter, spaceGrotesk } from "@/lib/fonts-en";
+
+export const metadata: Metadata = {
+  metadataBase: new URL(SITE.url),
+  title: {
+    default: "Mahmoud Elnagdy (Nagdista) — Full-Stack Developer in Cairo",
+    template: "%s — Mahmoud Elnagdy (Nagdista)",
+  },
+  description:
+    "Mahmoud Elnagdy (Nagdista) is a full-stack developer in Cairo, Egypt. He builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL.",
+  applicationName: "Nagdista",
+  authors: [{ name: SITE.name, url: SITE.url }],
+  creator: SITE.name,
+  publisher: SITE.name,
+  keywords: [
+    "Mahmoud Elnagdy",
+    "Mahmoud Alnagdy",
+    "Elnagdy",
+    "Nagdista",
+    "محمود النجدي",
+    "النجدي",
+    "نجديستا",
+    "full-stack developer Cairo",
+    "Next.js developer Egypt",
+    "React developer Cairo",
+    "TypeScript developer",
+  ],
+  alternates: {
+    canonical: "/",
+    languages: {
+      en: "/",
+      ar: "/ar/",
+      "x-default": "/",
+    },
+  },
+  openGraph: {
+    type: "website",
+    siteName: "Nagdista",
+    locale: "en_US",
+    alternateLocale: ["ar_EG"],
+    url: SITE.url,
+    title: "Mahmoud Elnagdy (Nagdista) — Full-Stack Developer",
+    description:
+      "Bilingual web products built with React, Next.js, TypeScript, Node.js, and SQL. Based in Cairo, Egypt.",
+    images: [{ url: "/og/home-en.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    creator: "@nagdista",
+    site: "@nagdista",
+    images: ["/og/home-en.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  category: "technology",
+};
+
+export const viewport: Viewport = {
+  themeColor: "#f7f4ef",
+  colorScheme: "light",
+  width: "device-width",
+  initialScale: 1,
+};
+
+const bootScript = `document.documentElement.classList.add('js')`;
+
+export default function EnglishLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html
+      lang="en"
+      dir="ltr"
+      className={`locale-en ${inter.variable} ${spaceGrotesk.variable}`}
+    >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: bootScript }} />
+      </head>
+      <body>
+        <a href="#main" className="skip-link">
+          Skip to content
+        </a>
+        <SiteHeader locale="en" />
+        <main id="main">{children}</main>
+        <SiteFooter locale="en" />
+        <ScrollReveal />
+        <JsonLd data={personJsonLd("en")} />
+        <JsonLd data={websiteJsonLd("en")} />
+      </body>
+    </html>
+  );
+}

@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# nagdista.com
 
-## Getting Started
+Personal portfolio for **Mahmoud Elnagdy (Nagdista)** — a full-stack developer in Cairo, Egypt.
 
-First, run the development server:
+Bilingual by design: English lives at `/`, Arabic at `/ar`, with proper `lang`/`dir` roots, localized
+metadata, and RTL-aware layouts. The site is a fully static export, so it can be hosted anywhere.
+
+## Stack
+
+- **Next.js 16** (App Router, static export)
+- **React 19** + **TypeScript**
+- **Tailwind CSS v4** with a small custom design system
+- **pnpm**
+- Web3Forms for contact (falls back to `mailto:` when no key is configured)
+- GitHub REST API at build time for the public-repository section
+
+## Local development
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
+pnpm dev          # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Build the static site:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm build        # outputs to out/
+python3 -m http.server 4173 -d out
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Lint:
 
-## Learn More
+```bash
+pnpm lint
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Configuration
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Create a `.env.local` file (both variables are optional):
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+# Public CV link. When empty, the CV button opens an email draft instead.
+NEXT_PUBLIC_CV_URL="https://drive.google.com/..."
 
-## Deploy on Vercel
+# Web3Forms access key. When empty, the contact form opens the user's email app.
+NEXT_PUBLIC_WEB3FORMS_KEY=""
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+A `GITHUB_TOKEN` can be provided at build time to raise the GitHub API rate limit while generating
+the repository list. The build falls back to a checked-in snapshot if the API is unavailable.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Structure
+
+```
+src/
+  app/
+    (en)/            English routes
+    (ar)/ar/         Arabic routes (root layout with dir="rtl")
+    global-not-found.tsx
+  components/        UI, project covers, timeline, forms
+  content/           Bilingual copy, projects, articles, site constants
+  lib/               SEO helpers, GitHub fetching, feeds
+public/
+  og/                Generated social images (24, EN + AR)
+scripts/
+  generate-og.py     Rebuilds the OG images with PIL
+```
+
+## SEO
+
+- Per-page canonical URLs and `hreflang` alternates (`en`, `ar`, `x-default`)
+- Localized titles/descriptions, Open Graph and Twitter cards
+- `Person` + `WebSite` JSON-LD, article and project metadata
+- `sitemap.xml`, `robots.txt`, RSS feeds, and `llms.txt`
+- Static HTML for every route; no client-side rendering required to read content
+
+## Notes
+
+- Testimonials are intentionally a placeholder until real quotes are available. No fabricated
+  testimonials.
+- Case-study copy is written from the actual project work; screenshots are CSS motifs rather than
+  stock mockups.
+- The GitHub section excludes forks and archived repositories.
+
+## License
+
+Content and personal branding © Mahmoud Elnagdy. The code is available for reference; please do not
+republish the written content or personal assets as your own.
