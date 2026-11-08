@@ -16,6 +16,32 @@ export default function manifest(): MetadataRoute.Manifest {
     dir: "ltr",
     icons: [
       {
+        src: "/icons/nagdista-48.png",
+        sizes: "48x48",
+        type: "image/png",
+      },
+      {
+        src: "/icons/nagdista-96.png",
+        sizes: "96x96",
+        type: "image/png",
+      },
+      {
+        src: "/icons/nagdista-192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        src: "/icons/nagdista-512.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
+      {
+        src: "/icons/nagdista-maskable-512.png",
+        sizes: "512x512",
+        type: "image/png",
+        purpose: "maskable",
+      },
+      {
         src: "/icon.svg",
         sizes: "any",
         type: "image/svg+xml",

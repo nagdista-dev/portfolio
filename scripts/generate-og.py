@@ -230,6 +230,84 @@ def generate_home(locale: str) -> None:
     image.save(OUT / f"home-{locale}.png", optimize=True)
 
 
+def generate_home_square(locale: str) -> None:
+    """Square card that survives Google's square result thumbnails."""
+    size = 1200
+    image = Image.new("RGB", (size, size), PAPER)
+    draw = ImageDraw.Draw(image)
+    for y in range(0, size, 26):
+        for x in range(0, size, 26):
+            draw.point((x, y), fill="#0000000D")
+
+    # Brand row
+    draw.rounded_rectangle((72, 72, 140, 140), radius=12, fill=ACCENT)
+    n = font(SPACE, 46, "Bold")
+    draw.text((106, 104), "N", font=n, fill="#FFFFFF", anchor="mm")
+    draw_tracked(draw, (160, 88), "NAGDISTA", font(SPACE, 26, "Bold"), INK, 4.0)
+    draw.text(
+        (size - 72, 94),
+        "nagdista.com",
+        font=body("en", 22, "Medium"),
+        fill=MUTED,
+        anchor="ra",
+    )
+
+    draw_asterisk(draw, size / 2, 298, 18, 6, ACCENT)
+
+    if locale == "ar":
+        kicker = "مطور فول ستاك · القاهرة، مصر"
+        lines = ["محمود", "النجدي"]
+        direction = "rtl"
+        language = "ar"
+    else:
+        kicker = "FULL-STACK DEVELOPER · CAIRO, EGYPT"
+        lines = ["MAHMOUD", "ELNAGDY"]
+        direction = "ltr"
+        language = "en"
+
+    kicker_font = body(locale, 30, "SemiBold") if locale == "ar" else font(SPACE, 25, "Medium")
+    draw.text(
+        (size / 2, 350),
+        kicker,
+        font=kicker_font,
+        fill=MUTED,
+        anchor="mm",
+        direction=direction,
+        language=language,
+    )
+
+    name_size = 200
+    while name_size > 90:
+        candidate = display(locale, name_size, "Bold")
+        if all(measure(draw, line, candidate, direction) <= 1000 for line in lines):
+            break
+        name_size -= 4
+    name_font = display(locale, name_size, "Bold")
+    for line, y in zip(lines, (570, 790)):
+        draw.text(
+            (size / 2, y),
+            line,
+            font=name_font,
+            fill=INK,
+            anchor="mm",
+            direction=direction,
+            language=language,
+        )
+
+    # Footer
+    draw.line((72, 1080, size - 72, 1080), fill=LINE, width=1)
+    left = "محمود النجدي" if locale == "ar" else "Mahmoud Elnagdy"
+    right = "بورتفوليو 2026" if locale == "ar" else "PORTFOLIO 2026"
+    if locale == "ar":
+        draw.text((size - 72, 1104), left, font=body("ar", 20, "SemiBold"), fill=MUTED, anchor="ra", direction="rtl", language="ar")
+        draw.text((72, 1104), right, font=body("ar", 20, "SemiBold"), fill=MUTED, direction="rtl", language="ar")
+    else:
+        draw.text((72, 1104), left, font=body("en", 20, "Medium"), fill=MUTED)
+        draw.text((size - 72, 1104), right, font=font(SPACE, 18, "Bold"), fill=MUTED, anchor="ra")
+
+    image.save(OUT / f"home-{locale}-square.png", optimize=True)
+
+
 def generate_section(
     locale: str,
     slug: str,
@@ -427,6 +505,8 @@ def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     generate_home("en")
     generate_home("ar")
+    generate_home_square("en")
+    generate_home_square("ar")
     generate_section("en", "about", "About · engineering with an editor's eye", ["Engineering", "with an eye."], [])
     generate_section("ar", "about", "عني · هندسة بعين محرر", [], ["هندسة", "بعين محرر."])
     generate_section("en", "projects", "Selected work · 2022—2026", ["Selected", "work."], [])

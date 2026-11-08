@@ -35,6 +35,8 @@ type BuildMetadataInput = {
   description: string;
   path: string;
   image: string;
+  imageWidth?: number;
+  imageHeight?: number;
   absoluteTitle?: boolean;
   type?: "website" | "article";
   alternate?: boolean;
@@ -51,6 +53,8 @@ export function buildMetadata({
   description,
   path,
   image,
+  imageWidth = 1200,
+  imageHeight = 630,
   absoluteTitle = false,
   type = "website",
   alternate = true,
@@ -87,8 +91,8 @@ export function buildMetadata({
           images: [
             {
               url: image,
-              width: 1200,
-              height: 630,
+              width: imageWidth,
+              height: imageHeight,
               alt: fullTitle,
             },
           ],
@@ -104,8 +108,8 @@ export function buildMetadata({
           images: [
             {
               url: image,
-              width: 1200,
-              height: 630,
+              width: imageWidth,
+              height: imageHeight,
               alt: fullTitle,
             },
           ],

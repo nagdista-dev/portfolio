@@ -18,6 +18,18 @@ export const metadata: Metadata = {
   description:
     "محمود النجدي مطور فول ستاك في القاهرة، مصر. يبني منتجات ويب سريعة وسهلة الاستخدام وثنائية اللغة بـ React وNext.js وTypeScript وNode.js وSQL.",
   applicationName: "نجديستا",
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/icons/nagdista-48.png", sizes: "48x48", type: "image/png" },
+      { url: "/icons/nagdista-96.png", sizes: "96x96", type: "image/png" },
+      { url: "/icons/nagdista-192.png", sizes: "192x192", type: "image/png" },
+    ],
+    apple: [
+      { url: "/icons/nagdista-180.png", sizes: "180x180", type: "image/png" },
+    ],
+    shortcut: ["/favicon.ico"],
+  },
   authors: [{ name: SITE.nameAr, url: SITE.url }],
   creator: SITE.nameAr,
   publisher: SITE.nameAr,
@@ -49,13 +61,13 @@ export const metadata: Metadata = {
     title: "محمود النجدي — مطور فول ستاك",
     description:
       "منتجات ويب ثنائية اللغة بـ React وNext.js وTypeScript وNode.js وSQL. من القاهرة، مصر.",
-    images: [{ url: "/og/home-ar.png", width: 1200, height: 630 }],
+    images: [{ url: "/og/home-ar-square.png", width: 1200, height: 1200 }],
   },
   twitter: {
     card: "summary_large_image",
     creator: "@nagdista",
     site: "@nagdista",
-    images: ["/og/home-ar.png"],
+    images: ["/og/home-ar-square.png"],
   },
   robots: {
     index: true,

@@ -10,7 +10,9 @@ export const metadata: Metadata = buildMetadata({
   description:
     "Mahmoud Elnagdy is a full-stack developer in Cairo, Egypt, with a B.Sc. in Business Information Systems (2026). He builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL.",
   path: "/",
-  image: "/og/home-en.png",
+  image: "/og/home-en-square.png",
+  imageWidth: 1200,
+  imageHeight: 1200,
   absoluteTitle: true,
   keywords: [
     "Mahmoud Elnagdy",

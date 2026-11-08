@@ -18,6 +18,18 @@ export const metadata: Metadata = {
   description:
     "Mahmoud Elnagdy is a full-stack developer in Cairo, Egypt. He builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL.",
   applicationName: "Nagdista",
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/icons/nagdista-48.png", sizes: "48x48", type: "image/png" },
+      { url: "/icons/nagdista-96.png", sizes: "96x96", type: "image/png" },
+      { url: "/icons/nagdista-192.png", sizes: "192x192", type: "image/png" },
+    ],
+    apple: [
+      { url: "/icons/nagdista-180.png", sizes: "180x180", type: "image/png" },
+    ],
+    shortcut: ["/favicon.ico"],
+  },
   authors: [{ name: SITE.name, url: SITE.url }],
   creator: SITE.name,
   publisher: SITE.name,
@@ -51,13 +63,13 @@ export const metadata: Metadata = {
     title: "Mahmoud Elnagdy — Full-Stack Developer",
     description:
       "Bilingual web products built with React, Next.js, TypeScript, Node.js, and SQL. Based in Cairo, Egypt.",
-    images: [{ url: "/og/home-en.png", width: 1200, height: 630 }],
+    images: [{ url: "/og/home-en-square.png", width: 1200, height: 1200 }],
   },
   twitter: {
     card: "summary_large_image",
     creator: "@nagdista",
     site: "@nagdista",
-    images: ["/og/home-en.png"],
+    images: ["/og/home-en-square.png"],
   },
   robots: {
     index: true,
