@@ -105,6 +105,10 @@ export default function ArabicLayout({
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: bootScript }} />
+        <meta
+          name="msvalidate.01"
+          content="A97765CFC294546AC47FBCA2401662C8"
+        />
       </head>
       <body>
         <a href="#main" className="skip-link">
