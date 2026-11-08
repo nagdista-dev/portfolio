@@ -4,7 +4,6 @@ import { SOCIAL_LINKS } from "@/content/site";
 import {
   GithubIcon,
   LinkedinIcon,
-  TopmateIcon,
   XIcon,
   type IconProps,
 } from "./icons";
@@ -13,7 +12,6 @@ const ICONS: Record<string, (props: IconProps) => ReactElement> = {
   GitHub: GithubIcon,
   LinkedIn: LinkedinIcon,
   X: XIcon,
-  Topmate: TopmateIcon,
 };
 
 type SocialLinksProps = {

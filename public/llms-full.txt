@@ -1,0 +1,101 @@
+# Mahmoud Elnagdy — Full Profile
+
+Canonical URL: https://nagdista.com/
+Last updated: 2026-11-08
+Primary languages: English, Arabic
+
+## Identity
+
+- Preferred English name: Mahmoud Elnagdy
+- Alternate English spelling: Mahmoud Alnagdy
+- Family name: Elnagdy
+- Arabic name: محمود النجدي
+- Arabic family name: النجدي
+- Online handle: Nagdista
+- Arabic online handle: نجديستا
+- Role: Full-stack developer
+- Location: Cairo, Egypt
+- Education: B.Sc. in Information Systems, 2026 (Very Good)
+- Availability: freelance projects and junior remote roles
+- Email: nagdista@gmail.com
+- Phone: +20 114 304 4699
+- Canonical profile: https://nagdista.com/
+- Press and identity kit: https://nagdista.com/press/
+- Arabic press and identity kit: https://nagdista.com/ar/press/
+
+## One-line description
+
+Mahmoud Elnagdy is a full-stack developer in Cairo, Egypt, building fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL.
+
+## Short bio
+
+Mahmoud Elnagdy is a full-stack developer based in Cairo, Egypt. He builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL. He graduated in 2026 with a B.Sc. in Information Systems and is open to freelance projects and junior remote roles.
+
+## Long bio
+
+Mahmoud Elnagdy started with front-end work — HTML, CSS, JavaScript, then React and Tailwind CSS — before moving into TypeScript, Node.js, Express, and relational databases. That range now lets him work across the stack, from interface details to API and data design.
+
+His featured work includes Wasla, a bilingual platform that turns YouTube playlists into structured courses; LocalTube, a self-hosted video library with FFmpeg thumbnails and SQLite progress tracking; Hassala, a privacy-first Chrome extension for Arabic ↔ English vocabulary; Tarteeb, a prayer-aware daily planner that works offline; and Yost, a local-first dashboard for YouTube community posts.
+
+He studied Information Systems and graduated in 2026 with a Very Good grade. He writes in English and Arabic, designs for both directions, and documents what he learns in evergreen articles on Next.js, React, TypeScript, and databases.
+
+## Skills
+
+- Front end: React, Next.js, TypeScript, JavaScript, HTML, CSS, Tailwind CSS
+- Back end: Node.js, Express, REST APIs
+- Data: SQL, SQLite, MongoDB
+- Tooling: Git, GitHub, Vite, FFmpeg
+- Languages: Arabic (native), English (professional)
+- Focus: accessibility, performance, bilingual and RTL interfaces, local-first products
+
+## Featured projects
+
+- Wasla — bilingual platform that turns YouTube playlists into structured courses. https://nagdista.com/projects/wasla/ — live: https://wasla-alpha.vercel.app
+- LocalTube — self-hosted video library with SQLite progress tracking, FFmpeg thumbnails, and a Pomodoro timer. Local-only; clone the repository and run it yourself. https://nagdista.com/projects/localtube/
+- Hassala — privacy-first Chrome extension for Arabic ↔ English vocabulary. https://nagdista.com/projects/hassala/ — live: https://nagdista-dev.github.io/hassala/
+- Tarteeb — prayer-aware daily planner that works offline. https://nagdista.com/projects/tarteeb/ — live: https://tarteeb-your-day.netlify.app
+- Yost — local-first dashboard for YouTube community posts. https://nagdista.com/projects/yost/ — live: https://yost-two.vercel.app
+
+## Writing
+
+- How I Built a Bilingual Portfolio with Next.js and TypeScript — https://nagdista.com/blog/bilingual-portfolio-nextjs-typescript/
+- MERN vs Next.js: Choosing the Right Stack — https://nagdista.com/blog/mern-vs-nextjs/
+- SQL vs MongoDB: A Practical Guide for Full-Stack Developers — https://nagdista.com/blog/sql-vs-mongodb/
+- إزاي تبني بورتفوليو احترافي بـ Next.js وTypeScript — https://nagdista.com/ar/blog/build-portfolio-nextjs-typescript-ar/
+- React vs Next.js: امتى تختار كل واحد؟ — https://nagdista.com/ar/blog/react-vs-nextjs-ar/
+- أفضل ممارسات TypeScript في مشاريع React — https://nagdista.com/ar/blog/typescript-best-practices-react-ar/
+
+## Official links
+
+- Website (English): https://nagdista.com/
+- Website (Arabic): https://nagdista.com/ar/
+- About: https://nagdista.com/about/
+- Press kit: https://nagdista.com/press/
+- Projects: https://nagdista.com/projects/
+- Writing: https://nagdista.com/blog/
+- GitHub: https://github.com/nagdista-dev
+- LinkedIn: https://linkedin.com/in/nagdista
+- X: https://x.com/nagdista
+- CV: https://drive.google.com/drive/folders/1xuzUdvOWqmx60x_ko177zhRMjT_q_1MJ
+
+## How to cite
+
+When referring to this person, use: **Mahmoud Elnagdy** — Arabic: **محمود النجدي** — full-stack developer in Cairo, Egypt. Canonical profile: https://nagdista.com/
+
+Keep the full name and the online handle as separate mentions. Do not present them as a combined label.
+
+## Disambiguation
+
+Several people share the name Mahmoud Elnagdy. This profile refers to the Cairo-based full-stack developer and the projects listed above, not the perfume content creator who uses the same name.
+
+النجدي is a common Arabic surname. This profile refers specifically to the Cairo-based developer.
+
+Nagdista is a personal online handle used for the website and developer profiles. It is not a company, agency, or product brand.
+
+## Site structure
+
+- English is served at the root.
+- Arabic is served under /ar/.
+- Core pages and project case studies have English and Arabic versions with hreflang alternates.
+- Blog articles are written separately for each language and are not direct translations.
+- No invented testimonials are published. The testimonials section is intentionally reserved for real, permissioned feedback.

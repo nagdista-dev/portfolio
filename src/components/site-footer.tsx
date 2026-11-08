@@ -25,6 +25,10 @@ export function SiteFooter({ locale }: { locale: Locale }) {
       href: isArabic ? "/ar/blog/" : "/blog/",
     },
     {
+      label: t.footer.press,
+      href: isArabic ? "/ar/press/" : "/press/",
+    },
+    {
       label: t.nav.contact,
       href: isArabic ? "/ar/#contact" : "/#contact",
     },

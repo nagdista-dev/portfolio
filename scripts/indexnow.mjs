@@ -1,15 +1,23 @@
+import { readFile } from "node:fs/promises";
+
 const HOST = "nagdista.com";
 const KEY = "68b0bbd009b8b307bbde4b0480eabfaf";
 const KEY_LOCATION = `https://${HOST}/${KEY}.txt`;
 const SITEMAP = `https://${HOST}/sitemap.xml`;
 
-const sitemap = await fetch(SITEMAP, { headers: { "user-agent": "nagdista-indexnow/1.0" } });
-if (!sitemap.ok) {
-  console.error(`Could not fetch sitemap: ${sitemap.status}`);
-  process.exit(1);
+let xml;
+try {
+  xml = await readFile(new URL("../out/sitemap.xml", import.meta.url), "utf8");
+  console.log("Using local build sitemap (out/sitemap.xml).");
+} catch {
+  const sitemap = await fetch(SITEMAP, { headers: { "user-agent": "nagdista-indexnow/1.0" } });
+  if (!sitemap.ok) {
+    console.error(`Could not fetch sitemap: ${sitemap.status}`);
+    process.exit(1);
+  }
+  xml = await sitemap.text();
 }
 
-const xml = await sitemap.text();
 const urlList = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1].trim());
 
 if (urlList.length === 0) {

@@ -50,6 +50,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: pair("/about/"),
     },
     {
+      url: `${BASE}/press/`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.8,
+      alternates: pair("/press/"),
+    },
+    {
+      url: `${BASE}/ar/press/`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.8,
+      alternates: pair("/press/"),
+    },
+    {
       url: `${BASE}/projects/`,
       lastModified: now,
       changeFrequency: "weekly",

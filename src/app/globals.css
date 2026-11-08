@@ -3587,6 +3587,57 @@ a.contact__detail-value:hover {
   border-radius: 50%;
 }
 
+.press-names,
+.press-list {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0;
+  padding-inline-start: 1.15rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--ink-2);
+}
+
+.press-names strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.press-faq {
+  display: grid;
+  gap: 1.1rem;
+  margin: 0;
+}
+
+.press-faq dt {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.press-faq dd {
+  margin: 0.3rem 0 0;
+  line-height: 1.7;
+  color: var(--ink-2);
+}
+
+.press-updated {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--muted);
+}
+
+.about-page__prose h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  margin-block-start: 1.1rem;
+}
+
+.currently p {
+  font-size: 0.86rem;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
 .about-cta {
   display: flex;
   flex-wrap: wrap;

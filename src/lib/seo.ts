@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { PRESS } from "@/content/press";
 import { NAME_VARIANTS, SITE } from "@/content/site";
 import type { Article, Locale, Project } from "@/content/types";
 
@@ -179,7 +180,7 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
       name: locale === "ar" ? "مطور فول ستاك" : "Full-Stack Developer",
     },
     mainEntityOfPage: pageUrl(locale, "/about/"),
-    sameAs: [SITE.github, SITE.linkedin, SITE.x, SITE.topmate],
+    sameAs: [SITE.github, SITE.linkedin, SITE.x],
     knowsAbout: [
       "React",
       "Next.js",
@@ -214,6 +215,41 @@ export function profilePageJsonLd(locale: Locale): Record<string, unknown> {
         : "About Mahmoud Elnagdy",
     inLanguage: locale === "ar" ? "ar" : "en",
     mainEntity: personJsonLd(locale),
+  };
+}
+
+export function pressPageJsonLd(locale: Locale): Record<string, unknown> {
+  const url = pageUrl(locale, "/press/");
+  return {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": `${url}#profile`,
+    url,
+    name:
+      locale === "ar"
+        ? "محمود النجدي — ملف صحفي وتعريفي"
+        : "Mahmoud Elnagdy — Press & Identity",
+    inLanguage: locale === "ar" ? "ar" : "en",
+    mainEntity: personJsonLd(locale),
+    about: personJsonLd(locale),
+  };
+}
+
+export function pressFaqJsonLd(locale: Locale): Record<string, unknown> {
+  const url = pageUrl(locale, "/press/");
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": `${url}#faq`,
+    inLanguage: locale === "ar" ? "ar" : "en",
+    mainEntity: PRESS[locale].faq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
   };
 }
 

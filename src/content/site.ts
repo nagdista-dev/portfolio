@@ -16,7 +16,6 @@ export const SITE = {
   github: "https://github.com/nagdista-dev",
   linkedin: "https://linkedin.com/in/nagdista",
   x: "https://x.com/nagdista",
-  topmate: "https://topmate.io/nagdista",
   cvUrl:
     process.env.NEXT_PUBLIC_CV_URL ||
     "https://drive.google.com/drive/folders/1xuzUdvOWqmx60x_ko177zhRMjT_q_1MJ",
@@ -31,7 +30,6 @@ export const SOCIAL_LINKS = [
   { label: "GitHub", href: SITE.github, handle: "@nagdista-dev" },
   { label: "LinkedIn", href: SITE.linkedin, handle: "/in/nagdista" },
   { label: "X", href: SITE.x, handle: "@nagdista" },
-  { label: "Topmate", href: SITE.topmate, handle: "/nagdista" },
 ] as const;
 
 export const HOME_PATH = "/";

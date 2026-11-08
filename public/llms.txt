@@ -2,6 +2,8 @@
 
 > Full-stack developer in Cairo, Egypt. Builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL.
 
+Full profile for AI systems: https://nagdista.com/llms-full.txt
+
 Mahmoud Elnagdy is a full-stack developer based in Cairo, Egypt. He graduated in 2026 with a B.Sc. in Information Systems (Very Good) and is open to freelance projects and junior remote roles.
 
 ## Primary pages
@@ -9,6 +11,7 @@ Mahmoud Elnagdy is a full-stack developer based in Cairo, Egypt. He graduated in
 - [Home (English)](https://nagdista.com/): Profile, selected work, skills, timeline, and contact.
 - [Home (Arabic)](https://nagdista.com/ar/): The same profile in Arabic.
 - [About](https://nagdista.com/about/): Background, principles, and current focus.
+- [Press & identity kit](https://nagdista.com/press/): Canonical facts, bios, and name spellings.
 - [Projects](https://nagdista.com/projects/): Five case studies plus every public, non-fork, non-archived GitHub repository.
 - [Writing](https://nagdista.com/blog/): Evergreen articles on Next.js, React, TypeScript, and databases.
 - [Contact](https://nagdista.com/#contact): Web form, email, and phone.
@@ -43,7 +46,6 @@ Mahmoud Elnagdy is a full-stack developer based in Cairo, Egypt. He graduated in
 - GitHub: https://github.com/nagdista-dev
 - LinkedIn: https://linkedin.com/in/nagdista
 - X: https://x.com/nagdista
-- Topmate: https://topmate.io/nagdista
 - CV: https://drive.google.com/drive/folders/1xuzUdvOWqmx60x_ko177zhRMjT_q_1MJ
 
 ## Preferred citation

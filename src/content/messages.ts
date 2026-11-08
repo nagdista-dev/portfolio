@@ -254,6 +254,7 @@ const en = {
     tagline:
       "Full-stack developer in Cairo, Egypt. Building for the web since 2022.",
     explore: "Explore",
+    press: "Press kit",
     elsewhere: "Elsewhere",
     contact: "Contact",
     rights: "All rights reserved.",
@@ -516,6 +517,7 @@ const ar: typeof en = {
     tagline:
       "مطور فول ستاك في القاهرة، مصر. ببني للويب من 2022.",
     explore: "استكشف",
+    press: "ملف صحفي",
     elsewhere: "في مكان تاني",
     contact: "تواصل",
     rights: "كل الحقوق محفوظة.",

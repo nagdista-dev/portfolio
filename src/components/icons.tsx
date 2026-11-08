@@ -276,25 +276,4 @@ export function XIcon({ size = 20, ...props }: IconProps) {
   );
 }
 
-export function TopmateIcon({ size = 20, ...props }: IconProps) {
-  return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={1.75}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-      focusable="false"
-      {...props}
-    >
-      <path d="M4 7h16" />
-      <path d="M12 7v14" />
-      <path d="M7 3h10" />
-      <path d="M8 21h8" />
-    </svg>
-  );
-}
+
