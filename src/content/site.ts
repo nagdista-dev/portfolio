@@ -14,7 +14,7 @@ export const SITE = {
     ar: "القاهرة، مصر",
   },
   github: "https://github.com/nagdista-dev",
-  linkedin: "https://linkedin.com/in/nagdista",
+  linkedin: "https://www.linkedin.com/in/nagdista/",
   x: "https://x.com/nagdista",
   cvUrl:
     process.env.NEXT_PUBLIC_CV_URL ||
