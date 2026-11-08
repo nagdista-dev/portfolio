@@ -232,9 +232,6 @@ const en = {
     success: "Message sent. I'll get back to you soon.",
     error:
       "The message didn't go through. Please try again or email me directly.",
-    fallback: "Open email app",
-    fallbackNote:
-      "The form opens your email app until the Web3Forms key is configured.",
     privacy:
       "Your details are only used to reply to this message. No lists, no tracking.",
     emailLabel: "Email",
@@ -245,6 +242,13 @@ const en = {
     responseTime: "Usually replies within 1–2 days",
     copyEmail: "Copy email",
     copyPhone: "Copy phone",
+  },
+  thanks: {
+    eyebrow: "Message sent",
+    title: "Thanks — I've got it.",
+    body: "I read every message and usually reply within 1–2 days. If it's urgent, email nagdista@gmail.com directly.",
+    back: "Back to home",
+    work: "See the work",
   },
   footer: {
     tagline:
@@ -490,8 +494,6 @@ const ar: typeof en = {
     sending: "بيبعت…",
     success: "الرسالة وصلت. هرد عليك قريب.",
     error: "الرسالة مابعتتش. جرّب تاني أو ابعت لي إيميل مباشرة.",
-    fallback: "افتح تطبيق الإيميل",
-    fallbackNote: "الفورم بيفتح تطبيق الإيميل لحد ما مفتاح Web3Forms يتضاف.",
     privacy:
       "بياناتك بتتستخدم للرد على الرسالة دي بس. مفيش قوائم ولا تتبع.",
     emailLabel: "الإيميل",
@@ -502,6 +504,13 @@ const ar: typeof en = {
     responseTime: "الرد عادةً خلال 1–2 يوم",
     copyEmail: "انسخ الإيميل",
     copyPhone: "انسخ التليفون",
+  },
+  thanks: {
+    eyebrow: "الرسالة وصلت",
+    title: "شكرًا — وصلتني رسالتك.",
+    body: "بقرأ كل رسالة وبالرد عادةً في خلال يوم أو يومين. لو مستعجل، ابعت مباشرة على nagdista@gmail.com.",
+    back: "ارجع للرئيسية",
+    work: "شوف الأعمال",
   },
   footer: {
     tagline:

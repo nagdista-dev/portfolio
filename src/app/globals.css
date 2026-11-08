@@ -3731,6 +3731,49 @@ a.contact__detail-value:hover {
   margin-top: 0.75rem;
 }
 
+.thanks {
+  display: grid;
+  place-items: center;
+  min-height: 60vh;
+  padding: clamp(3rem, 8vw, 6rem) 1.25rem;
+  text-align: center;
+}
+
+.thanks__inner {
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+}
+
+.thanks__mark {
+  display: grid;
+  place-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+}
+
+.thanks h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  line-height: 1.1;
+}
+
+.thanks p {
+  max-width: 46ch;
+  color: var(--muted);
+}
+
+.thanks__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+  margin-top: 0.75rem;
+}
+
 /* Print */
 
 @media print {

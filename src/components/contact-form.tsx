@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useEffect, useRef, useState, type FormEvent } from "react";
 import { messages } from "@/content/messages";
 import { SITE } from "@/content/site";
 import type { Locale } from "@/content/types";
@@ -27,7 +27,14 @@ export function ContactForm({ locale }: { locale: Locale }) {
   const [values, setValues] = useState<Values>(EMPTY);
   const [honeypot, setHoneypot] = useState("");
   const [status, setStatus] = useState<Status>("idle");
-  const hasKey = Boolean(SITE.web3formsKey);
+  const startRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    // Fill-time signal for the form backend's spam filter.
+    if (startRef.current) {
+      startRef.current.value = String(Date.now());
+    }
+  }, []);
 
   function update(field: keyof Values, value: string) {
     setValues((current) => ({ ...current, [field]: value }));
@@ -38,49 +45,38 @@ export function ContactForm({ locale }: { locale: Locale }) {
 
     if (honeypot) return;
 
+    const form = event.currentTarget;
     const subject =
       values.subject.trim() ||
       (locale === "ar" ? "رسالة من nagdista.com" : "Message from nagdista.com");
 
-    if (!hasKey) {
-      const body = [
-        `${t.contact.name}: ${values.name}`,
-        `${t.contact.email}: ${values.email}`,
-        "",
-        values.message,
-      ].join("\n");
-
-      window.location.href = `mailto:${SITE.email}?subject=${encodeURIComponent(
-        subject,
-      )}&body=${encodeURIComponent(body)}`;
-      return;
-    }
-
     setStatus("sending");
 
+    const data = new FormData(form);
+    data.set("_subject", subject);
+    data.set("_page", window.location.href);
+    if (startRef.current) {
+      data.set("_start_time", startRef.current.value);
+    }
+
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
+      const response = await fetch(SITE.contactEndpoint, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({
-          access_key: SITE.web3formsKey,
-          name: values.name,
-          email: values.email,
-          subject,
-          message: values.message,
-          from_name: "nagdista.com",
-          botcheck: honeypot,
-        }),
+        headers: { Accept: "application/json" },
+        body: data,
       });
 
-      const data = (await response.json()) as { success?: boolean };
+      const result = (await response.json().catch(() => null)) as {
+        ok?: boolean;
+      } | null;
 
-      if (response.ok && data.success) {
+      if (response.ok && result?.ok) {
         setStatus("success");
         setValues(EMPTY);
+        form.reset();
+        if (startRef.current) {
+          startRef.current.value = String(Date.now());
+        }
       } else {
         setStatus("error");
       }
@@ -90,16 +86,32 @@ export function ContactForm({ locale }: { locale: Locale }) {
   }
 
   return (
-    <form className="contact-form" onSubmit={onSubmit} noValidate={false}>
+    <form
+      className="contact-form"
+      action={SITE.contactEndpoint}
+      method="post"
+      onSubmit={onSubmit}
+      aria-busy={status === "sending"}
+    >
       <input
         type="text"
-        name="botcheck"
+        name="_gotcha"
         className="contact-form__honeypot"
         tabIndex={-1}
         autoComplete="off"
         aria-hidden="true"
         value={honeypot}
         onChange={(event) => setHoneypot(event.target.value)}
+      />
+      <input ref={startRef} type="hidden" name="_start_time" defaultValue="" />
+      <input
+        type="hidden"
+        name="_next"
+        value={
+          locale === "ar"
+            ? "https://nagdista.com/ar/thanks/"
+            : "https://nagdista.com/thanks/"
+        }
       />
 
       <div className="contact-form__row">
@@ -166,15 +178,11 @@ export function ContactForm({ locale }: { locale: Locale }) {
           className="button button--accent"
           disabled={status === "sending"}
         >
-          {status === "sending" ? t.contact.sending : hasKey ? t.contact.send : t.contact.fallback}
+          {status === "sending" ? t.contact.sending : t.contact.send}
           <ArrowUpRight size={16} />
         </button>
         <p className="contact-form__privacy">{t.contact.privacy}</p>
       </div>
-
-      {!hasKey ? (
-        <p className="contact-form__note">{t.contact.fallbackNote}</p>
-      ) : null}
 
       <p
         className={`contact-form__status contact-form__status--${status}`}

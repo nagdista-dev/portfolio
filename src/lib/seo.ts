@@ -37,6 +37,7 @@ type BuildMetadataInput = {
   absoluteTitle?: boolean;
   type?: "website" | "article";
   alternate?: boolean;
+  noindex?: boolean;
   publishedTime?: string;
   modifiedTime?: string;
   tags?: string[];
@@ -52,6 +53,7 @@ export function buildMetadata({
   absoluteTitle = false,
   type = "website",
   alternate = true,
+  noindex = false,
   publishedTime,
   modifiedTime,
   tags,
@@ -128,17 +130,22 @@ export function buildMetadata({
     creator: SITE.name,
     publisher: SITE.name,
     keywords,
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        "max-image-preview": "large",
-        "max-snippet": -1,
-        "max-video-preview": -1,
-      },
+    verification: {
+      google: SITE.googleVerification,
     },
+    robots: noindex
+      ? { index: false, follow: false }
+      : {
+          index: true,
+          follow: true,
+          googleBot: {
+            index: true,
+            follow: true,
+            "max-image-preview": "large",
+            "max-snippet": -1,
+            "max-video-preview": -1,
+          },
+        },
   };
 }
 

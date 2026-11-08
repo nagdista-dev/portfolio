@@ -17,8 +17,13 @@ export const SITE = {
   linkedin: "https://linkedin.com/in/nagdista",
   x: "https://x.com/nagdista",
   topmate: "https://topmate.io/nagdista",
-  cvUrl: process.env.NEXT_PUBLIC_CV_URL ?? "",
-  web3formsKey: process.env.NEXT_PUBLIC_WEB3FORMS_KEY ?? "",
+  cvUrl:
+    process.env.NEXT_PUBLIC_CV_URL ||
+    "https://drive.google.com/drive/folders/1xuzUdvOWqmx60x_ko177zhRMjT_q_1MJ",
+  contactEndpoint:
+    process.env.NEXT_PUBLIC_CONTACT_ENDPOINT ||
+    "https://send.webforms.to/wft_wre9j7f3mpa8xemt3ypq",
+  googleVerification: "BxGIGgYgIAEDpfUP1RiTUpCBy_e0Reas2aukQHyE3bI",
   launchYear: 2026,
 } as const;
 
