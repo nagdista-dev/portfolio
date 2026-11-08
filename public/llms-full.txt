@@ -19,7 +19,7 @@ Primary languages: English, Arabic
 - Graduation project: EduSwap — Excellent (99%)
 - Learning: self-taught developer; currently learning English and AI-assisted language learning
 - Most active social platform: X (Twitter)
-- Availability: freelance projects and junior remote roles
+- Availability: freelance until January 2027; military service January 2027 – March 2028; full-time after
 - Email: nagdista@gmail.com
 - Phone: +20 114 304 4699
 - Canonical profile: https://nagdista.com/
@@ -32,7 +32,7 @@ Mahmoud Elnagdy is a full-stack developer in Cairo, Egypt, building fast, access
 
 ## Short bio
 
-Mahmoud Elnagdy is a full-stack developer based in Cairo, Egypt. He builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL. He graduated in 2026 with a B.Sc. in Business Information Systems and is open to freelance projects and junior remote roles.
+Mahmoud Elnagdy is a full-stack developer based in Cairo, Egypt. He builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL. He graduated in 2026 with a B.Sc. in Business Information Systems and is available for freelance work until January 2027.
 
 ## Long bio
 
@@ -61,6 +61,17 @@ He studied Business Information Systems at Misr Higher Institute for Commerce & 
 - Programming education: largely self-taught, starting from the first day of university in 2022
 - Currently learning: English and AI-assisted language-learning methods
 - Public learning repositories: https://github.com/nagdista-dev?tab=repositories
+
+## Experience
+
+- Freelance developer working directly with clients in Egypt, from requirements through delivery.
+- Builds bilingual and local-first web products; selected work is listed below.
+
+## Availability
+
+- Freelance work: available until January 2027
+- Military service: January 2027 – March 2028 (15 months)
+- Full-time work: available again after March 2028
 
 ## Featured projects
 

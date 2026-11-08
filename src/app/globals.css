@@ -3598,6 +3598,15 @@ a.contact__detail-value:hover {
   color: var(--ink-2);
 }
 
+.press-portrait {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  margin-bottom: 1rem;
+}
+
 .press-page {
   display: grid;
   gap: clamp(2rem, 4vw, 3rem);

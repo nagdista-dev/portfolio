@@ -52,11 +52,11 @@ const en = {
     bio: "I'm Mahmoud Elnagdy. I design and build fast, accessible web products with React, Next.js, TypeScript, and Node.js. I care about the details that make software feel effortless.",
     ctaWork: "See selected work",
     ctaContact: "Let's talk",
-    available: "Available for freelance & remote roles",
+    available: "Available for freelance until January 2027",
     scroll: "Scroll to explore",
     cardRole: "Full-stack developer",
     cardLocation: "Cairo, EG",
-    cardStatus: "Open to work",
+    cardStatus: "Freelance until Jan 2027",
     statRepos: "Public repositories",
     statProjects: "Featured case studies",
     statGrad: "Class of",
@@ -80,7 +80,7 @@ const en = {
     aboutIntro:
       "I'm Mahmoud Elnagdy (Mahmoud Alnagdy), a full-stack developer based in Cairo. My work sits between engineering and design: calm interfaces on top, dependable systems underneath.",
     aboutBody:
-      "I studied Business Information Systems at Misr Higher Institute for Commerce & Computers in Mansoura and graduated in 2026 with a Very Good grade. Since then I've been building bilingual learning tools, local-first video libraries, browser extensions, and daily planning apps. I'm currently open to freelance projects and junior remote roles.",
+      "I studied Business Information Systems at Misr Higher Institute for Commerce & Computers in Mansoura and graduated in 2026 with a Very Good grade. Since then I've been building bilingual learning tools, local-first video libraries, browser extensions, and daily planning apps. I'm available for freelance work until January 2027, before military service.",
     aboutQuote:
       "Good interfaces don't shout. They make the next step obvious.",
     aboutQuoteAttr: "Working principle",
@@ -94,7 +94,8 @@ const en = {
     factLanguages: "Languages",
     factLanguagesValue: "Arabic (native) · English (professional)",
     factStatus: "Status",
-    factStatusValue: "Open to freelance & junior remote roles",
+    factStatusValue:
+      "Freelance until Jan 2027 · Military service Jan 2027 – Mar 2028",
     workLabel: "02 — Selected work",
     workTitle: "Projects built to be used.",
     workIntro:
@@ -132,7 +133,7 @@ const en = {
     body: [
       "My path started with front-end work: HTML, CSS, JavaScript, then React and Tailwind CSS. The more I built, the more I wanted to understand what happened behind the interface. That curiosity pulled me into TypeScript, Node.js, Express, databases, and the decisions that make an application fast and maintainable.",
       "Today I work across the stack. I've built Wasla, a bilingual platform that turns YouTube playlists into structured courses; LocalTube, a self-hosted video library with FFmpeg thumbnails and SQLite; Hassala, a privacy-first Chrome extension for Arabic ↔ English learners; Tarteeb, a planner built around prayer times; and Yost, a local dashboard for YouTube community posts.",
-      "I studied Business Information Systems at Misr Higher Institute for Commerce & Computers in Mansoura and graduated in August 2026 with a Very Good grade. My graduation project, EduSwap, earned Excellent (99%). I'm based in Cairo and open to freelance projects and junior remote roles where I can keep learning from strong engineers while shipping work that matters.",
+      "I studied Business Information Systems at Misr Higher Institute for Commerce & Computers in Mansoura and graduated in August 2026 with a Very Good grade. My graduation project, EduSwap, earned Excellent (99%). I'm based in Cairo and available for freelance work until January 2027, when I begin military service. After that, I'll return to full-time work where I can keep learning from strong engineers while shipping work that matters.",
     ],
     principlesTitle: "How I work",
     principles: [
@@ -153,7 +154,7 @@ const en = {
     currently: [
       "Building bilingual web products with Next.js and TypeScript",
       "Going deeper into SQL, system design, and accessibility",
-      "Open to junior remote roles and freelance projects",
+      "Freelance work until January 2027, then military service",
     ],
     ctaTitle: "Want the longer version?",
     ctaBody:
@@ -238,7 +239,8 @@ const en = {
     phoneLabel: "Phone",
     locationLabel: "Location",
     socialsLabel: "Elsewhere",
-    availability: "Available for freelance & remote roles",
+    availability:
+      "Available for freelance until January 2027. Military service: January 2027 – March 2028; returning to full-time work after.",
     responseTime: "Usually replies within 1–2 days",
     copyEmail: "Copy email",
     copyPhone: "Copy phone",
@@ -318,11 +320,11 @@ const ar: typeof en = {
     bio: "أنا محمود النجدي. ببني منتجات ويب سريعة وسهلة الاستخدام بـ React وNext.js وTypeScript وNode.js، وبهتم بالتفاصيل اللي بتخلي التجربة طبيعية ومريحة.",
     ctaWork: "شوف أعمالي المختارة",
     ctaContact: "كلمني",
-    available: "متاح للفريلانس والوظائف عن بُعد",
+    available: "متاح للفريلانس حتى يناير 2027",
     scroll: "انزل للاستكشاف",
     cardRole: "مطور فول ستاك",
     cardLocation: "القاهرة، مصر",
-    cardStatus: "متاح للعمل",
+    cardStatus: "فريلانس حتى يناير 2027",
     statRepos: "مستودع عام",
     statProjects: "دراسات حالة مختارة",
     statGrad: "دفعة",
@@ -346,7 +348,7 @@ const ar: typeof en = {
     aboutIntro:
       "أنا محمود النجدي، مطور فول ستاك مقيم في القاهرة. شغلي واقع بين الهندسة والتصميم: واجهات هادية فوق، وأنظمة تعتمد عليها تحت.",
     aboutBody:
-      "درست نظم ومعلومات الأعمال في معهد مصر العالي للتجارة والحاسبات بالمنصورة وتخرجت سنة 2026 بتقدير جيد جدًا. من ساعتها وأنا ببني أدوات تعلم ثنائية اللغة، ومكتبات فيديو محلية، وإكستنشن للمتصفح، وتطبيقات لتنظيم اليوم. متاح حاليًا للفريلانس والوظائف عن بُعد.",
+      "درست نظم ومعلومات الأعمال في معهد مصر العالي للتجارة والحاسبات بالمنصورة وتخرجت سنة 2026 بتقدير جيد جدًا. من ساعتها وأنا ببني أدوات تعلم ثنائية اللغة، ومكتبات فيديو محلية، وإكستنشن للمتصفح، وتطبيقات لتنظيم اليوم. متاح للفريلانس حتى يناير 2027، قبل الخدمة العسكرية.",
     aboutQuote: "الواجهات الحلوة مش بتعلي صوتها. بتخلي الخطوة الجاية واضحة.",
     aboutQuoteAttr: "مبدأ عمل",
     aboutCta: "اعرف أكتر عني",
@@ -359,7 +361,8 @@ const ar: typeof en = {
     factLanguages: "اللغات",
     factLanguagesValue: "العربية (أصلية) · الإنجليزية (احترافية)",
     factStatus: "الحالة",
-    factStatusValue: "متاح للفريلانس والوظائف عن بُعد",
+    factStatusValue:
+      "فريلانس حتى يناير 2027 · خدمة عسكرية يناير 2027 – مارس 2028",
     workLabel: "02 — أعمال مختارة",
     workTitle: "مشاريع اتبنت عشان تتنستخدم.",
     workIntro:
@@ -397,7 +400,7 @@ const ar: typeof en = {
     body: [
       "بدأت من الواجهات: HTML وCSS وJavaScript، بعدين React وTailwind CSS. كل ما بنيت أكتر، كل ما حبيت أفهم اللي بيحصل وراء الواجهة. الفضول ده سحبني لـ TypeScript وNode.js وExpress وقواعد البيانات والقرارات اللي بتخلي التطبيق سريع وسهل الصيانة.",
       "اليوم بشتغل على الستاك كله. بنيت Wasla، منصة ثنائية اللغة بتحول قوائم تشغيل يوتيوب لكورسات منظمة؛ وLocalTube، مكتبة فيديو self-hosted بتستخدم FFmpeg وSQLite؛ وHassala، إكستنشن Chrome بيحترم الخصوصية لمتعلمي العربي ↔ الإنجليزي؛ وTarteeb، منظم يومي مبني حول مواعيد الصلاة؛ وYost، داشبورد محلي لبوستات مجتمع يوتيوب.",
-      "درست نظم ومعلومات الأعمال في معهد مصر العالي للتجارة والحاسبات بالمنصورة وتخرجت في أغسطس 2026 بتقدير جيد جدًا. مشروع التخرج، EduSwap، حصل على امتياز بنسبة 99%. مقيم في القاهرة ومتاح للفريلانس والوظائف عن بُعد، عشان أتعلم من مهندسين قويين وأسلّم شغل يستاهل.",
+      "درست نظم ومعلومات الأعمال في معهد مصر العالي للتجارة والحاسبات بالمنصورة وتخرجت في أغسطس 2026 بتقدير جيد جدًا. مشروع التخرج، EduSwap، حصل على امتياز بنسبة 99%. مقيم في القاهرة ومتاح للفريلانس حتى يناير 2027، وبعدها أبدأ الخدمة العسكرية. بعد انتهائها هرجع للعمل بدوام كامل عشان أتعلم من مهندسين قويين وأسلّم شغل يستاهل.",
     ],
     principlesTitle: "طريقة شغلي",
     principles: [
@@ -501,7 +504,8 @@ const ar: typeof en = {
     phoneLabel: "التليفون",
     locationLabel: "المكان",
     socialsLabel: "في مكان تاني",
-    availability: "متاح للفريلانس والوظائف عن بُعد",
+    availability:
+      "متاح للفريلانس حتى يناير 2027. خدمة عسكرية: يناير 2027 – مارس 2028، والعودة للعمل بعدها.",
     responseTime: "الرد عادةً خلال 1–2 يوم",
     copyEmail: "انسخ الإيميل",
     copyPhone: "انسخ التليفون",

@@ -160,7 +160,7 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
     familyName: "Elnagdy",
     alternateName: NAME_VARIANTS,
     url: SITE.url,
-    image: `${SITE.url}/og/home-${locale}.png`,
+    image: `${SITE.url}/images/avatar.jpg`,
     jobTitle: locale === "ar" ? "مطور فول ستاك" : "Full-Stack Developer",
     description:
       locale === "ar"

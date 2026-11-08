@@ -38,6 +38,8 @@ export type PressContent = {
   education: PressRow[];
   learningTitle: string;
   learning: string[];
+  experienceTitle: string;
+  experience: string[];
   skillsTitle: string;
   skills: PressRow[];
   workTitle: string;
@@ -74,7 +76,8 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
       },
       {
         label: "Availability",
-        value: "Freelance projects and junior remote roles",
+        value:
+          "Freelance until January 2027; military service January 2027 – March 2028; full-time after",
       },
       {
         label: "Languages",
@@ -98,7 +101,7 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
     ],
     bioTitle: "Short bio",
     shortBio:
-      "Mahmoud Elnagdy is a full-stack developer based in Cairo, Egypt. He builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL. He graduated in 2026 with a B.Sc. in Business Information Systems and is open to freelance projects and junior remote roles.",
+      "Mahmoud Elnagdy is a full-stack developer based in Cairo, Egypt. He builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL. He graduated in 2026 with a B.Sc. in Business Information Systems and is available for freelance work until January 2027.",
     educationTitle: "Education",
     education: [
       {
@@ -130,6 +133,11 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
       "Studying English and building AI-assisted tools for learning languages.",
       "Learns by trial and error, and is open to feedback and advice from more experienced engineers.",
       "Public learning repositories document the path: Python fundamentals, GitHub CLI, animation, and frontend interview preparation.",
+    ],
+    experienceTitle: "Experience",
+    experience: [
+      "Freelance developer working directly with clients in Egypt, from requirements through delivery.",
+      "Builds bilingual and local-first web products; selected work is listed below.",
     ],
     skillsTitle: "Skills",
     skills: [
@@ -281,7 +289,7 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
       {
         question: "Is Mahmoud Elnagdy available for work?",
         answer:
-          "Yes. He is open to freelance projects and junior remote roles. Contact: nagdista@gmail.com.",
+          "He is available for freelance work until January 2027. He begins military service in January 2027 for 15 months and returns to full-time work after March 2028.",
       },
       {
         question: "What is Nagdista?",
@@ -314,7 +322,8 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
       },
       {
         label: "الإتاحة",
-        value: "مشاريع فريلانس ووظائف عن بُعد للمبتدئين",
+        value:
+          "فريلانس حتى يناير 2027؛ خدمة عسكرية يناير 2027 – مارس 2028؛ دوام كامل بعدها",
       },
       {
         label: "اللغات",
@@ -370,6 +379,11 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
       "يدرس الإنجليزية ويبني أدوات مدعومة بالذكاء الاصطناعي لتعلّم اللغات.",
       "يتعلم بالتجربة والخطأ، ومنفتح على الملاحظات والنصايح من المهندسين الأكثر خبرة.",
       "مستودعات التعلّم العامة توثّق المسار: أساسيات Python، وGitHub CLI، والأنيميشن، والتحضير لمقابلات الواجهات.",
+    ],
+    experienceTitle: "الخبرة",
+    experience: [
+      "مطور فريلانس يعمل مباشرة مع عملاء في مصر، من فهم المتطلبات حتى التسليم.",
+      "يبني منتجات ويب ثنائية اللغة وتهتم بالعمل المحلي؛ الأعمال المختارة بالأسفل.",
     ],
     skillsTitle: "المهارات",
     skills: [
@@ -520,7 +534,7 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
       {
         question: "هل محمود النجدي متاح للعمل؟",
         answer:
-          "نعم. هو متاح لمشاريع الفريلانس والوظائف عن بُعد للمبتدئين. للتواصل: nagdista@gmail.com.",
+          "متاح للفريلانس حتى يناير 2027. يبدأ الخدمة العسكرية في يناير 2027 لمدة 15 شهرًا، ويعود للعمل بدوام كامل بعد مارس 2028.",
       },
       {
         question: "ما هو Nagdista؟",

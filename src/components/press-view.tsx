@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { PRESS, type PressRow } from "@/content/press";
 import { SITE, SOCIAL_LINKS } from "@/content/site";
@@ -59,18 +60,27 @@ export function PressView({ locale }: { locale: Locale }) {
           title={content.title}
           intro={content.intro}
           aside={
-            <div className="hero__actions">
-              <Link href={workHref} className="button button--small">
-                {isArabic ? "أعمال مختارة" : "Selected work"}
-                <ArrowRight size={15} />
-              </Link>
-              <a
-                href={`mailto:${SITE.email}`}
-                className="button button--small button--ghost"
-              >
-                <MailIcon size={15} />
-                {SITE.email}
-              </a>
+            <div>
+              <Image
+                className="press-portrait"
+                src="/images/avatar.jpg"
+                alt={isArabic ? "محمود النجدي" : "Mahmoud Elnagdy"}
+                width={88}
+                height={88}
+              />
+              <div className="hero__actions">
+                <Link href={workHref} className="button button--small">
+                  {isArabic ? "أعمال مختارة" : "Selected work"}
+                  <ArrowRight size={15} />
+                </Link>
+                <a
+                  href={`mailto:${SITE.email}`}
+                  className="button button--small button--ghost"
+                >
+                  <MailIcon size={15} />
+                  {SITE.email}
+                </a>
+              </div>
             </div>
           }
         />
@@ -105,6 +115,15 @@ export function PressView({ locale }: { locale: Locale }) {
             <h2>{content.learningTitle}</h2>
             <ul className="press-list">
               {content.learning.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </section>
+
+          <section className="press-section" data-reveal>
+            <h2>{content.experienceTitle}</h2>
+            <ul className="press-list">
+              {content.experience.map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>
