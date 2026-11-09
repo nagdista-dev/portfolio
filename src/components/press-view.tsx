@@ -79,7 +79,7 @@ export function PressView({ locale }: { locale: Locale }) {
             <div>
               <Image
                 className="press-portrait"
-                src="/images/avatar.jpg"
+                src="/images/portrait-formal.jpg"
                 alt={isArabic ? "محمود النجدي" : "Mahmoud Elnagdy"}
                 width={88}
                 height={88}

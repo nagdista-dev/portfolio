@@ -167,8 +167,8 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
     url: SITE.url,
     image: {
       "@type": "ImageObject",
-      url: `${SITE.url}/images/avatar.jpg`,
-      contentUrl: `${SITE.url}/images/avatar.jpg`,
+      url: `${SITE.url}/images/portrait-formal.jpg`,
+      contentUrl: `${SITE.url}/images/portrait-formal.jpg`,
       caption:
         locale === "ar" ? "صورة محمود النجدي" : "Portrait of Mahmoud Elnagdy",
       width: 460,

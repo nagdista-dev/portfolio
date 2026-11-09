@@ -16,8 +16,8 @@
   "url": "https://nagdista.com/",
   "image": {
     "@type": "ImageObject",
-    "url": "https://nagdista.com/images/avatar.jpg",
-    "contentUrl": "https://nagdista.com/images/avatar.jpg",
+    "url": "https://nagdista.com/images/portrait-formal.jpg",
+    "contentUrl": "https://nagdista.com/images/portrait-formal.jpg",
     "caption": "Portrait of Mahmoud Elnagdy",
     "width": 460,
     "height": 460
