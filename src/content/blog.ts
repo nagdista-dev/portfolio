@@ -6,7 +6,7 @@ const enArticles: Article[] = [
     locale: "en",
     title: "How I Built a Bilingual Portfolio with Next.js and TypeScript",
     description:
-      "A practical walkthrough of the architecture behind nagdista.com: route groups, two root layouts, static export, bilingual SEO, and a design system that works in Arabic and English.",
+      "A practical walkthrough of the architecture behind nagdista.com: route groups, two root layouts, static export, bilingual SEO, and a bilingual design system.",
     excerpt:
       "The decisions behind a fast, bilingual portfolio: two root layouts, a localized content model, static export, and SEO that works in both directions.",
     category: "Next.js",

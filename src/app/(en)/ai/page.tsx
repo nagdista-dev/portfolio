@@ -13,7 +13,7 @@ export const metadata: Metadata = buildMetadata({
   locale: "en",
   title: "AI & Developer Workflows",
   description:
-    "Mahmoud Elnagdy writes AI in Brief, a daily LinkedIn newsletter about AI news for developers, and uses AI-assisted workflows for debugging, testing, and bilingual product work.",
+    "Mahmoud Elnagdy writes AI in Brief, a daily LinkedIn newsletter about AI for developers, and builds AI-powered web features.",
   path: "/ai/",
   image: "/og/about-en.png",
   keywords: [

@@ -150,7 +150,7 @@ export const PROJECTS: Project[] = [
           "LocalTube was my deepest lesson in local-first architecture. Every feature had to work without a cloud account, which made file handling, SQLite migrations, and streaming decisions much more explicit. It also taught me to design optional integrations: yt-dlp and the YouTube API are useful, but the app must work without them.",
         seoTitle: "LocalTube — Self-Hosted Video Library",
         seoDescription:
-          "LocalTube is a self-hosted video library with YouTube-style browsing, SQLite progress tracking, FFmpeg thumbnails, and a Pomodoro timer. A case study by Mahmoud Elnagdy.",
+          "LocalTube by Mahmoud Elnagdy: a self-hosted video library with YouTube-style browsing, SQLite progress tracking, FFmpeg thumbnails, and a Pomodoro timer.",
       },
       ar: {
         tagline: "مكتبة الفيديو بتاعتك. من غير خوارزمية.",

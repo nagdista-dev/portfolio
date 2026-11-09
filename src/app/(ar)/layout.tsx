@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s — محمود النجدي",
   },
   description:
-    "محمود النجدي مطور فول ستاك في القاهرة، مصر. يبني منتجات ويب سريعة وسهلة الاستخدام وثنائية اللغة بـ React وNext.js وTypeScript وNode.js وSQL.",
+    "محمود النجدي مطور فول ستاك في القاهرة، مصر. بكالوريوس نظم ومعلومات الأعمال 2026. يبني منتجات ويب سريعة وثنائية اللغة بـ React وNext.js وTypeScript وNode.js.",
   applicationName: "نجديستا",
   icons: {
     icon: [
