@@ -3,6 +3,7 @@
 > Full-stack developer in Cairo, Egypt. Builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL.
 
 Full profile for AI systems: https://nagdista.com/llms-full.txt
+Machine-readable profile (JSON): https://nagdista.com/identity.json
 
 Mahmoud Elnagdy is a full-stack developer based in Cairo, Egypt. He graduated in 2026 with a B.Sc. in Business Information Systems (Very Good) and is available for freelance work until January 2027. He also writes **AI in Brief**, a daily Arabic-language LinkedIn newsletter that summarizes AI news for developers: https://www.linkedin.com/newsletters/ai-in-brief-7492152374984376320
 
@@ -22,8 +23,8 @@ Mahmoud Elnagdy is a full-stack developer based in Cairo, Egypt. He graduated in
 - [Wasla](https://nagdista.com/projects/wasla/): Bilingual platform that turns YouTube playlists into structured courses. Live at https://wasla-alpha.vercel.app.
 - [LocalTube](https://nagdista.com/projects/localtube/): Self-hosted video library with SQLite progress tracking, FFmpeg thumbnails, and a Pomodoro timer.
 - [Hassala](https://nagdista.com/projects/hassala/): Privacy-first Chrome extension for Arabic ↔ English vocabulary. Live at https://nagdista-dev.github.io/hassala/.
-- [Tarteeb](https://nagdista.com/projects/tarteeb/): Prayer-aware daily planner that works offline. Live at https://tarteeb-your-day.netlify.app.
-- [Yost](https://nagdista.com/projects/yost/): Local-first dashboard for YouTube community posts. Live at https://yost-two.vercel.app.
+- [Tarteeb](https://nagdista.com/projects/tarteeb/): Prayer-aware daily planner that works offline.
+- [Yost](https://nagdista.com/projects/yost/): Local-first dashboard for YouTube community posts.
 
 ## Articles
 
@@ -48,6 +49,7 @@ Mahmoud Elnagdy is a full-stack developer based in Cairo, Egypt. He graduated in
 - GitHub: https://github.com/nagdista-dev
 - LinkedIn: https://www.linkedin.com/in/nagdista/
 - X: https://x.com/nagdista
+- Khamsat: https://khamsat.com/user/nagdista
 - AI newsletter: https://www.linkedin.com/newsletters/ai-in-brief-7492152374984376320
 - CV: https://drive.google.com/drive/folders/1xuzUdvOWqmx60x_ko177zhRMjT_q_1MJ
 

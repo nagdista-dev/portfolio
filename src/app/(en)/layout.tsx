@@ -107,6 +107,12 @@ export default function EnglishLayout({
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: bootScript }} />
+        <link
+          rel="alternate"
+          type="application/json"
+          href="/identity.json"
+          title="Machine-readable profile"
+        />
         <meta
           name="msvalidate.01"
           content="A97765CFC294546AC47FBCA2401662C8"

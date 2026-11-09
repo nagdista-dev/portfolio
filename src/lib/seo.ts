@@ -161,11 +161,19 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
     "@type": "Person",
     "@id": `${SITE.url}/#person`,
     name: SITE.name,
-    givenName: "Mahmoud",
-    familyName: "Elnagdy",
+    givenName: locale === "ar" ? "محمود" : "Mahmoud",
+    familyName: locale === "ar" ? "النجدي" : "Elnagdy",
     alternateName: NAME_VARIANTS,
     url: SITE.url,
-    image: `${SITE.url}/images/avatar.jpg`,
+    image: {
+      "@type": "ImageObject",
+      url: `${SITE.url}/images/avatar.jpg`,
+      contentUrl: `${SITE.url}/images/avatar.jpg`,
+      caption:
+        locale === "ar" ? "صورة محمود النجدي" : "Portrait of Mahmoud Elnagdy",
+      width: 460,
+      height: 460,
+    },
     jobTitle: locale === "ar" ? "مطور فول ستاك" : "Full-Stack Developer",
     description:
       locale === "ar"
@@ -217,9 +225,39 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
     hasOccupation: {
       "@type": "Occupation",
       name: locale === "ar" ? "مطور فول ستاك" : "Full-Stack Developer",
+      occupationLocation: {
+        "@type": "City",
+        name: "Cairo",
+      },
+      skills:
+        "React, Next.js, TypeScript, Node.js, Express, MongoDB, SQL, Tailwind CSS, WordPress, OpenAI API",
     },
     mainEntityOfPage: pageUrl(locale, "/about/"),
-    sameAs: [SITE.github, SITE.linkedin, SITE.x],
+    sameAs: [
+      SITE.github,
+      SITE.linkedin,
+      SITE.x,
+      SITE.khamsat,
+      SITE.egyptInnovate,
+    ],
+    subjectOf: [
+      {
+        "@type": "ProfilePage",
+        url: pageUrl(locale, "/press/"),
+        name:
+          locale === "ar"
+            ? "محمود النجدي — ملف صحفي وتعريفي"
+            : "Mahmoud Elnagdy — Press & Identity Kit",
+      },
+      {
+        "@type": "ProfilePage",
+        url: pageUrl(locale, "/ai/"),
+        name:
+          locale === "ar"
+            ? "محمود النجدي والذكاء الاصطناعي"
+            : "Mahmoud Elnagdy on AI",
+      },
+    ],
     knowsAbout: [
       "React",
       "Next.js",
@@ -229,15 +267,20 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
       "MongoDB",
       "SQL",
       "Tailwind CSS",
+      "WordPress",
       "Web accessibility",
       "Search engine optimization",
       "Self-taught programming",
       "Language learning",
       "Artificial Intelligence",
       "AI news",
+      "AI in Brief",
       "AI-assisted development",
       "AI-assisted language learning",
       "OpenAI API",
+      "تطوير الويب",
+      "الذكاء الاصطناعي",
+      "البرمجة",
     ],
     authorOf: {
       "@type": "Periodical",
@@ -270,6 +313,8 @@ export function profilePageJsonLd(locale: Locale): Record<string, unknown> {
         ? "عن محمود النجدي"
         : "About Mahmoud Elnagdy",
     inLanguage: locale === "ar" ? "ar" : "en",
+    dateModified: "2026-11-09",
+    isPartOf: { "@id": `${SITE.url}/#website` },
     mainEntity: personJsonLd(locale),
   };
 }
@@ -286,6 +331,8 @@ export function pressPageJsonLd(locale: Locale): Record<string, unknown> {
         ? "محمود النجدي — ملف صحفي وتعريفي"
         : "Mahmoud Elnagdy — Press & Identity",
     inLanguage: locale === "ar" ? "ar" : "en",
+    dateModified: "2026-11-09",
+    isPartOf: { "@id": `${SITE.url}/#website` },
     mainEntity: personJsonLd(locale),
     about: personJsonLd(locale),
   };
@@ -321,6 +368,8 @@ export function aiPageJsonLd(locale: Locale): Record<string, unknown> {
         ? "محمود النجدي والذكاء الاصطناعي"
         : "Mahmoud Elnagdy on AI",
     inLanguage: locale === "ar" ? "ar" : "en",
+    dateModified: "2026-11-09",
+    isPartOf: { "@id": `${SITE.url}/#website` },
     mainEntity: personJsonLd(locale),
     about: personJsonLd(locale),
     mentions: {
@@ -363,6 +412,7 @@ export function websiteJsonLd(locale: Locale): Record<string, unknown> {
         ? "بورتفوليو محمود النجدي، مطور فول ستاك في القاهرة."
         : "The portfolio of Mahmoud Elnagdy, a full-stack developer in Cairo.",
     inLanguage: ["en", "ar"],
+    about: { "@id": `${SITE.url}/#person` },
     publisher: { "@id": `${SITE.url}/#person` },
   };
 }
@@ -377,17 +427,25 @@ export function siteNavigationJsonLd(
     { name: ar ? "مقالات" : "Writing", path: "/blog/" },
     { name: ar ? "الذكاء الاصطناعي" : "AI", path: "/ai/" },
     { name: ar ? "ملف صحفي" : "Press", path: "/press/" },
+    { name: ar ? "تواصل" : "Contact", path: "/#contact" },
   ];
   return {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: ar ? "روابط الموقع الأساسية" : "Primary site navigation",
-    itemListElement: items.map((item, index) => ({
-      "@type": "SiteNavigationElement",
-      position: index + 1,
-      name: item.name,
-      url: pageUrl(locale, item.path),
-    })),
+    itemListElement: items.map((item, index) => {
+      const hashIndex = item.path.indexOf("#");
+      const url =
+        hashIndex === -1
+          ? pageUrl(locale, item.path)
+          : `${pageUrl(locale, item.path.slice(0, hashIndex))}${item.path.slice(hashIndex)}`;
+      return {
+        "@type": "SiteNavigationElement",
+        position: index + 1,
+        name: item.name,
+        url,
+      };
+    }),
   };
 }
 

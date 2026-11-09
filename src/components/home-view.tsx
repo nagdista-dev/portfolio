@@ -26,6 +26,7 @@ export function HomeView({ locale, repoCount }: HomeViewProps) {
   const aboutHref = locale === "ar" ? "/ar/about/" : "/about/";
   const blogHref = locale === "ar" ? "/ar/blog/" : "/blog/";
   const aiHref = locale === "ar" ? "/ar/ai/" : "/ai/";
+  const pressHref = locale === "ar" ? "/ar/press/" : "/press/";
   const homeHref = locale === "ar" ? "/ar/" : "/";
 
   return (
@@ -123,10 +124,19 @@ export function HomeView({ locale, repoCount }: HomeViewProps) {
                 <p>“{t.home.aboutQuote}”</p>
                 <cite>{t.home.aboutQuoteAttr}</cite>
               </blockquote>
-              <Link href={aboutHref} className="text-link about__cta">
-                {t.home.aboutCta}
-                <ArrowRight size={16} />
-              </Link>
+              <div className="about__actions">
+                <Link href={aboutHref} className="text-link about__cta">
+                  {t.home.aboutCta}
+                  <ArrowRight size={16} />
+                </Link>
+                <Link
+                  href={pressHref}
+                  className="text-link about__cta about__cta--secondary"
+                >
+                  {t.home.pressCta}
+                  <ArrowRight size={14} />
+                </Link>
+              </div>
             </div>
 
             <aside className="about__aside" data-reveal>

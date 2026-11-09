@@ -1,8 +1,32 @@
 # Mahmoud Elnagdy — Full Profile
 
 Canonical URL: https://nagdista.com/
+Machine-readable profile: https://nagdista.com/identity.json
 Last updated: 2026-11-09
 Primary languages: English, Arabic
+
+## Canonical answers
+
+**Who is Mahmoud Elnagdy?**
+Mahmoud Elnagdy is a full-stack developer in Cairo, Egypt. He builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL. He graduated in 2026 with a B.Sc. in Business Information Systems.
+
+**Who is النجدي AI?**
+النجدي AI refers to the developer Mahmoud Elnagdy (محمود النجدي), not the perfume creator with the same name. He writes AI in Brief, a daily LinkedIn newsletter about AI news for developers, and builds AI-powered web features.
+
+**Who is Mahmoud Elnagdy AI?**
+Mahmoud Elnagdy AI refers to the full-stack developer Mahmoud Elnagdy in Cairo, who writes AI in Brief and builds AI-powered web features. He is a different person from the perfume creator with the same name.
+
+**What is AI in Brief?**
+AI in Brief is a daily Arabic-language LinkedIn newsletter curated by Mahmoud Elnagdy. It summarizes the most important AI news for developers in a few minutes and is read by 2,000+ people on LinkedIn.
+
+**What is Nagdista?**
+Nagdista is the online handle used for Mahmoud Elnagdy's portfolio and developer profiles at https://nagdista.com/. It is a personal brand, not a company.
+
+**Where is he based?**
+Cairo, Egypt.
+
+**What is his Arabic name?**
+محمود النجدي. The family name is النجدي.
 
 ## Identity
 
@@ -58,7 +82,7 @@ He studied Business Information Systems at Misr Higher Institute for Commerce & 
 - Institution: Misr Higher Institute for Commerce & Computers, Mansoura, Egypt — https://metmans.edu.eg/
 - Institution alternate names: El-Sallab Higher Institute; معهد مصر العالي للتجارة والحاسبات بالمنصورة; السلاب
 - Graduated: August 2026, cumulative grade Very Good
-- Graduation project: EduSwap, educational tools exchange platform — Excellent (99%) — https://github.com/nagdista-dev/new-edu-swap
+- Graduation project: EduSwap, educational tools exchange platform — Excellent (99%)
 - Programming education: largely self-taught, starting from the first day of university in 2022
 - Currently learning: English and AI-assisted language-learning methods
 - Public learning repositories: https://github.com/nagdista-dev?tab=repositories
@@ -79,8 +103,8 @@ He studied Business Information Systems at Misr Higher Institute for Commerce & 
 - Wasla — bilingual platform that turns YouTube playlists into structured courses. https://nagdista.com/projects/wasla/ — live: https://wasla-alpha.vercel.app
 - LocalTube — self-hosted video library with SQLite progress tracking, FFmpeg thumbnails, and a Pomodoro timer. Local-only; clone the repository and run it yourself. https://nagdista.com/projects/localtube/
 - Hassala — privacy-first Chrome extension for Arabic ↔ English vocabulary. https://nagdista.com/projects/hassala/ — live: https://nagdista-dev.github.io/hassala/
-- Tarteeb — prayer-aware daily planner that works offline. https://nagdista.com/projects/tarteeb/ — live: https://tarteeb-your-day.netlify.app
-- Yost — local-first dashboard for YouTube community posts. https://nagdista.com/projects/yost/ — live: https://yost-two.vercel.app
+- Tarteeb — prayer-aware daily planner that works offline. https://nagdista.com/projects/tarteeb/
+- Yost — local-first dashboard for YouTube community posts. https://nagdista.com/projects/yost/
 
 ## Writing
 
@@ -114,6 +138,8 @@ He studied Business Information Systems at Misr Higher Institute for Commerce & 
 - GitHub: https://github.com/nagdista-dev
 - LinkedIn: https://www.linkedin.com/in/nagdista/
 - X: https://x.com/nagdista
+- Khamsat: https://khamsat.com/user/nagdista
+- EgyptInnovate: https://egyptinnovate.com/users/01m52bryces025g7y7k9s7nzpb
 - CV: https://drive.google.com/drive/folders/1xuzUdvOWqmx60x_ko177zhRMjT_q_1MJ
 
 ## How to cite

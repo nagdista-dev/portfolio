@@ -16,6 +16,8 @@ export const SITE = {
   github: "https://github.com/nagdista-dev",
   linkedin: "https://www.linkedin.com/in/nagdista/",
   x: "https://x.com/nagdista",
+  khamsat: "https://khamsat.com/user/nagdista",
+  egyptInnovate: "https://egyptinnovate.com/users/01m52bryces025g7y7k9s7nzpb",
   aiNewsletter:
     "https://www.linkedin.com/newsletters/ai-in-brief-7492152374984376320",
   cvUrl:

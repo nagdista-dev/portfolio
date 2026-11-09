@@ -1132,8 +1132,21 @@ html.js [data-reveal].is-visible {
   line-height: 1.5;
 }
 
+.about__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.9rem 1.5rem;
+}
+
 .about__cta {
   justify-self: start;
+}
+
+.about__cta--secondary {
+  font-size: 0.78rem;
+  color: var(--muted);
+  border-color: var(--line);
 }
 
 @media (min-width: 900px) {

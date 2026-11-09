@@ -287,7 +287,6 @@ export const PROJECTS: Project[] = [
     stack: ["React 19", "Tailwind CSS 4", "Netlify", "PWA"],
     links: {
       repo: "https://github.com/nagdista-dev/tarteeb",
-      live: "https://tarteeb-your-day.netlify.app",
     },
     cover: {
       bg: "#20324A",
@@ -375,7 +374,6 @@ export const PROJECTS: Project[] = [
     ],
     links: {
       repo: "https://github.com/nagdista-dev/yost",
-      live: "https://yost-two.vercel.app",
     },
     cover: {
       bg: "#2A1E3A",

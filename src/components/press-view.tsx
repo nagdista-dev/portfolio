@@ -53,6 +53,10 @@ export function PressView({ locale }: { locale: Locale }) {
       label: isArabic ? "نشرة AI in Brief" : "AI in Brief",
       href: SITE.aiNewsletter,
     },
+    {
+      label: isArabic ? "خمسات" : "Khamsat",
+      href: SITE.khamsat,
+    },
     ...SOCIAL_LINKS.map((link) => ({
       label: link.label,
       href: link.href,
@@ -154,10 +158,12 @@ export function PressView({ locale }: { locale: Locale }) {
                 <article className="press-card" key={project.name}>
                   <h3>{project.name}</h3>
                   <p>{project.description}</p>
-                  <a href={project.href} target="_blank" rel="noreferrer">
-                    {project.linkLabel}
-                    <ExternalLinkIcon size={12} />
-                  </a>
+                  {project.href && project.linkLabel ? (
+                    <a href={project.href} target="_blank" rel="noreferrer">
+                      {project.linkLabel}
+                      <ExternalLinkIcon size={12} />
+                    </a>
+                  ) : null}
                 </article>
               ))}
             </div>

@@ -41,6 +41,8 @@ export default async function ArabicHomePage() {
           url: pageUrl("ar", "/"),
           name: "محمود النجدي — مطور فول ستاك",
           inLanguage: "ar",
+          dateModified: "2026-11-09",
+          isPartOf: { "@id": "https://nagdista.com/#website" },
           mainEntity: personJsonLd("ar"),
         }}
       />

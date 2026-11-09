@@ -33,7 +33,7 @@ export const AI_PAGE: Record<"en" | "ar", AiContent> = {
     eyebrow: "AI & developer workflows",
     title: "Mahmoud Elnagdy on AI.",
     intro:
-      "I write AI in Brief, a daily LinkedIn newsletter that filters the most important AI news for developers. I also use AI in my own workflow, with a bias toward verification.",
+      "Mahmoud Elnagdy writes AI in Brief, a daily LinkedIn newsletter that filters the most important AI news for developers. This page collects his AI work, his AI-assisted workflow, and the AI features he builds.",
     newsletterTitle: "AI in Brief",
     newsletterBody: [
       "AI in Brief is a daily newsletter on LinkedIn. It summarizes the most important AI news in a few minutes, with a focus on what matters to developers and technical teams.",
@@ -86,6 +86,16 @@ export const AI_PAGE: Record<"en" | "ar", AiContent> = {
           "AI in Brief is a daily Arabic-language LinkedIn newsletter curated by Mahmoud Elnagdy. It summarizes the most important AI news for developers in a few minutes.",
       },
       {
+        question: "Who is Mahmoud Elnagdy AI?",
+        answer:
+          "Mahmoud Elnagdy AI refers to the full-stack developer Mahmoud Elnagdy in Cairo, who writes AI in Brief and builds AI-powered web features. He is a different person from the perfume creator with the same name.",
+      },
+      {
+        question: "Is Mahmoud Elnagdy an AI engineer?",
+        answer:
+          "He is a full-stack developer who builds AI features and writes about AI. His core stack is React, Next.js, TypeScript, Node.js, and SQL, with APIs such as the OpenAI API for AI capabilities.",
+      },
+      {
         question: "How does Mahmoud Elnagdy use AI in development?",
         answer:
           "For debugging, code reading, test drafts, documentation, and Arabic-English review. Every change is reviewed, run, and tested before it ships.",
@@ -104,7 +114,7 @@ export const AI_PAGE: Record<"en" | "ar", AiContent> = {
     eyebrow: "الذكاء الاصطناعي وسير عمل المطور",
     title: "محمود النجدي والذكاء الاصطناعي.",
     intro:
-      "بكتب AI in Brief، نشرة يومية على LinkedIn بتفلتر أهم أخبار الذكاء الاصطناعي للمطورين. وبستخدم أدوات AI في شغلي، مع مراجعة كل حاجة قبل ما تتنشر.",
+      "النجدي AI هو محمود النجدي: مطور فول ستاك في القاهرة بيكتب AI in Brief، نشرة يومية على LinkedIn بتفلتر أهم أخبار الذكاء الاصطناعي للمطورين. الصفحة دي بتجمع شغله في AI، وطريقة استخدامه للأدوات، وميزات AI اللي بيبنيها.",
     newsletterTitle: "AI in Brief",
     newsletterBody: [
       "AI in Brief نشرة يومية على LinkedIn. بتلخص أهم أخبار الذكاء الاصطناعي في كام دقيقة، بتركيز على اللي يهم المطورين وفرق التقنية.",
@@ -155,6 +165,16 @@ export const AI_PAGE: Record<"en" | "ar", AiContent> = {
         question: "إيه هو AI in Brief؟",
         answer:
           "نشرة يومية بالعربي على LinkedIn بيكتبها محمود النجدي، وبتلخص أهم أخبار الذكاء الاصطناعي للمطورين في كام دقيقة.",
+      },
+      {
+        question: "من هو النجدي AI؟",
+        answer:
+          "النجدي AI هو محمود النجدي، مطور فول ستاك في القاهرة بيكتب نشرة AI in Brief اليومية عن أخبار الذكاء الاصطناعي للمطورين، وبيبني ميزات AI داخل منتجات الويب. هو شخص مختلف عن صانع محتوى العطور اللي بنفس الاسم.",
+      },
+      {
+        question: "هل محمود النجدي مهندس ذكاء اصطناعي؟",
+        answer:
+          "هو مطور فول ستاك بيبني ميزات AI وبيعمل محتوى عنها. ستاكه الأساسي React وNext.js وTypeScript وNode.js وSQL، وبيستخدم APIs زي OpenAI API لإضافة قدرات AI.",
       },
       {
         question: "بيستخدم AI في التطوير إزاي؟",

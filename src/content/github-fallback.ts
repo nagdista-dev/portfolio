@@ -115,7 +115,7 @@ export const GITHUB_FALLBACK: GitHubRepo[] = [
     description:
       "Daily planner that structures your time around prayer schedules",
     url: "https://github.com/nagdista-dev/tarteeb",
-    homepageUrl: "https://tarteeb-your-day.netlify.app",
+    homepageUrl: null,
     language: "JavaScript",
     stars: 1,
     updatedAt: "2026-08-21T19:37:00Z",
@@ -141,7 +141,7 @@ export const GITHUB_FALLBACK: GitHubRepo[] = [
     description:
       "Local dashboard for viewing YouTube community posts from your favorite channels",
     url: "https://github.com/nagdista-dev/yost",
-    homepageUrl: "https://yost-two.vercel.app",
+    homepageUrl: null,
     language: "JavaScript",
     stars: 1,
     updatedAt: "2026-08-21T19:37:00Z",
@@ -158,19 +158,6 @@ export const GITHUB_FALLBACK: GitHubRepo[] = [
     language: "TypeScript",
     stars: 0,
     updatedAt: "2026-07-27T15:45:43Z",
-    topics: [],
-    fork: false,
-    archived: false,
-  },
-  {
-    name: "new-edu-swap",
-    description:
-      "Educational tools exchange platform for students — graduation project with real-time chat",
-    url: "https://github.com/nagdista-dev/new-edu-swap",
-    homepageUrl: "https://final-eduswap-backend.vercel.app",
-    language: "JavaScript",
-    stars: 0,
-    updatedAt: "2026-07-27T15:45:30Z",
     topics: [],
     fork: false,
     archived: false,

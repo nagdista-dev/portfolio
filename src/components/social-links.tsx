@@ -32,7 +32,7 @@ export function SocialLinks({
             <Link
               href={item.href}
               target="_blank"
-              rel="noreferrer"
+              rel="me noreferrer"
               className="social-link"
               aria-label={`${item.label} — ${item.handle}`}
             >

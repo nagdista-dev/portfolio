@@ -4,6 +4,11 @@ const OWNER = "nagdista-dev";
 
 const EXCLUDED_REPOS = new Set(["nagdista-dev", "portfolio-legacy"]);
 
+const DEAD_HOMEPAGES = new Set([
+  "https://tarteeb-your-day.netlify.app",
+  "https://yost-two.vercel.app",
+]);
+
 type RawRepo = {
   name: string;
   description: string | null;
@@ -22,7 +27,10 @@ function normalize(raw: RawRepo): GitHubRepo {
     name: raw.name,
     description: raw.description,
     url: raw.html_url,
-    homepageUrl: raw.homepage || null,
+    homepageUrl:
+      raw.homepage && !DEAD_HOMEPAGES.has(raw.homepage)
+        ? raw.homepage
+        : null,
     language: raw.language,
     stars: raw.stargazers_count,
     updatedAt: raw.updated_at,
@@ -65,7 +73,7 @@ export async function getGitHubRepos(): Promise<GitHubRepo[]> {
   try {
     const response = await fetch(
       `https://api.github.com/users/${OWNER}/repos?per_page=100&sort=updated`,
-      { headers },
+      { headers, cache: "no-store" },
     );
 
     if (!response.ok) {

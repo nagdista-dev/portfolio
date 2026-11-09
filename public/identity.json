@@ -1,0 +1,122 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://nagdista.com/#person",
+  "name": "Mahmoud Elnagdy",
+  "givenName": "Mahmoud",
+  "familyName": "Elnagdy",
+  "alternateName": [
+    "Mahmoud Alnagdy",
+    "Elnagdy",
+    "Nagdista",
+    "محمود النجدي",
+    "النجدي",
+    "نجديستا"
+  ],
+  "url": "https://nagdista.com/",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://nagdista.com/images/avatar.jpg",
+    "contentUrl": "https://nagdista.com/images/avatar.jpg",
+    "caption": "Portrait of Mahmoud Elnagdy",
+    "width": 460,
+    "height": 460
+  },
+  "jobTitle": "Full-Stack Developer",
+  "description": "Mahmoud Elnagdy is a full-stack developer in Cairo, Egypt. He builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL.",
+  "disambiguatingDescription": "Cairo-based full-stack developer and creator of Wasla, LocalTube, Hassala, Tarteeb, and Yost; B.Sc. in Business Information Systems, 2026. He is a different person from the perfume creator with the same name.",
+  "email": "mailto:nagdista@gmail.com",
+  "telephone": "+201143044699",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Cairo",
+    "addressRegion": "Cairo Governorate",
+    "addressCountry": "EG"
+  },
+  "nationality": {
+    "@type": "Country",
+    "name": "Egypt"
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Misr Higher Institute for Commerce & Computers, Mansoura",
+    "alternateName": [
+      "معهد مصر العالي للتجارة والحاسبات بالمنصورة",
+      "El-Sallab Higher Institute for Commerce & Computers"
+    ],
+    "url": "https://metmans.edu.eg/"
+  },
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "degree",
+    "name": "B.Sc. in Business Information Systems",
+    "educationalLevel": "Bachelor's degree",
+    "dateCreated": "2026"
+  },
+  "hasOccupation": {
+    "@type": "Occupation",
+    "name": "Full-Stack Developer",
+    "occupationLocation": {
+      "@type": "City",
+      "name": "Cairo"
+    },
+    "skills": "React, Next.js, TypeScript, Node.js, Express, MongoDB, SQL, Tailwind CSS, WordPress, OpenAI API"
+  },
+  "knowsAbout": [
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "SQL",
+    "Tailwind CSS",
+    "WordPress",
+    "Web accessibility",
+    "Search engine optimization",
+    "Artificial Intelligence",
+    "AI news",
+    "AI in Brief",
+    "AI-assisted development",
+    "OpenAI API",
+    "تطوير الويب",
+    "الذكاء الاصطناعي",
+    "البرمجة"
+  ],
+  "knowsLanguage": [
+    "ar",
+    "en"
+  ],
+  "authorOf": {
+    "@type": "Periodical",
+    "name": "AI in Brief",
+    "url": "https://www.linkedin.com/newsletters/ai-in-brief-7492152374984376320",
+    "inLanguage": "ar",
+    "description": "A daily Arabic-language LinkedIn newsletter that summarizes the most important AI news for developers."
+  },
+  "subjectOf": [
+    {
+      "@type": "ProfilePage",
+      "url": "https://nagdista.com/press/",
+      "name": "Mahmoud Elnagdy — Press & Identity Kit"
+    },
+    {
+      "@type": "ProfilePage",
+      "url": "https://nagdista.com/about/",
+      "name": "About Mahmoud Elnagdy"
+    },
+    {
+      "@type": "ProfilePage",
+      "url": "https://nagdista.com/ai/",
+      "name": "Mahmoud Elnagdy on AI"
+    }
+  ],
+  "mainEntityOfPage": "https://nagdista.com/about/",
+  "sameAs": [
+    "https://github.com/nagdista-dev",
+    "https://www.linkedin.com/in/nagdista/",
+    "https://x.com/nagdista",
+    "https://khamsat.com/user/nagdista",
+    "https://egyptinnovate.com/users/01m52bryces025g7y7k9s7nzpb"
+  ]
+}

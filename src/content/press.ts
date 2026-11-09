@@ -17,8 +17,8 @@ export type PressFaq = {
 export type PressWork = {
   name: string;
   description: string;
-  href: string;
-  linkLabel: string;
+  href?: string;
+  linkLabel?: string;
 };
 
 export type PressArticle = {
@@ -125,7 +125,6 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
         label: "Graduation project",
         value:
           "EduSwap — an educational tools exchange platform, graded Excellent (99%)",
-        href: "https://github.com/nagdista-dev/new-edu-swap",
       },
       {
         label: "Project stack",
@@ -211,8 +210,6 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
         name: "EduSwap",
         description:
           "Graduation project: educational tools exchange platform with real-time chat.",
-        href: "https://github.com/nagdista-dev/new-edu-swap",
-        linkLabel: "Repository",
       },
     ],
     writingTitle: "Writing",
@@ -316,6 +313,11 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
           "AI in Brief is a daily Arabic-language LinkedIn newsletter curated by Mahmoud Elnagdy. It summarizes the most important AI news for developers in a few minutes and is read by 2,000+ people on LinkedIn.",
       },
       {
+        question: "Who is Mahmoud Elnagdy AI?",
+        answer:
+          "Mahmoud Elnagdy AI refers to the developer Mahmoud Elnagdy, not the perfume creator with the same name. He writes AI in Brief, a daily LinkedIn newsletter about AI news for developers, and builds AI-powered web features with React, Next.js, Node.js, and APIs such as the OpenAI API.",
+      },
+      {
         question: "How is the name spelled?",
         answer:
           "The preferred English spelling is Mahmoud Elnagdy. An older transliteration is Mahmoud Alnagdy. In Arabic: محمود النجدي.",
@@ -390,7 +392,6 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
         label: "مشروع التخرج",
         value:
           "EduSwap — منصة لتبادل الأدوات التعليمية، بتقدير امتياز 99%",
-        href: "https://github.com/nagdista-dev/new-edu-swap",
       },
       {
         label: "تقنيات المشروع",
@@ -476,8 +477,6 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
         name: "EduSwap",
         description:
           "مشروع التخرج: منصة لتبادل الأدوات التعليمية مع محادثة فورية.",
-        href: "https://github.com/nagdista-dev/new-edu-swap",
-        linkLabel: "المستودع",
       },
     ],
     writingTitle: "الكتابة",
@@ -578,6 +577,11 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
         question: "إيه هو AI in Brief؟",
         answer:
           "AI in Brief نشرة يومية بالعربي على LinkedIn بيكتبها محمود النجدي، وبتلخص أهم أخبار الذكاء الاصطناعي للمطورين في كام دقيقة، وبيقراها أكتر من 2,000 متابع على LinkedIn.",
+      },
+      {
+        question: "من هو النجدي AI؟",
+        answer:
+          "النجدي AI هو محمود النجدي المطور، مش صانع محتوى العطور اللي بنفس الاسم. بيكتب AI in Brief، نشرة يومية على LinkedIn عن أخبار الذكاء الاصطناعي للمطورين، وبيبني ميزات AI داخل منتجات الويب بـReact وNext.js وNode.js وAPIs زي OpenAI API.",
       },
       {
         question: "كيف يُكتب الاسم؟",
