@@ -237,6 +237,7 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
       SITE.github,
       SITE.linkedin,
       SITE.x,
+      SITE.youtube,
       SITE.khamsat,
       SITE.egyptInnovate,
       SITE.githubPages,
