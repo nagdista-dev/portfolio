@@ -244,7 +244,7 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
     ],
     subjectOf: [
       {
-        "@type": "ProfilePage",
+        "@type": "WebPage",
         url: pageUrl(locale, "/press/"),
         name:
           locale === "ar"
@@ -252,7 +252,7 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
             : "Mahmoud Elnagdy — Press & Identity Kit",
       },
       {
-        "@type": "ProfilePage",
+        "@type": "WebPage",
         url: pageUrl(locale, "/ai/"),
         name:
           locale === "ar"
@@ -331,12 +331,11 @@ export function pressPageJsonLd(locale: Locale): Record<string, unknown> {
     name:
       locale === "ar"
         ? "محمود النجدي — ملف صحفي وتعريفي"
-        : "Mahmoud Elnagdy — Press & Identity",
+        : "Mahmoud Elnagdy — Press & Identity Kit",
     inLanguage: locale === "ar" ? "ar" : "en",
     dateModified: "2026-11-09",
     isPartOf: { "@id": `${SITE.url}/#website` },
     mainEntity: personJsonLd(locale),
-    about: personJsonLd(locale),
   };
 }
 
@@ -373,7 +372,6 @@ export function aiPageJsonLd(locale: Locale): Record<string, unknown> {
     dateModified: "2026-11-09",
     isPartOf: { "@id": `${SITE.url}/#website` },
     mainEntity: personJsonLd(locale),
-    about: personJsonLd(locale),
     mentions: {
       "@type": "Periodical",
       name: "AI in Brief",
