@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s — Mahmoud Elnagdy",
   },
   description:
-    "Mahmoud Elnagdy is a full-stack developer in Cairo, Egypt. B.Sc. Business Information Systems (2026). Builds with React, Next.js, TypeScript, Node.js.",
+    "Mahmoud Elnagdy is a full-stack developer in Cairo, Egypt, building fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL.",
   applicationName: "Nagdista",
   icons: {
     icon: [
