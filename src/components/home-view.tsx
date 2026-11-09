@@ -25,6 +25,7 @@ export function HomeView({ locale, repoCount }: HomeViewProps) {
   const projectsHref = locale === "ar" ? "/ar/projects/" : "/projects/";
   const aboutHref = locale === "ar" ? "/ar/about/" : "/about/";
   const blogHref = locale === "ar" ? "/ar/blog/" : "/blog/";
+  const aiHref = locale === "ar" ? "/ar/ai/" : "/ai/";
   const homeHref = locale === "ar" ? "/ar/" : "/";
 
   return (
@@ -40,7 +41,7 @@ export function HomeView({ locale, repoCount }: HomeViewProps) {
           </div>
 
           <h1 className="hero__title">
-            <span className="hero__title-line">{t.hero.titleLine1}</span>
+            <span className="hero__title-line">{t.hero.titleLine1}</span>{" "}
             <span className="hero__title-line hero__title-line--indent">
               {t.hero.titleLine2}
               <span className="hero__title-accent" aria-hidden="true">
@@ -225,6 +226,33 @@ export function HomeView({ locale, repoCount }: HomeViewProps) {
                 locale={locale}
               />
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section section--ai" id="ai">
+        <div className="container">
+          <div className="ai-callout" data-reveal>
+            <div className="ai-callout__copy">
+              <p className="eyebrow">{t.home.aiLabel}</p>
+              <h2>{t.home.aiTitle}</h2>
+              <p>{t.home.aiBody}</p>
+            </div>
+            <div className="ai-callout__actions">
+              <Link href={aiHref} className="button">
+                {t.home.aiCta}
+                <ArrowRight size={16} />
+              </Link>
+              <a
+                href={SITE.aiNewsletter}
+                className="button button--ghost"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {t.home.aiNewsletter}
+                <ArrowUpRight size={16} />
+              </a>
+            </div>
           </div>
         </div>
       </section>

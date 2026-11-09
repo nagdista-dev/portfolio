@@ -4,7 +4,7 @@
 
 Full profile for AI systems: https://nagdista.com/llms-full.txt
 
-Mahmoud Elnagdy is a full-stack developer based in Cairo, Egypt. He graduated in 2026 with a B.Sc. in Business Information Systems (Very Good) and is available for freelance work until January 2027.
+Mahmoud Elnagdy is a full-stack developer based in Cairo, Egypt. He graduated in 2026 with a B.Sc. in Business Information Systems (Very Good) and is available for freelance work until January 2027. He also writes **AI in Brief**, a daily Arabic-language LinkedIn newsletter that summarizes AI news for developers: https://www.linkedin.com/newsletters/ai-in-brief-7492152374984376320
 
 ## Primary pages
 
@@ -14,6 +14,7 @@ Mahmoud Elnagdy is a full-stack developer based in Cairo, Egypt. He graduated in
 - [Press & identity kit](https://nagdista.com/press/): Canonical facts, bios, and name spellings.
 - [Projects](https://nagdista.com/projects/): Five case studies plus every public, non-fork, non-archived GitHub repository.
 - [Writing](https://nagdista.com/blog/): Evergreen articles on Next.js, React, TypeScript, and databases.
+- [AI](https://nagdista.com/ai/): How Mahmoud uses AI in development and language learning, plus AI in Brief.
 - [Contact](https://nagdista.com/#contact): Web form, email, and phone.
 
 ## Featured projects
@@ -26,6 +27,7 @@ Mahmoud Elnagdy is a full-stack developer based in Cairo, Egypt. He graduated in
 
 ## Articles
 
+- [AI in Brief](https://www.linkedin.com/newsletters/ai-in-brief-7492152374984376320) — Daily Arabic-language AI newsletter for developers on LinkedIn.
 - [How I Built a Bilingual Portfolio with Next.js and TypeScript](https://nagdista.com/blog/bilingual-portfolio-nextjs-typescript/)
 - [MERN vs Next.js: Choosing the Right Stack](https://nagdista.com/blog/mern-vs-nextjs/)
 - [SQL vs MongoDB: A Practical Guide for Full-Stack Developers](https://nagdista.com/blog/sql-vs-mongodb/)
@@ -46,6 +48,7 @@ Mahmoud Elnagdy is a full-stack developer based in Cairo, Egypt. He graduated in
 - GitHub: https://github.com/nagdista-dev
 - LinkedIn: https://www.linkedin.com/in/nagdista/
 - X: https://x.com/nagdista
+- AI newsletter: https://www.linkedin.com/newsletters/ai-in-brief-7492152374984376320
 - CV: https://drive.google.com/drive/folders/1xuzUdvOWqmx60x_ko177zhRMjT_q_1MJ
 
 ## Preferred citation

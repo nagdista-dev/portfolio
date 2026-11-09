@@ -3,6 +3,7 @@ const en = {
     work: "Work",
     about: "About",
     writing: "Writing",
+    ai: "AI",
     press: "Press",
     contact: "Contact",
     cv: "CV",
@@ -121,6 +122,12 @@ const en = {
     writingIntro:
       "Evergreen notes on front-end architecture, full-stack decisions, and the craft of shipping bilingual products.",
     writingAll: "Read all articles",
+    aiLabel: "AI in Brief",
+    aiTitle: "AI, without the noise.",
+    aiBody:
+      "I write AI in Brief, a daily LinkedIn newsletter that summarizes the most important AI news for developers in a few minutes. I also use AI carefully in my own development workflow.",
+    aiCta: "Explore AI",
+    aiNewsletter: "Read the newsletter",
     contactLabel: "07 — Contact",
     contactTitle: "Let's make something worth using.",
     contactIntro:
@@ -272,6 +279,7 @@ const ar: typeof en = {
     work: "أعمالي",
     about: "عني",
     writing: "مقالات",
+    ai: "الذكاء الاصطناعي",
     press: "ملف صحفي",
     contact: "تواصل",
     cv: "السيرة",
@@ -389,6 +397,12 @@ const ar: typeof en = {
     writingIntro:
       "مقالات دائمة عن معمارية الواجهات، وقرارات الفول ستاك، وصناعة منتجات ثنائية اللغة.",
     writingAll: "اقرأ كل المقالات",
+    aiLabel: "AI in Brief",
+    aiTitle: "الذكاء الاصطناعي من غير دوشة.",
+    aiBody:
+      "بكتب AI in Brief، نشرة يومية على LinkedIn بتلخص أهم أخبار الذكاء الاصطناعي للمطورين في كام دقيقة. وبستخدم AI بحرص في شغلي.",
+    aiCta: "اعرف أكتر عن AI",
+    aiNewsletter: "اقرأ النشرة",
     contactLabel: "07 — تواصل",
     contactTitle: "خلينا نعمل حاجة تستاهل تتنستخدم.",
     contactIntro:

@@ -98,6 +98,11 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
         value: "X (@nagdista)",
         href: "https://x.com/nagdista",
       },
+      {
+        label: "AI newsletter",
+        value: "AI in Brief on LinkedIn",
+        href: "https://www.linkedin.com/newsletters/ai-in-brief-7492152374984376320",
+      },
     ],
     bioTitle: "Short bio",
     shortBio:
@@ -213,6 +218,10 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
     writingTitle: "Writing",
     writing: [
       {
+        title: "AI in Brief — a daily AI newsletter for developers",
+        href: "https://www.linkedin.com/newsletters/ai-in-brief-7492152374984376320",
+      },
+      {
         title: "How I Built a Bilingual Portfolio with Next.js and TypeScript",
         href: "https://nagdista.com/blog/bilingual-portfolio-nextjs-typescript/",
       },
@@ -297,6 +306,16 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
           "Nagdista is an online handle used for a portfolio and developer profiles at https://nagdista.com/. It is a personal brand, not a company.",
       },
       {
+        question: "Does Mahmoud Elnagdy work with AI?",
+        answer:
+          "Yes. He writes AI in Brief, a daily LinkedIn newsletter about AI news for developers, and uses AI-assisted tools in his development and language-learning workflow. Read it at https://www.linkedin.com/newsletters/ai-in-brief-7492152374984376320.",
+      },
+      {
+        question: "What is AI in Brief?",
+        answer:
+          "AI in Brief is a daily Arabic-language LinkedIn newsletter curated by Mahmoud Elnagdy. It summarizes the most important AI news for developers in a few minutes and is read by 2,000+ people on LinkedIn.",
+      },
+      {
         question: "How is the name spelled?",
         answer:
           "The preferred English spelling is Mahmoud Elnagdy. An older transliteration is Mahmoud Alnagdy. In Arabic: محمود النجدي.",
@@ -305,7 +324,7 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
     contactTitle: "Press contact",
     contactBody:
       "For interviews, quotes, or verification, email nagdista@gmail.com. Please link to https://nagdista.com/ when citing this profile.",
-    updated: "Last updated: 8 November 2026",
+    updated: "Last updated: 9 November 2026",
   },
   ar: {
     eyebrow: "الملف التعريفي والصحفي",
@@ -344,10 +363,15 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
         value: "X (@nagdista)",
         href: "https://x.com/nagdista",
       },
+      {
+        label: "نشرة AI",
+        value: "AI in Brief على LinkedIn",
+        href: "https://www.linkedin.com/newsletters/ai-in-brief-7492152374984376320",
+      },
     ],
     bioTitle: "نبذة مختصرة",
     shortBio:
-      "محمود النجدي مطور فول ستاك في القاهرة، مصر. يبني منتجات ويب سريعة وسهلة الاستخدام وثنائية اللغة باستخدام React وNext.js وTypeScript وNode.js وSQL. تخرج عام 2026 بدرجة بكالوريوس في نظم ومعلومات الأعمال، وهو متاح لمشاريع الفريلانس والوظائف عن بُعد للمبتدئين.",
+      "محمود النجدي مطور فول ستاك في القاهرة، مصر. يبني منتجات ويب سريعة وسهلة الاستخدام وثنائية اللغة باستخدام React وNext.js وTypeScript وNode.js وSQL. تخرج عام 2026 بدرجة بكالوريوس في نظم ومعلومات الأعمال، وهو متاح للفريلانس حتى يناير 2027.",
     educationTitle: "التعليم",
     education: [
       {
@@ -459,6 +483,10 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
     writingTitle: "الكتابة",
     writing: [
       {
+        title: "AI in Brief — نشرة يومية عن أخبار الذكاء الاصطناعي للمطورين",
+        href: "https://www.linkedin.com/newsletters/ai-in-brief-7492152374984376320",
+      },
+      {
         title: "إزاي تبني بورتفوليو احترافي بـ Next.js وTypeScript",
         href: "https://nagdista.com/ar/blog/build-portfolio-nextjs-typescript-ar/",
       },
@@ -542,6 +570,16 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
           "Nagdista اسم مستعار أونلاين يُستخدم لموقع وملفات مطور على https://nagdista.com/. هو علامة شخصية وليس شركة.",
       },
       {
+        question: "هل محمود النجدي بيشتغل بالذكاء الاصطناعي؟",
+        answer:
+          "أيوه. بيكتب AI in Brief، نشرة يومية على LinkedIn عن أخبار الذكاء الاصطناعي للمطورين، وبيستخدم أدوات AI في التطوير وتعلّم اللغات. اقرأها على https://www.linkedin.com/newsletters/ai-in-brief-7492152374984376320.",
+      },
+      {
+        question: "إيه هو AI in Brief؟",
+        answer:
+          "AI in Brief نشرة يومية بالعربي على LinkedIn بيكتبها محمود النجدي، وبتلخص أهم أخبار الذكاء الاصطناعي للمطورين في كام دقيقة، وبيقراها أكتر من 2,000 متابع على LinkedIn.",
+      },
+      {
         question: "كيف يُكتب الاسم؟",
         answer:
           "الصيغة الإنجليزية المفضلة هي Mahmoud Elnagdy، وهناك نقل حرفي أقدم هو Mahmoud Alnagdy. وبالعربية: محمود النجدي.",
@@ -550,6 +588,6 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
     contactTitle: "للتواصل الصحفي",
     contactBody:
       "لإجراء مقابلات أو اقتباسات أو التحقق من المعلومات، راسل nagdista@gmail.com. يُرجى الربط بـhttps://nagdista.com/ar/ عند الاستشهاد بهذا الملف.",
-    updated: "آخر تحديث: 8 نوفمبر 2026",
+    updated: "آخر تحديث: 9 نوفمبر 2026",
   },
 };

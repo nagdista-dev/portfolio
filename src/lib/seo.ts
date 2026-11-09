@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AI_PAGE } from "@/content/ai";
 import { PRESS } from "@/content/press";
 import { NAME_VARIANTS, SITE } from "@/content/site";
 import type { Article, Locale, Project } from "@/content/types";
@@ -233,8 +234,21 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
       "Self-taught programming",
       "Language learning",
       "Artificial Intelligence",
+      "AI news",
+      "AI-assisted development",
       "AI-assisted language learning",
+      "OpenAI API",
     ],
+    authorOf: {
+      "@type": "Periodical",
+      name: "AI in Brief",
+      url: SITE.aiNewsletter,
+      inLanguage: "ar",
+      description:
+        locale === "ar"
+          ? "نشرة يومية على LinkedIn بتلخص أهم أخبار الذكاء الاصطناعي للمطورين."
+          : "A daily LinkedIn newsletter that summarizes the most important AI news for developers.",
+    },
     knowsLanguage: ["ar", "en"],
     worksFor: {
       "@type": "Organization",
@@ -295,6 +309,47 @@ export function pressFaqJsonLd(locale: Locale): Record<string, unknown> {
   };
 }
 
+export function aiPageJsonLd(locale: Locale): Record<string, unknown> {
+  const url = pageUrl(locale, "/ai/");
+  return {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": `${url}#profile`,
+    url,
+    name:
+      locale === "ar"
+        ? "محمود النجدي والذكاء الاصطناعي"
+        : "Mahmoud Elnagdy on AI",
+    inLanguage: locale === "ar" ? "ar" : "en",
+    mainEntity: personJsonLd(locale),
+    about: personJsonLd(locale),
+    mentions: {
+      "@type": "Periodical",
+      name: "AI in Brief",
+      url: SITE.aiNewsletter,
+      inLanguage: "ar",
+    },
+  };
+}
+
+export function aiFaqJsonLd(locale: Locale): Record<string, unknown> {
+  const url = pageUrl(locale, "/ai/");
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": `${url}#faq`,
+    inLanguage: locale === "ar" ? "ar" : "en",
+    mainEntity: AI_PAGE[locale].faq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+}
+
 export function websiteJsonLd(locale: Locale): Record<string, unknown> {
   return {
     "@context": "https://schema.org",
@@ -320,6 +375,7 @@ export function siteNavigationJsonLd(
     { name: ar ? "أعمالي" : "Work", path: "/projects/" },
     { name: ar ? "عني" : "About", path: "/about/" },
     { name: ar ? "مقالات" : "Writing", path: "/blog/" },
+    { name: ar ? "الذكاء الاصطناعي" : "AI", path: "/ai/" },
     { name: ar ? "ملف صحفي" : "Press", path: "/press/" },
   ];
   return {

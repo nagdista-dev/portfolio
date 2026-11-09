@@ -45,6 +45,14 @@ export function PressView({ locale }: { locale: Locale }) {
       label: isArabic ? "المقالات" : "Writing",
       href: isArabic ? "/ar/blog/" : "/blog/",
     },
+    {
+      label: isArabic ? "الذكاء الاصطناعي" : "AI",
+      href: isArabic ? "/ar/ai/" : "/ai/",
+    },
+    {
+      label: isArabic ? "نشرة AI in Brief" : "AI in Brief",
+      href: SITE.aiNewsletter,
+    },
     ...SOCIAL_LINKS.map((link) => ({
       label: link.label,
       href: link.href,

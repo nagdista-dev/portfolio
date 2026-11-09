@@ -16,6 +16,8 @@ export const SITE = {
   github: "https://github.com/nagdista-dev",
   linkedin: "https://www.linkedin.com/in/nagdista/",
   x: "https://x.com/nagdista",
+  aiNewsletter:
+    "https://www.linkedin.com/newsletters/ai-in-brief-7492152374984376320",
   cvUrl:
     process.env.NEXT_PUBLIC_CV_URL ||
     "https://drive.google.com/drive/folders/1xuzUdvOWqmx60x_ko177zhRMjT_q_1MJ",
