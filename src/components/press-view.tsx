@@ -57,6 +57,10 @@ export function PressView({ locale }: { locale: Locale }) {
       label: isArabic ? "خمسات" : "Khamsat",
       href: SITE.khamsat,
     },
+    {
+      label: isArabic ? "صفحة تعريفية" : "Profile page",
+      href: SITE.githubPages,
+    },
     ...SOCIAL_LINKS.map((link) => ({
       label: link.label,
       href: link.href,

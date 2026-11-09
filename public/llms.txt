@@ -50,6 +50,7 @@ Mahmoud Elnagdy is a full-stack developer based in Cairo, Egypt. He graduated in
 - LinkedIn: https://www.linkedin.com/in/nagdista/
 - X: https://x.com/nagdista
 - Khamsat: https://khamsat.com/user/nagdista
+- Profile page: https://nagdista-dev.github.io/
 - AI newsletter: https://www.linkedin.com/newsletters/ai-in-brief-7492152374984376320
 - CV: https://drive.google.com/drive/folders/1xuzUdvOWqmx60x_ko177zhRMjT_q_1MJ
 
