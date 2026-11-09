@@ -41,7 +41,7 @@ export default async function EnglishHomePage() {
           url: pageUrl("en", "/"),
           name: "Mahmoud Elnagdy — Full-Stack Developer",
           inLanguage: "en",
-          dateModified: "2026-11-09",
+          dateModified: "2026-11-09T00:00:00+02:00",
           isPartOf: { "@id": "https://nagdista.com/#website" },
           mainEntity: personJsonLd("en"),
         }}
