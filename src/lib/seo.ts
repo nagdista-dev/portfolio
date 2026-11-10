@@ -171,12 +171,12 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
     url: SITE.url,
     image: {
       "@type": "ImageObject",
-      url: `${SITE.url}/images/portrait-formal.jpg`,
-      contentUrl: `${SITE.url}/images/portrait-formal.jpg`,
+      url: `${SITE.url}/images/portrait-informal.jpg`,
+      contentUrl: `${SITE.url}/images/portrait-informal.jpg`,
       caption:
         locale === "ar" ? "صورة محمود النجدي" : "Portrait of Mahmoud Elnagdy",
-      width: 460,
-      height: 460,
+      width: 800,
+      height: 800,
     },
     jobTitle: locale === "ar" ? "مطور فول ستاك" : "Full-Stack Developer",
     description:
