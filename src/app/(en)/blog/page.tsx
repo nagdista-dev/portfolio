@@ -7,7 +7,7 @@ import { breadcrumbJsonLd, buildMetadata, pageUrl } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
   locale: "en",
-  title: "Writing — Notes on Web Development & Architecture",
+  title: "Writing — Notes on Web Development",
   description:
     "Evergreen articles by Mahmoud Elnagdy about Next.js, React, TypeScript, databases, and building bilingual web products.",
   path: "/blog/",

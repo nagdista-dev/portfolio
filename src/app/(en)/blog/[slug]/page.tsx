@@ -28,7 +28,7 @@ export async function generateMetadata({
 
   return buildMetadata({
     locale: "en",
-    title: article.title,
+    title: article.seoTitle ?? article.title,
     description: article.description,
     path: `/blog/${article.slug}/`,
     image: `/og/article-${article.slug}.png`,

@@ -6,7 +6,7 @@ import { buildMetadata, pageUrl, personJsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
   locale: "ar",
-  title: "محمود النجدي",
+  title: "محمود النجدي — مطور فول ستاك في القاهرة",
   description:
     "محمود النجدي مطور فول ستاك في القاهرة، مصر. بكالوريوس نظم ومعلومات الأعمال 2026. يبني منتجات ويب سريعة وثنائية اللغة بـ React وNext.js وTypeScript وNode.js.",
   path: "/",
@@ -41,7 +41,7 @@ export default async function ArabicHomePage() {
           url: pageUrl("ar", "/"),
           name: "محمود النجدي — مطور فول ستاك",
           inLanguage: "ar",
-          dateModified: "2026-11-09T00:00:00+02:00",
+          dateModified: "2026-11-10T00:00:00+02:00",
           isPartOf: { "@id": "https://nagdista.com/#website" },
           mainEntity: personJsonLd("ar"),
         }}

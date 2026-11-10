@@ -16,6 +16,7 @@ Mahmoud Elnagdy is a full-stack developer based in Cairo, Egypt. He graduated in
 - [Projects](https://nagdista.com/projects/): Five case studies plus every public, non-fork, non-archived GitHub repository.
 - [Writing](https://nagdista.com/blog/): Evergreen articles on Next.js, React, TypeScript, and databases.
 - [AI](https://nagdista.com/ai/): How Mahmoud uses AI in development and language learning, plus AI in Brief.
+- [AI (Arabic)](https://nagdista.com/ar/ai/): The Arabic version of the AI page.
 - [Contact](https://nagdista.com/#contact): Web form, email, and phone.
 
 ## Featured projects
@@ -49,7 +50,9 @@ Mahmoud Elnagdy is a full-stack developer based in Cairo, Egypt. He graduated in
 - GitHub: https://github.com/nagdista-dev
 - LinkedIn: https://www.linkedin.com/in/nagdista/
 - X: https://x.com/nagdista
+- YouTube: https://www.youtube.com/@nagdista
 - Khamsat: https://khamsat.com/user/nagdista
+- EgyptInnovate: https://egyptinnovate.com/users/01m52bryces025g7y7k9s7nzpb
 - Profile page: https://nagdista-dev.github.io/
 - AI newsletter: https://www.linkedin.com/newsletters/ai-in-brief-7492152374984376320
 - CV: https://drive.google.com/drive/folders/1xuzUdvOWqmx60x_ko177zhRMjT_q_1MJ

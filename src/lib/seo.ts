@@ -319,7 +319,7 @@ export function profilePageJsonLd(locale: Locale): Record<string, unknown> {
         ? "عن محمود النجدي"
         : "About Mahmoud Elnagdy",
     inLanguage: locale === "ar" ? "ar" : "en",
-    dateModified: isoDateTime("2026-11-09"),
+    dateModified: isoDateTime(SITE.lastUpdated),
     isPartOf: { "@id": `${SITE.url}/#website` },
     mainEntity: personJsonLd(locale),
   };
@@ -337,7 +337,7 @@ export function pressPageJsonLd(locale: Locale): Record<string, unknown> {
         ? "محمود النجدي — ملف صحفي وتعريفي"
         : "Mahmoud Elnagdy — Press & Identity Kit",
     inLanguage: locale === "ar" ? "ar" : "en",
-    dateModified: isoDateTime("2026-11-09"),
+    dateModified: isoDateTime(SITE.lastUpdated),
     isPartOf: { "@id": `${SITE.url}/#website` },
     mainEntity: personJsonLd(locale),
   };
@@ -373,7 +373,7 @@ export function aiPageJsonLd(locale: Locale): Record<string, unknown> {
         ? "محمود النجدي والذكاء الاصطناعي"
         : "Mahmoud Elnagdy on AI",
     inLanguage: locale === "ar" ? "ar" : "en",
-    dateModified: isoDateTime("2026-11-09"),
+    dateModified: isoDateTime(SITE.lastUpdated),
     isPartOf: { "@id": `${SITE.url}/#website` },
     mainEntity: personJsonLd(locale),
     mentions: {

@@ -56,7 +56,7 @@ export const PROJECTS: Project[] = [
         ],
         outcome:
           "Wasla taught me how much product thinking lives inside a data model. The difference between a playlist and a course is not technical — it is a set of assumptions about how people learn. Building the bilingual UI also forced me to design the layout for both directions from the start.",
-        seoTitle: "Wasla — Bilingual YouTube Learning Platform",
+        seoTitle: "Wasla — Bilingual Learning Platform",
         seoDescription:
           "Wasla turns YouTube channels and playlists into structured, bilingual courses with progress tracking. A case study by Mahmoud Elnagdy.",
       },
@@ -241,7 +241,7 @@ export const PROJECTS: Project[] = [
         ],
         outcome:
           "Hassala taught me how much product quality lives in constraints. No account, no server, no tracking — every feature had to earn its place in local storage and in the browser's permission model. The bilingual documentation also made me think about SEO and onboarding as part of the product, not as an afterthought.",
-        seoTitle: "Hassala — Arabic ↔ English Word Bank Extension",
+        seoTitle: "Hassala — Arabic ↔ English Word Bank",
         seoDescription:
           "Hassala is a free, open-source Chrome extension that translates Arabic ↔ English and saves words to a private local word bank. A case study by Mahmoud Elnagdy.",
       },

@@ -18,7 +18,7 @@ function pair(path: string): MetadataRoute.Sitemap[number]["alternates"] {
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date("2026-11-09T00:00:00.000Z");
+  const now = new Date(SITE.lastUpdated);
 
   const staticPages: MetadataRoute.Sitemap = [
     {

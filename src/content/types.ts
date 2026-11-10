@@ -76,6 +76,7 @@ export type Article = {
   slug: string;
   locale: Locale;
   title: string;
+  seoTitle?: string;
   description: string;
   excerpt: string;
   category: string;

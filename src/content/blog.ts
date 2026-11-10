@@ -5,6 +5,7 @@ const enArticles: Article[] = [
     slug: "bilingual-portfolio-nextjs-typescript",
     locale: "en",
     title: "How I Built a Bilingual Portfolio with Next.js and TypeScript",
+    seoTitle: "Bilingual Portfolio with Next.js",
     description:
       "A practical walkthrough of the architecture behind nagdista.com: route groups, two root layouts, static export, bilingual SEO, and a bilingual design system.",
     excerpt:
@@ -287,6 +288,7 @@ type Project = {
     slug: "sql-vs-mongodb",
     locale: "en",
     title: "SQL vs MongoDB: A Practical Guide for Full-Stack Developers",
+    seoTitle: "SQL vs MongoDB: A Practical Guide",
     description:
       "A developer-friendly comparison of relational databases and document stores: data shape, relationships, transactions, scaling, and a checklist for choosing.",
     excerpt:
@@ -442,6 +444,7 @@ const arArticles: Article[] = [
     slug: "build-portfolio-nextjs-typescript-ar",
     locale: "ar",
     title: "إزاي تبني بورتفوليو احترافي بـ Next.js وTypeScript",
+    seoTitle: "بورتفوليو احترافي بـ Next.js",
     description:
       "دليل عملي لبناء بورتفوليو سريع وثنائي اللغة: التخطيط، التصميم، Next.js App Router، التصدير الثابت، الـ SEO، والأداء.",
     excerpt:
