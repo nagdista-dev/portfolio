@@ -38,6 +38,7 @@ export const metadata: Metadata = {
     "Mahmoud Alnagdy",
     "Elnagdy",
     "Nagdista",
+    "Najdista",
     "محمود النجدي",
     "النجدي",
     "نجديستا",

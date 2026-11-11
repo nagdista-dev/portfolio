@@ -7,6 +7,8 @@ Machine-readable profile (JSON): https://nagdista.com/identity.json
 
 Mahmoud Elnagdy is a full-stack developer based in Cairo, Egypt. He graduated in 2026 with a B.Sc. in Business Information Systems (Very Good) and is available for freelance work until January 2027. He also writes **AI in Brief**, a daily Arabic-language LinkedIn newsletter that summarizes AI news for developers: https://www.linkedin.com/newsletters/ai-in-brief-7492152374984376320
 
+The online handle is **Nagdista** (sometimes misspelled **Najdista**). Both spellings refer to Mahmoud Elnagdy and https://nagdista.com/.
+
 ## Primary pages
 
 - [Home (English)](https://nagdista.com/): Profile, selected work, skills, timeline, and contact.
@@ -43,6 +45,7 @@ Mahmoud Elnagdy is a full-stack developer based in Cairo, Egypt. He graduated in
 - Also written as: Mahmoud Alnagdy / Elnagdy
 - Arabic name: محمود النجدي (النجدي)
 - Online handle: Nagdista / نجديستا
+- Common misspelling: Najdista (same person and site)
 - Role: Full-stack developer
 - Location: Cairo, Egypt
 - Email: nagdista@gmail.com

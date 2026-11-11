@@ -30,7 +30,7 @@ export const SITE = {
     "https://send.webforms.to/wft_wre9j7f3mpa8xemt3ypq",
   googleVerification: "BxGIGgYgIAEDpfUP1RiTUpCBy_e0Reas2aukQHyE3bI",
   launchYear: 2026,
-  lastUpdated: "2026-11-10",
+  lastUpdated: "2026-11-11",
 } as const;
 
 export const SOCIAL_LINKS = [
@@ -59,6 +59,7 @@ export const NAME_VARIANTS = [
   "Mahmoud Alnagdy",
   "Elnagdy",
   "Nagdista",
+  "Najdista",
   "محمود النجدي",
   "النجدي",
   "نجديستا",

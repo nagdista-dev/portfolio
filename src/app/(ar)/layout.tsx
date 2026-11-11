@@ -43,6 +43,7 @@ export const metadata: Metadata = {
     "مطور React مصر",
     "Mahmoud Elnagdy",
     "Nagdista",
+    "Najdista",
   ],
   alternates: {
     canonical: "/ar/",

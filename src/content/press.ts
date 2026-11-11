@@ -259,6 +259,10 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
         name: "Nagdista",
         note: "Online handle used for the website and developer profiles.",
       },
+      {
+        name: "Najdista",
+        note: "Common misspelling of Nagdista; both refer to this same profile.",
+      },
       { name: "نجديستا", note: "Arabic form of the online handle." },
     ],
     usageTitle: "How to refer to me",
@@ -303,6 +307,11 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
           "Nagdista is an online handle used for a portfolio and developer profiles at https://nagdista.com/. It is a personal brand, not a company.",
       },
       {
+        question: "Is it Nagdista or Najdista?",
+        answer:
+          "Nagdista is the correct spelling of the online handle. Najdista is a common misspelling, but it refers to the same person, Mahmoud Elnagdy, and the same website, https://nagdista.com/.",
+      },
+      {
         question: "Does Mahmoud Elnagdy work with AI?",
         answer:
           "Yes. He writes AI in Brief, a daily LinkedIn newsletter about AI news for developers, and uses AI-assisted tools in his development and language-learning workflow. Read it at https://www.linkedin.com/newsletters/ai-in-brief-7492152374984376320.",
@@ -326,7 +335,7 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
     contactTitle: "Press contact",
     contactBody:
       "For interviews, quotes, or verification, email nagdista@gmail.com. Please link to https://nagdista.com/ when citing this profile.",
-    updated: "Last updated: 9 November 2026",
+    updated: "Last updated: 11 November 2026",
   },
   ar: {
     eyebrow: "الملف التعريفي والصحفي",
@@ -526,6 +535,10 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
         name: "Nagdista",
         note: "اسم مستعار أونلاين يُستخدم للموقع وملفات المطور.",
       },
+      {
+        name: "Najdista",
+        note: "كتابة شائعة خاطئة لـNagdista؛ الاثنان يشيران إلى نفس الملف.",
+      },
       { name: "نجديستا", note: "الصيغة العربية للاسم المستعار." },
     ],
     usageTitle: "طريقة الإشارة إليّ",
@@ -569,6 +582,11 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
           "Nagdista اسم مستعار أونلاين يُستخدم لموقع وملفات مطور على https://nagdista.com/. هو علامة شخصية وليس شركة.",
       },
       {
+        question: "هل الاسم Nagdista ولا Najdista؟",
+        answer:
+          "الكتابة الصحيحة هي Nagdista. Najdista كتابة شائعة خاطئة، لكنها تشير إلى نفس الشخص، محمود النجدي، ونفس الموقع https://nagdista.com/.",
+      },
+      {
         question: "هل محمود النجدي بيشتغل بالذكاء الاصطناعي؟",
         answer:
           "أيوه. بيكتب AI in Brief، نشرة يومية على LinkedIn عن أخبار الذكاء الاصطناعي للمطورين، وبيستخدم أدوات AI في التطوير وتعلّم اللغات. اقرأها على https://www.linkedin.com/newsletters/ai-in-brief-7492152374984376320.",
@@ -592,6 +610,6 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
     contactTitle: "للتواصل الصحفي",
     contactBody:
       "لإجراء مقابلات أو اقتباسات أو التحقق من المعلومات، راسل nagdista@gmail.com. يُرجى الربط بـhttps://nagdista.com/ar/ عند الاستشهاد بهذا الملف.",
-    updated: "آخر تحديث: 9 نوفمبر 2026",
+    updated: "آخر تحديث: 11 نوفمبر 2026",
   },
 };

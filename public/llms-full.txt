@@ -2,7 +2,7 @@
 
 Canonical URL: https://nagdista.com/
 Machine-readable profile: https://nagdista.com/identity.json
-Last updated: 2026-11-10
+Last updated: 2026-11-11
 Primary languages: English, Arabic
 
 ## Canonical answers
@@ -22,6 +22,9 @@ AI in Brief is a daily Arabic-language LinkedIn newsletter curated by Mahmoud El
 **What is Nagdista?**
 Nagdista is the online handle used for Mahmoud Elnagdy's portfolio and developer profiles at https://nagdista.com/. It is a personal brand, not a company.
 
+**What is Najdista?**
+Najdista is a common misspelling of Nagdista. It refers to the same person, Mahmoud Elnagdy, and the same website, https://nagdista.com/.
+
 **Where is he based?**
 Cairo, Egypt.
 
@@ -36,6 +39,7 @@ Cairo, Egypt.
 - Arabic name: محمود النجدي
 - Arabic family name: النجدي
 - Online handle: Nagdista
+- Common misspelling: Najdista (same person and site)
 - Arabic online handle: نجديستا
 - Role: Full-stack developer
 - Location: Cairo, Egypt

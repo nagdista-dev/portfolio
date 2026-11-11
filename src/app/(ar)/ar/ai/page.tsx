@@ -21,6 +21,7 @@ export const metadata: Metadata = buildMetadata({
     "النجدي AI",
     "الذكاء الاصطناعي",
     "AI in Brief",
+    "Najdista",
     "مطور AI القاهرة",
     "تطوير بالذكاء الاصطناعي",
   ],

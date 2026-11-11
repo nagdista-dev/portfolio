@@ -24,6 +24,7 @@ export const metadata: Metadata = buildMetadata({
     "مطور React مصر",
     "Mahmoud Elnagdy",
     "Nagdista",
+    "Najdista",
   ],
 });
 
@@ -41,7 +42,7 @@ export default async function ArabicHomePage() {
           url: pageUrl("ar", "/"),
           name: "محمود النجدي — مطور فول ستاك",
           inLanguage: "ar",
-          dateModified: "2026-11-10T00:00:00+02:00",
+          dateModified: "2026-11-11T00:00:00+02:00",
           isPartOf: { "@id": "https://nagdista.com/#website" },
           mainEntity: personJsonLd("ar"),
         }}

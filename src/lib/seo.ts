@@ -410,7 +410,7 @@ export function websiteJsonLd(locale: Locale): Record<string, unknown> {
     "@id": `${SITE.url}/#website`,
     url: SITE.url,
     name: "Mahmoud Elnagdy",
-    alternateName: ["Nagdista", "نجديستا"],
+    alternateName: ["Nagdista", "Najdista", "نجديستا"],
     description:
       locale === "ar"
         ? "بورتفوليو محمود النجدي، مطور فول ستاك في القاهرة."

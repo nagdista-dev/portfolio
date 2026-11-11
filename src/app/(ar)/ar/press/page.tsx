@@ -21,6 +21,7 @@ export const metadata: Metadata = buildMetadata({
     "محمود النجدي",
     "النجدي",
     "نجديستا",
+    "Najdista",
     "مطور فول ستاك القاهرة",
     "Mahmoud Elnagdy",
   ],
