@@ -116,7 +116,7 @@ He studied Business Information Systems at Misr Higher Institute for Commerce & 
 ## Writing
 
 - AI in Brief — daily Arabic-language AI newsletter for developers — https://www.linkedin.com/newsletters/ai-in-brief-7492152374984376320
-- How I Built a Bilingual Portfolio with Next.js and TypeScript — https://nagdista.com/blog/bilingual-portfolio-nextjs-typescript/
+- How I Built a Bilingual Portfolio with Next.js and TypeScript — https://nagdista.com/blog/bilingual-portfolio-nextjs-typescript/ (syndicated on DEV Community: https://dev.to/nagdistaa/how-i-built-a-bilingual-portfolio-with-nextjs-and-typescript-22ep)
 - MERN vs Next.js: Choosing the Right Stack — https://nagdista.com/blog/mern-vs-nextjs/
 - SQL vs MongoDB: A Practical Guide for Full-Stack Developers — https://nagdista.com/blog/sql-vs-mongodb/
 - إزاي تبني بورتفوليو احترافي بـ Next.js وTypeScript — https://nagdista.com/ar/blog/build-portfolio-nextjs-typescript-ar/
@@ -147,6 +147,7 @@ He studied Business Information Systems at Misr Higher Institute for Commerce & 
 - X: https://x.com/nagdista
 - YouTube: https://www.youtube.com/@nagdista
 - Khamsat: https://khamsat.com/user/nagdista
+- DEV Community: https://dev.to/nagdistaa
 - Profile page: https://nagdista-dev.github.io/
 - EgyptInnovate: https://egyptinnovate.com/users/01m52bryces025g7y7k9s7nzpb
 - CV: https://drive.google.com/drive/folders/1xuzUdvOWqmx60x_ko177zhRMjT_q_1MJ
