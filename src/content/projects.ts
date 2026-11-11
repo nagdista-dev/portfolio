@@ -7,6 +7,7 @@ export const PROJECTS: Project[] = [
     name: "Bunyan Contracting",
     year: "2026",
     featured: true,
+    category: "wordpress",
     kind: "website",
     stack: [
       "WordPress",
@@ -24,7 +25,6 @@ export const PROJECTS: Project[] = [
       fg: "#14110D",
       accent: "#F04E23",
       motif: "corporate",
-      image: "/images/projects/bunyan/home.webp",
       domain: "bunyan.nagdista.com",
     },
     status: {
@@ -178,6 +178,7 @@ export const PROJECTS: Project[] = [
     name: "Wasla",
     year: "2025",
     featured: true,
+    category: "react-next",
     stack: [
       "React 19",
       "Tailwind CSS",
@@ -195,11 +196,58 @@ export const PROJECTS: Project[] = [
       fg: "#F7F4EF",
       accent: "#FF4D00",
       motif: "playlist",
+      domain: "wasla.nagdista.com",
     },
     status: {
       en: "Live alpha",
       ar: "نسخة تجريبية مباشرة",
     },
+    gallery: [
+      {
+        src: "/images/projects/wasla/home.webp",
+        alt: {
+          en: "Wasla home feed with the latest videos from four Arabic and English channels",
+          ar: "الرئيسية في وصلة وفيها أحدث فيديوهات أربع قنوات عربية وإنجليزية",
+        },
+        caption: {
+          en: "Home — one feed for every channel, with categories and search within reach.",
+          ar: "الرئيسية — فيد واحد لكل القنوات، والتصنيفات والبحث في متناول إيدك.",
+        },
+      },
+      {
+        src: "/images/projects/wasla/player.webp",
+        alt: {
+          en: "Wasla player page with the video, description, notes, and transcript tabs",
+          ar: "صفحة المشاهدة في وصلة وفيها الفيديو والوصف والملاحظات والنص",
+        },
+        caption: {
+          en: "Player — watch, read the description, and keep notes without leaving the page.",
+          ar: "المشاهدة — اتفرج واقرأ الوصف وسجّل ملاحظاتك من غير ما تسيب الصفحة.",
+        },
+      },
+      {
+        src: "/images/projects/wasla/channels.webp",
+        alt: {
+          en: "Wasla channels page with channel cards, categories, and open actions",
+          ar: "صفحة القنوات في وصلة وفيها كروت القنوات والتصنيفات وأزرار الفتح",
+        },
+        caption: {
+          en: "Channels — every channel you follow, grouped and ready to open.",
+          ar: "القنوات — كل القنوات اللي بتتابعها، مرتبة وجاهزة تفتحها.",
+        },
+      },
+      {
+        src: "/images/projects/wasla/how-to-use.webp",
+        alt: {
+          en: "Wasla Arabic how-to-use guide with a welcome panel and quick start sections",
+          ar: "دليل الاستخدام في وصلة بالعربي، وفيه ترحيب وأقسام للبدء السريع",
+        },
+        caption: {
+          en: "Guide — Arabic-first onboarding that explains the product on one screen.",
+          ar: "الدليل — تعريف بالعربي يشرح المنتج في شاشة واحدة.",
+        },
+      },
+    ],
     copy: {
       en: {
         tagline: "YouTube playlists, turned into structured courses.",
@@ -269,6 +317,7 @@ export const PROJECTS: Project[] = [
     name: "LocalTube",
     year: "2025",
     featured: true,
+    category: "react-next",
     stack: [
       "React 19",
       "TypeScript",
@@ -285,11 +334,66 @@ export const PROJECTS: Project[] = [
       fg: "#F7F4EF",
       accent: "#FF4D00",
       motif: "video",
+      domain: "LocalTube · self-hosted",
     },
     status: {
       en: "Open source · Self-hosted",
       ar: "مفتوح المصدر · استضافة ذاتية",
     },
+    gallery: [
+      {
+        src: "/images/projects/localtube/home.webp",
+        width: 1600,
+        height: 1000,
+        alt: {
+          en: "LocalTube home screen with continue watching, categories, and recent videos",
+          ar: "الرئيسية في LocalTube وفيها استكمال المشاهدة والتصنيفات وأحدث الفيديوهات",
+        },
+        caption: {
+          en: "Home — continue watching, categories, and recent videos on one screen.",
+          ar: "الرئيسية — استكمال المشاهدة والتصنيفات وأحدث الفيديوهات في شاشة واحدة.",
+        },
+      },
+      {
+        src: "/images/projects/localtube/course.webp",
+        width: 1600,
+        height: 1000,
+        alt: {
+          en: "LocalTube course page with lessons, progress, and study planning",
+          ar: "صفحة الكورس في LocalTube وفيها الدروس والتقدم وتخطيط المذاكرة",
+        },
+        caption: {
+          en: "Course mode — lessons, progress, and a plan that matches the way you study.",
+          ar: "وضع الكورس — دروس وتقدم وخطة ماشية مع طريقة مذاكرتك.",
+        },
+      },
+      {
+        src: "/images/projects/localtube/player.webp",
+        width: 1600,
+        height: 1000,
+        alt: {
+          en: "LocalTube video player with playback controls, notes, and next videos",
+          ar: "مشغل الفيديو في LocalTube وفيها أدوات التشغيل والملاحظات والفيديوهات الجاية",
+        },
+        caption: {
+          en: "Player — local playback with the controls and context you expect.",
+          ar: "المشغل — تشغيل محلي بكل الأدوات والسياق اللي متعوّد عليه.",
+        },
+      },
+      {
+        src: "/images/projects/localtube/stats.webp",
+        width: 1600,
+        height: 1000,
+        alt: {
+          en: "LocalTube statistics screen with watch time and study totals",
+          ar: "شاشة الإحصائيات في LocalTube وفيها وقت المشاهدة وإجمالي المذاكرة",
+        },
+        caption: {
+          en: "Statistics — watch time and study totals, kept on your machine.",
+          ar: "الإحصائيات — وقت المشاهدة وإجمالي المذاكرة، محفوظين على جهازك.",
+        },
+      },
+    ],
     copy: {
       en: {
         tagline: "Your own video library. No algorithm.",
@@ -363,6 +467,7 @@ export const PROJECTS: Project[] = [
     name: "Hassala",
     year: "2025–2026",
     featured: true,
+    category: "browser-extensions",
     stack: [
       "Manifest V3",
       "JavaScript",
@@ -379,11 +484,49 @@ export const PROJECTS: Project[] = [
       fg: "#17211F",
       accent: "#0F766E",
       motif: "wordbank",
+      domain: "hassala.nagdista.com",
     },
     status: {
       en: "Live · Open source",
       ar: "مباشر · مفتوح المصدر",
     },
+    gallery: [
+      {
+        src: "/images/projects/hassala/wordbank.webp",
+        alt: {
+          en: "Hassala word bank with saved words, translations, and folders",
+          ar: "بنك الكلمات في Hassala وفيه الكلمات المحفوظة والترجمات والفولدرات",
+        },
+        caption: {
+          en: "Word bank — every saved word, its translation, and the folder it belongs to.",
+          ar: "بنك الكلمات — كل كلمة حفظتها وترجمتها والفولدر اللي فيه.",
+        },
+      },
+      {
+        src: "/images/projects/hassala/popup.webp",
+        width: 420,
+        height: 334,
+        alt: {
+          en: "Hassala extension popup translating resilient to Arabic with save options",
+          ar: "بوب أب إكستنشن Hassala بيترجم resilient للعربي ومعاه اختيارات الحفظ",
+        },
+        caption: {
+          en: "Popup — translate, listen, and save without leaving the page.",
+          ar: "البوب أب — ترجم واسمع واحفظ من غير ما تسيب الصفحة.",
+        },
+      },
+      {
+        src: "/images/projects/hassala/site.webp",
+        alt: {
+          en: "Hassala marketing site with the headline Arabic to English, every word kept",
+          ar: "موقع Hassala التسويقي وعنوانه Arabic to English, every word kept",
+        },
+        caption: {
+          en: "Site — bilingual documentation and a clear download path.",
+          ar: "الموقع — توثيق ثنائي اللغة وطريق تحميل واضح.",
+        },
+      },
+    ],
     copy: {
       en: {
         tagline: "Every word you translate, kept.",
@@ -455,6 +598,7 @@ export const PROJECTS: Project[] = [
     name: "Tarteeb",
     year: "2025",
     featured: true,
+    category: "react-next",
     stack: ["React 19", "Tailwind CSS 4", "Netlify", "PWA"],
     links: {
       repo: "https://github.com/nagdista-dev/tarteeb",
@@ -464,11 +608,47 @@ export const PROJECTS: Project[] = [
       fg: "#F7F4EF",
       accent: "#FF4D00",
       motif: "schedule",
+      domain: "Tarteeb · prayer-aware planner",
     },
     status: {
       en: "Live · Works offline",
       ar: "مباشر · يعمل أوفلاين",
     },
+    gallery: [
+      {
+        src: "/images/projects/tarteeb/tasks.webp",
+        alt: {
+          en: "Tarteeb tasks page with the day progress and prayer-based task list",
+          ar: "صفحة المهام في ترتيب وفيها تقدم اليوم وقائمة المهام حسب أوقات الصلاة",
+        },
+        caption: {
+          en: "Tasks — the day's work, ordered around prayer times and progress.",
+          ar: "المهام — شغل اليوم مرتب حول أوقات الصلاة ومعاه نسبة الإنجاز.",
+        },
+      },
+      {
+        src: "/images/projects/tarteeb/stats.webp",
+        alt: {
+          en: "Tarteeb statistics with task completion, prayer status, and habit rings",
+          ar: "إحصائيات ترتيب وفيها إنجاز المهام وحالة الصلاة وحلقات العادات",
+        },
+        caption: {
+          en: "Statistics — task, prayer, and habit progress in one honest view.",
+          ar: "الإحصائيات — تقدم المهام والصلاة والعادات في نظرة واحدة صادقة.",
+        },
+      },
+      {
+        src: "/images/projects/tarteeb/settings.webp",
+        alt: {
+          en: "Tarteeb settings for day start, font size, theme, and time format",
+          ar: "إعدادات ترتيب لبداية اليوم وحجم الخط والسمة وتنسيق الوقت",
+        },
+        caption: {
+          en: "Settings — day start, theme, type scale, and time format, all in reach.",
+          ar: "الإعدادات — بداية اليوم والسمة وحجم الخط وتنسيق الوقت، كله في متناول إيدك.",
+        },
+      },
+    ],
     copy: {
       en: {
         tagline: "A day planned around prayer, not around noise.",
@@ -536,6 +716,7 @@ export const PROJECTS: Project[] = [
     name: "Yost",
     year: "2025",
     featured: true,
+    category: "react-next",
     stack: [
       "React 19",
       "Vite",
@@ -551,11 +732,27 @@ export const PROJECTS: Project[] = [
       fg: "#F7F4EF",
       accent: "#FF4D00",
       motif: "feed",
+      domain: "Yost · local feed",
     },
     status: {
       en: "Live preview · Local-first",
       ar: "معاينة مباشرة · محلي أولًا",
     },
+    gallery: [
+      {
+        src: "/images/projects/yost/feed.webp",
+        width: 960,
+        height: 720,
+        alt: {
+          en: "Yost community feed showing posts from a YouTube channel in a clean list",
+          ar: "فيد بوستات مجتمع يوتيوب في Yost، وفيه بوستات قناة في قائمة نظيفة",
+        },
+        caption: {
+          en: "Feed — community posts from your channels, without videos or recommendations.",
+          ar: "الفيد — بوستات مجتمع قنواتك، من غير فيديوهات ولا توصيات.",
+        },
+      },
+    ],
     copy: {
       en: {
         tagline: "No videos. No algorithm. Just posts.",

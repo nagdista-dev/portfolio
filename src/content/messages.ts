@@ -8,6 +8,9 @@ const en = {
     press: "Press",
     contact: "Contact",
     cv: "CV",
+    more: "More",
+    pages: "Pages",
+    platforms: "Platforms",
     menu: "Menu",
     close: "Close",
     language: "Language",
@@ -87,7 +90,7 @@ const en = {
     aboutBody:
       "I studied Business Information Systems at Misr Higher Institute for Commerce & Computers in Mansoura and graduated in 2026 with a Very Good grade. Since then I've been building bilingual learning tools, local-first video libraries, browser extensions, daily planning apps, and corporate WordPress sites. I'm available for freelance work until January 2027, before military service.",
     aboutQuote:
-      "Good interfaces don't shout. They make the next step obvious.",
+      "A good interface respects the work: it shows what matters, then steps aside.",
     aboutQuoteAttr: "Working principle",
     aboutCta: "More about me",
     pressCta: "Full profile of Mahmoud Elnagdy",
@@ -190,6 +193,16 @@ const en = {
     searchPlaceholder: "Search repositories…",
     sourceNote:
       "Repositories marked as forks or archived are excluded. Learning repositories are included — they're part of the journey.",
+    categoriesTitle: "Browse by platform",
+    categoriesIntro:
+      "Six projects across five platforms. Pick the track you care about — and the platforms without published work are open for it.",
+    categoryNav: "Jump to a platform",
+    projectCountOne: "project",
+    projectCountMany: "projects",
+    emptyTitle: "Open for work",
+    emptyBody:
+      "No published case study here yet. Shopify and Salla builds are work I take on — this space is ready for the next one.",
+    emptyCta: "Talk about a project",
   },
   projectPage: {
     breadcrumb: "Projects",
@@ -207,6 +220,7 @@ const en = {
     allProjects: "All projects",
     wordpressCta: "WordPress website services",
     caseStudy: "Case study",
+    platform: "Platform",
   },
   blogPage: {
     eyebrow: "Writing",
@@ -295,6 +309,9 @@ const ar: typeof en = {
     press: "ملف صحفي",
     contact: "تواصل",
     cv: "السيرة",
+    more: "المزيد",
+    pages: "الصفحات",
+    platforms: "المنصات",
     menu: "القائمة",
     close: "إغلاق",
     language: "اللغة",
@@ -373,7 +390,7 @@ const ar: typeof en = {
       "أنا محمود النجدي، مطور فول ستاك مقيم في القاهرة. شغلي واقع بين الهندسة والتصميم: واجهات هادية فوق، وأنظمة تعتمد عليها تحت.",
     aboutBody:
       "درست نظم ومعلومات الأعمال في معهد مصر العالي للتجارة والحاسبات بالمنصورة وتخرجت سنة 2026 بتقدير جيد جدًا. من ساعتها وأنا ببني أدوات تعلم ثنائية اللغة، ومكتبات فيديو محلية، وإكستنشن للمتصفح، وتطبيقات لتنظيم اليوم، ومواقع Corporate على وردبريس. متاح للفريلانس حتى يناير 2027، قبل الخدمة العسكرية.",
-    aboutQuote: "الواجهات الحلوة مش بتعلي صوتها. بتخلي الخطوة الجاية واضحة.",
+    aboutQuote: "الواجهة الحلوة بتحترم شغلك: بتوريك المهم، وبعدين تبعد عن طريقك.",
     aboutQuoteAttr: "مبدأ عمل",
     aboutCta: "اعرف أكتر عني",
     pressCta: "الملف الكامل عن محمود النجدي",
@@ -476,6 +493,16 @@ const ar: typeof en = {
     searchPlaceholder: "ابحث في المستودعات…",
     sourceNote:
       "المستودعات اللي هي fork أو مؤرشفة مستبعدة. مستودعات التعلم موجودة — هي جزء من الرحلة.",
+    categoriesTitle: "اختار البلاتفورم",
+    categoriesIntro:
+      "ست مشاريع على خمس منصات. اختار اللي يهمك — والمنصات اللي لسه مفيش فيها شغل منشور، دي شغل بنعمله ومفتوحة ليه.",
+    categoryNav: "اقفز على منصة",
+    projectCountOne: "مشروع",
+    projectCountMany: "مشاريع",
+    emptyTitle: "مفتوحة للشغل",
+    emptyBody:
+      "لسه مفيش دراسة حالة منشورة هنا. شغل شوبيفاي وسلة بنعمله — والمكان ده مستني المشروع الجاي.",
+    emptyCta: "اتكلم عن مشروعك",
   },
   projectPage: {
     breadcrumb: "المشاريع",
@@ -493,6 +520,7 @@ const ar: typeof en = {
     allProjects: "كل المشاريع",
     wordpressCta: "خدمات مواقع وردبريس",
     caseStudy: "دراسة حالة",
+    platform: "المنصة",
   },
   blogPage: {
     eyebrow: "مقالات",

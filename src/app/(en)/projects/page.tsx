@@ -2,13 +2,18 @@ import type { Metadata } from "next";
 import { ProjectsView } from "@/components/projects-view";
 import { JsonLd } from "@/components/json-ld";
 import { getGitHubRepos } from "@/lib/github";
-import { breadcrumbJsonLd, buildMetadata, pageUrl } from "@/lib/seo";
+import {
+  breadcrumbJsonLd,
+  buildMetadata,
+  pageUrl,
+  projectsCollectionJsonLd,
+} from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
   locale: "en",
-  title: "Projects — Web Apps, WordPress & Open Source",
+  title: "Projects by Platform — WordPress, React & Next.js, Extensions",
   description:
-    "Case studies and open-source projects by Mahmoud Elnagdy: Bunyan Contracting, a corporate WordPress site, plus Wasla, LocalTube, Hassala, Tarteeb, Yost, and every public GitHub repository.",
+    "Case studies grouped by platform: Bunyan Contracting on WordPress, Wasla, LocalTube, Tarteeb, and Yost on React & Next.js, Hassala as a browser extension, plus every public GitHub repository. Shopify and Salla work is open.",
   path: "/projects/",
   image: "/og/projects-en.png",
   keywords: [
@@ -17,7 +22,10 @@ export const metadata: Metadata = buildMetadata({
     "React projects",
     "Next.js projects",
     "WordPress projects",
+    "browser extension projects",
     "corporate WordPress case study",
+    "Shopify developer Cairo",
+    "Salla developer",
     "open source projects Cairo",
   ],
 });
@@ -28,6 +36,7 @@ export default async function EnglishProjectsPage() {
   return (
     <>
       <ProjectsView locale="en" repos={repos} />
+      <JsonLd data={projectsCollectionJsonLd("en")} />
       <JsonLd
         data={breadcrumbJsonLd([
           { name: "Home", url: pageUrl("en", "/") },

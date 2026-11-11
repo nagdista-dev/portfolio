@@ -2,13 +2,18 @@ import type { Metadata } from "next";
 import { ProjectsView } from "@/components/projects-view";
 import { JsonLd } from "@/components/json-ld";
 import { getGitHubRepos } from "@/lib/github";
-import { breadcrumbJsonLd, buildMetadata, pageUrl } from "@/lib/seo";
+import {
+  breadcrumbJsonLd,
+  buildMetadata,
+  pageUrl,
+  projectsCollectionJsonLd,
+} from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
   locale: "ar",
-  title: "مشاريع مختارة — تطبيقات ويب ووردبريس ومفتوحة المصدر",
+  title: "المشاريع حسب المنصة — وردبريس وReact وNext.js وإكستنشنز",
   description:
-    "دراسات حالة ومشاريع لمحمود النجدي: Bunyan Contracting، موقع Corporate على وردبريس، وWasla وLocalTube وHassala وTarteeb وYost، وكل مستودعات GitHub العامة.",
+    "دراسات حالة مرتبة حسب المنصة: Bunyan Contracting على وردبريس، وWasla وLocalTube وTarteeb وYost على React وNext.js، وHassala كإكستنشن متصفح، وكل مستودعات GitHub العامة. شغل شوبيفاي وسلة مفتوح.",
   path: "/projects/",
   image: "/og/projects-ar.png",
   keywords: [
@@ -17,7 +22,10 @@ export const metadata: Metadata = buildMetadata({
     "مشاريع React",
     "مشاريع Next.js",
     "مشاريع وردبريس",
+    "إكستنشن متصفح",
     "دراسة حالة موقع شركة",
+    "مطور شوبيفاي",
+    "مطور سلة",
     "مشاريع مفتوحة المصدر",
   ],
 });
@@ -28,6 +36,7 @@ export default async function ArabicProjectsPage() {
   return (
     <>
       <ProjectsView locale="ar" repos={repos} />
+      <JsonLd data={projectsCollectionJsonLd("ar")} />
       <JsonLd
         data={breadcrumbJsonLd([
           { name: "الرئيسية", url: pageUrl("ar", "/") },

@@ -2,6 +2,11 @@ import type { Metadata } from "next";
 import { AI_PAGE } from "@/content/ai";
 import { PRESS } from "@/content/press";
 import { WORDPRESS_PAGE } from "@/content/wordpress";
+import { PROJECTS } from "@/content/projects";
+import {
+  PROJECT_CATEGORIES,
+  getProjectCategory,
+} from "@/content/project-categories";
 import { NAME_VARIANTS, SITE } from "@/content/site";
 import type { Article, Locale, Project } from "@/content/types";
 
@@ -170,15 +175,11 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
     familyName: locale === "ar" ? "النجدي" : "Elnagdy",
     alternateName: NAME_VARIANTS,
     url: SITE.url,
-    image: {
-      "@type": "ImageObject",
-      url: `${SITE.url}/images/portrait-informal.jpg`,
-      contentUrl: `${SITE.url}/images/portrait-informal.jpg`,
-      caption:
-        locale === "ar" ? "صورة محمود النجدي" : "Portrait of Mahmoud Elnagdy",
-      width: 800,
-      height: 800,
-    },
+    image: `${SITE.url}/images/portrait-informal.jpg`,
+    thumbnailUrl: [
+      `${SITE.url}/images/portrait-informal.jpg`,
+      `${SITE.url}/images/portrait-formal.jpg`,
+    ],
     jobTitle: locale === "ar" ? "مطور فول ستاك" : "Full-Stack Developer",
     description:
       locale === "ar"
@@ -464,6 +465,8 @@ export function websiteJsonLd(locale: Locale): Record<string, unknown> {
         ? "بورتفوليو محمود النجدي، مطور فول ستاك في القاهرة."
         : "The portfolio of Mahmoud Elnagdy, a full-stack developer in Cairo.",
     inLanguage: ["en", "ar"],
+    image: `${SITE.url}/images/portrait-informal.jpg`,
+    logo: `${SITE.url}/icons/nagdista-512.png`,
     about: { "@id": `${SITE.url}/#person` },
     publisher: { "@id": `${SITE.url}/#person` },
   };
@@ -513,6 +516,62 @@ export function breadcrumbJsonLd(
       position: index + 1,
       name: item.name,
       item: item.url,
+    })),
+  };
+}
+
+export function projectsCollectionJsonLd(
+  locale: Locale,
+): Record<string, unknown> {
+  const url = pageUrl(locale, "/projects/");
+  const ar = locale === "ar";
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": `${url}#collection`,
+    url,
+    name: ar
+      ? "مشاريع محمود النجدي حسب المنصة"
+      : "Mahmoud Elnagdy projects by platform",
+    description: ar
+      ? "مشاريع محمود النجدي مقسّمة حسب المنصة: وردبريس، React وNext.js، إكستنشنز المتصفح، شوبيفاي، وسلة."
+      : "Mahmoud Elnagdy's projects grouped by platform: WordPress, React & Next.js, browser extensions, Shopify, and Salla.",
+    inLanguage: locale,
+    isPartOf: { "@id": `${SITE.url}/#website` },
+    about: { "@id": `${SITE.url}/#person` },
+    author: { "@id": `${SITE.url}/#person` },
+    dateModified: isoDateTime(SITE.lastUpdated),
+    primaryImageOfPage: `${SITE.url}/og/projects-${locale}.png`,
+    breadcrumb: { "@id": `${url}#breadcrumb` },
+    mainEntity: {
+      "@type": "ItemList",
+      name: ar ? "مشاريع مختارة" : "Selected projects",
+      numberOfItems: PROJECTS.length,
+      itemListOrder: "https://schema.org/ItemListOrderAscending",
+      itemListElement: PROJECTS.map((project, index) => {
+        const projectUrl = pageUrl(locale, `/projects/${project.slug}/`);
+        return {
+          "@type": "ListItem",
+          position: index + 1,
+          item: {
+            "@type": project.kind === "website" ? "WebSite" : "SoftwareSourceCode",
+            "@id": `${projectUrl}#project`,
+            url: projectUrl,
+            name: project.name,
+            description: project.copy[locale].summary,
+            genre: getProjectCategory(project.category).label[locale],
+            keywords: [...project.stack, project.status[locale]].join(", "),
+          },
+        };
+      }),
+    },
+    hasPart: PROJECT_CATEGORIES.map((category) => ({
+      "@type": "WebPageElement",
+      "@id": `${url}#cat-${category.id}`,
+      name: category.label[locale],
+      description: category.description[locale],
+      isPartOf: { "@id": `${url}#collection` },
     })),
   };
 }
@@ -638,6 +697,7 @@ export function projectJsonLd(
   locale: Locale,
 ): Record<string, unknown> {
   const url = pageUrl(locale, `/projects/${project.slug}/`);
+  const category = getProjectCategory(project.category);
   const base = {
     "@context": "https://schema.org",
     "@id": `${url}#project`,
@@ -645,9 +705,15 @@ export function projectJsonLd(
     description: project.copy[locale].summary,
     url,
     image: `${SITE.url}/og/project-${project.slug}-${locale}.png`,
+    screenshot: project.gallery?.map((shot) => `${SITE.url}${shot.src}`),
     author: { "@id": `${SITE.url}/#person` },
     inLanguage: locale,
-    keywords: project.stack.join(", "),
+    genre: category.label[locale],
+    keywords: [
+      ...project.stack,
+      category.label[locale],
+      project.status[locale],
+    ].join(", "),
   };
 
   if (project.kind === "website") {

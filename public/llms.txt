@@ -23,14 +23,24 @@ The online handle is **Nagdista** (sometimes misspelled **Najdista**). Both spel
 - [AI (Arabic)](https://nagdista.com/ar/ai/): The Arabic version of the AI page.
 - [Contact](https://nagdista.com/#contact): Web form, email, and phone.
 
-## Featured projects
+## Featured projects — grouped by platform
+
+- [All projects by platform](https://nagdista.com/projects/): WordPress, React & Next.js, browser extensions, Shopify, and Salla. Shopify and Salla sections are honestly marked open for work.
+
+### WordPress
 
 - [Bunyan Contracting](https://nagdista.com/projects/bunyan-contracting/): Complete corporate WordPress site for a Cairo construction studio — seven pages, six project case studies, services, team, insights, and an enquiry flow. Built with Elementor, Rank Math SEO, and Fluent Forms. Live at https://bunyan.nagdista.com.
-- [Wasla](https://nagdista.com/projects/wasla/): Bilingual platform that turns YouTube playlists into structured courses. Live at https://wasla-alpha.vercel.app.
+
+### React & Next.js
+
+- [Wasla](https://nagdista.com/projects/wasla/): Bilingual platform that turns YouTube playlists into structured courses. Live at https://wasla.nagdista.com/.
 - [LocalTube](https://nagdista.com/projects/localtube/): Self-hosted video library with SQLite progress tracking, FFmpeg thumbnails, and a Pomodoro timer.
-- [Hassala](https://nagdista.com/projects/hassala/): Privacy-first Chrome extension for Arabic ↔ English vocabulary. Live at https://hassala.nagdista.com/.
 - [Tarteeb](https://nagdista.com/projects/tarteeb/): Prayer-aware daily planner that works offline.
 - [Yost](https://nagdista.com/projects/yost/): Local-first dashboard for YouTube community posts.
+
+### Browser extensions
+
+- [Hassala](https://nagdista.com/projects/hassala/): Privacy-first Chrome extension for Arabic ↔ English vocabulary. Live at https://hassala.nagdista.com/.
 
 ## Articles
 

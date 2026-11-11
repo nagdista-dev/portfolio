@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { messages } from "@/content/messages";
+import { PROJECT_CATEGORIES } from "@/content/project-categories";
 import { SITE } from "@/content/site";
 import type { Locale } from "@/content/types";
 import { SocialLinks } from "./social-links";
@@ -28,6 +29,7 @@ export function SiteHeader({ locale }: { locale: Locale }) {
 
   const homeHref = locale === "ar" ? "/ar/" : "/";
   const isArabic = locale === "ar";
+  const projectsHref = isArabic ? "/ar/projects/" : "/projects/";
 
   const nav: NavItem[] = [
     {
@@ -50,6 +52,9 @@ export function SiteHeader({ locale }: { locale: Locale }) {
       href: isArabic ? "/ar/blog/" : "/blog/",
       match: isArabic ? "/ar/blog" : "/blog",
     },
+  ];
+
+  const moreNav: NavItem[] = [
     {
       label: t.nav.ai,
       href: isArabic ? "/ar/ai/" : "/ai/",
@@ -60,12 +65,13 @@ export function SiteHeader({ locale }: { locale: Locale }) {
       href: isArabic ? "/ar/press/" : "/press/",
       match: isArabic ? "/ar/press" : "/press",
     },
-    {
-      label: t.nav.contact,
-      href: isArabic ? "/ar/#contact" : "/#contact",
-      match: null,
-    },
   ];
+
+  const contactItem: NavItem = {
+    label: t.nav.contact,
+    href: isArabic ? "/ar/#contact" : "/#contact",
+    match: null,
+  };
 
   const switchHref = isArabic
     ? pathname.startsWith("/ar/blog/")
@@ -87,6 +93,8 @@ export function SiteHeader({ locale }: { locale: Locale }) {
     if (!item.match) return false;
     return pathname === item.match || pathname.startsWith(`${item.match}/`);
   };
+
+  const moreActive = moreNav.some(isActive);
 
   useEffect(() => {
     const dialog = dialogRef.current;
@@ -134,6 +142,42 @@ export function SiteHeader({ locale }: { locale: Locale }) {
               {item.label}
             </Link>
           ))}
+
+          <details className="site-nav__more">
+            <summary className={moreActive ? "is-active" : undefined}>
+              {t.nav.more}
+            </summary>
+            <div className="site-nav__more-panel">
+              <div className="site-nav__more-group">
+                <p className="site-nav__more-label">{t.nav.platforms}</p>
+                {PROJECT_CATEGORIES.map((category) => (
+                  <Link
+                    key={category.id}
+                    href={`${projectsHref}#cat-${category.id}`}
+                  >
+                    {category.label[locale]}
+                  </Link>
+                ))}
+              </div>
+              <div className="site-nav__more-group">
+                <p className="site-nav__more-label">{t.nav.pages}</p>
+                {moreNav.map((item) => (
+                  <Link
+                    key={item.label}
+                    href={item.href}
+                    className={isActive(item) ? "is-active" : undefined}
+                    aria-current={isActive(item) ? "page" : undefined}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </details>
+
+          <Link href={contactItem.href} className="site-nav__link">
+            {contactItem.label}
+          </Link>
         </nav>
 
         <div className="site-header__actions">
@@ -225,6 +269,7 @@ export function SiteHeader({ locale }: { locale: Locale }) {
           </div>
 
           <nav className="mobile-menu__nav" aria-label={t.nav.menu}>
+            <p className="mobile-menu__group-label">{t.nav.pages}</p>
             {nav.map((item, index) => (
               <Link
                 key={item.label}
@@ -238,6 +283,51 @@ export function SiteHeader({ locale }: { locale: Locale }) {
                 {item.label}
               </Link>
             ))}
+
+            <p className="mobile-menu__group-label">{t.nav.platforms}</p>
+            {PROJECT_CATEGORIES.map((category, index) => (
+              <Link
+                key={category.id}
+                href={`${projectsHref}#cat-${category.id}`}
+                className="mobile-menu__link"
+                onClick={() => setOpen(false)}
+              >
+                <span className="mobile-menu__index">
+                  {String(nav.length + index + 1).padStart(2, "0")}
+                </span>
+                {category.label[locale]}
+              </Link>
+            ))}
+
+            <p className="mobile-menu__group-label">{t.nav.more}</p>
+            {moreNav.map((item, index) => (
+              <Link
+                key={item.label}
+                href={item.href}
+                className="mobile-menu__link"
+                onClick={() => setOpen(false)}
+              >
+                <span className="mobile-menu__index">
+                  {String(
+                    nav.length + PROJECT_CATEGORIES.length + index + 1,
+                  ).padStart(2, "0")}
+                </span>
+                {item.label}
+              </Link>
+            ))}
+
+            <Link
+              href={contactItem.href}
+              className="mobile-menu__link"
+              onClick={() => setOpen(false)}
+            >
+              <span className="mobile-menu__index">
+                {String(
+                  nav.length + PROJECT_CATEGORIES.length + moreNav.length + 1,
+                ).padStart(2, "0")}
+              </span>
+              {contactItem.label}
+            </Link>
           </nav>
 
           <div className="mobile-menu__bottom">

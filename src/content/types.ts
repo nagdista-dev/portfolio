@@ -15,7 +15,6 @@ export type ProjectCover = {
   fg: string;
   accent: string;
   motif: ProjectMotif;
-  image?: string;
   domain?: string;
 };
 
@@ -24,10 +23,19 @@ export type ProjectLinks = {
   live?: string;
 };
 
+export type ProjectCategory =
+  | "wordpress"
+  | "react-next"
+  | "browser-extensions"
+  | "shopify"
+  | "salla";
+
 export type ProjectShot = {
   src: string;
   alt: Localized<string>;
   caption?: Localized<string>;
+  width?: number;
+  height?: number;
 };
 
 export type ProjectCopy = {
@@ -49,6 +57,7 @@ export type Project = {
   name: string;
   year: string;
   featured: boolean;
+  category: ProjectCategory;
   stack: string[];
   links: ProjectLinks;
   cover: ProjectCover;

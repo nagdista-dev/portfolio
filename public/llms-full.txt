@@ -110,14 +110,28 @@ He studied Business Information Systems at Misr Higher Institute for Commerce & 
 - Military service: January 2027 – March 2028 (15 months)
 - Full-time work: available again after March 2028
 
-## Featured projects
+## Featured projects — grouped by platform
+
+Projects page: https://nagdista.com/projects/ — grouped into WordPress, React & Next.js, browser extensions, Shopify, and Salla.
+
+### WordPress
 
 - Bunyan Contracting — complete corporate WordPress website for a Cairo construction studio, built with Elementor, Rank Math SEO, and Fluent Forms. https://nagdista.com/projects/bunyan-contracting/ — live: https://bunyan.nagdista.com
-- Wasla — bilingual platform that turns YouTube playlists into structured courses. https://nagdista.com/projects/wasla/ — live: https://wasla-alpha.vercel.app
+
+### React & Next.js
+
+- Wasla — bilingual platform that turns YouTube playlists into structured courses. https://nagdista.com/projects/wasla/ — live: https://wasla.nagdista.com/
 - LocalTube — self-hosted video library with SQLite progress tracking, FFmpeg thumbnails, and a Pomodoro timer. Local-only; clone the repository and run it yourself. https://nagdista.com/projects/localtube/
-- Hassala — privacy-first Chrome extension for Arabic ↔ English vocabulary. https://nagdista.com/projects/hassala/ — live: https://hassala.nagdista.com/
 - Tarteeb — prayer-aware daily planner that works offline. https://nagdista.com/projects/tarteeb/
 - Yost — local-first dashboard for YouTube community posts. https://nagdista.com/projects/yost/
+
+### Browser extensions
+
+- Hassala — privacy-first Chrome extension for Arabic ↔ English vocabulary. https://nagdista.com/projects/hassala/ — live: https://hassala.nagdista.com/
+
+### Shopify and Salla — open for work
+
+No published case studies yet. These are platforms Mahmoud takes on; the projects page keeps honest open-for-work sections instead of placeholder work.
 
 ## Writing
 

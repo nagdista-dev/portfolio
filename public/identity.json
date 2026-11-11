@@ -15,14 +15,11 @@
     "نجديستا"
   ],
   "url": "https://nagdista.com/",
-  "image": {
-    "@type": "ImageObject",
-    "url": "https://nagdista.com/images/portrait-informal.jpg",
-    "contentUrl": "https://nagdista.com/images/portrait-informal.jpg",
-    "caption": "Portrait of Mahmoud Elnagdy",
-    "width": 800,
-    "height": 800
-  },
+  "image": "https://nagdista.com/images/portrait-informal.jpg",
+  "thumbnailUrl": [
+    "https://nagdista.com/images/portrait-informal.jpg",
+    "https://nagdista.com/images/portrait-formal.jpg"
+  ],
   "jobTitle": "Full-Stack Developer",
   "description": "Mahmoud Elnagdy is a full-stack developer in Cairo, Egypt. He builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL, plus corporate WordPress websites with Elementor and Rank Math.",
   "disambiguatingDescription": "Cairo-based full-stack developer and creator of Bunyan Contracting, Wasla, LocalTube, Hassala, Tarteeb, and Yost; B.Sc. in Business Information Systems, 2026. He is a different person from the perfume creator with the same name.",

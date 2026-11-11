@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { messages } from "@/content/messages";
+import { PROJECT_CATEGORIES } from "@/content/project-categories";
 import { SITE } from "@/content/site";
 import type { Locale } from "@/content/types";
 import { SocialLinks } from "./social-links";
@@ -10,6 +11,7 @@ export function SiteFooter({ locale }: { locale: Locale }) {
   const isArabic = locale === "ar";
   const homeHref = isArabic ? "/ar/" : "/";
   const year = SITE.launchYear;
+  const projectsHref = isArabic ? "/ar/projects/" : "/projects/";
 
   const explore = [
     {
@@ -54,6 +56,22 @@ export function SiteFooter({ locale }: { locale: Locale }) {
               <span className="wordmark__text">NAGDISTA</span>
             </Link>
             <p className="site-footer__tagline">{t.footer.tagline}</p>
+            <nav
+              className="site-footer__platforms"
+              aria-label={t.projectsPage.categoriesTitle}
+            >
+              {PROJECT_CATEGORIES.map((category) => (
+                <Link
+                  key={category.id}
+                  href={`${projectsHref}#cat-${category.id}`}
+                  className={`site-footer__platform${
+                    category.available ? "" : " is-open"
+                  }`}
+                >
+                  {category.label[locale]}
+                </Link>
+              ))}
+            </nav>
             <a href="#top" className="site-footer__back">
               {t.footer.backToTop}
               <ArrowUpRight size={15} />

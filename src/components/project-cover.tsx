@@ -1,5 +1,4 @@
 import type { CSSProperties } from "react";
-import Image from "next/image";
 import type { Project } from "@/content/types";
 import { CheckIcon, PlayIcon } from "./icons";
 
@@ -102,6 +101,31 @@ function FeedMotif() {
   );
 }
 
+function CorporateMotif() {
+  return (
+    <div className="motif motif--corporate">
+      <span className="motif-blueprint">
+        <span className="motif-blueprint__nav">
+          <span className="motif-blueprint__brand" />
+          <span className="motif-blueprint__navline" />
+          <span className="motif-blueprint__navline motif-blueprint__navline--short" />
+          <span className="motif-blueprint__cta" />
+        </span>
+        <span className="motif-blueprint__hero">
+          <span className="motif-blueprint__eyebrow" />
+          <span className="motif-blueprint__headline" />
+          <span className="motif-blueprint__headline motif-blueprint__headline--short" />
+        </span>
+        <span className="motif-blueprint__grid">
+          <span className="motif-blueprint__card" />
+          <span className="motif-blueprint__card" />
+          <span className="motif-blueprint__card" />
+        </span>
+      </span>
+    </div>
+  );
+}
+
 type ProjectCoverProps = {
   project: Project;
   className?: string;
@@ -117,42 +141,6 @@ export function ProjectCover({
     "--cover-accent": project.cover.accent,
   } as CSSProperties;
 
-  if (project.cover.image) {
-    return (
-      <div
-        className={`project-cover project-cover--shot ${className}`.trim()}
-        style={style}
-        aria-hidden="true"
-      >
-        <div className="project-cover__shotbar">
-          <span className="project-cover__dots">
-            <span />
-            <span />
-            <span />
-          </span>
-          <span className="project-cover__domain">
-            {project.cover.domain ?? project.name}
-          </span>
-          <span className="project-cover__shotindex">{project.index}</span>
-        </div>
-        <div className="project-cover__shot">
-          <Image
-            src={project.cover.image}
-            alt=""
-            fill
-            sizes="(min-width: 1100px) 1200px, 100vw"
-          />
-        </div>
-        <div className="project-cover__bottom">
-          <span className="project-cover__name">{project.name}</span>
-          <span className="project-cover__stack">
-            {project.stack.slice(0, 2).join(" · ")}
-          </span>
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div
       className={`project-cover ${className}`.trim()}
@@ -166,6 +154,7 @@ export function ProjectCover({
         <span>{project.year}</span>
       </div>
       <div className="project-cover__motif">
+        {project.cover.motif === "corporate" ? <CorporateMotif /> : null}
         {project.cover.motif === "playlist" ? <PlaylistMotif /> : null}
         {project.cover.motif === "video" ? <VideoMotif /> : null}
         {project.cover.motif === "wordbank" ? <WordbankMotif /> : null}

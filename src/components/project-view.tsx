@@ -3,6 +3,7 @@ import Image from "next/image";
 import { messages } from "@/content/messages";
 import { localePath } from "@/content/site";
 import { getNextProject } from "@/content/projects";
+import { getProjectCategory } from "@/content/project-categories";
 import type { Locale, Project } from "@/content/types";
 import { ProjectCover } from "./project-cover";
 import { ArrowLeft, ArrowRight, ArrowUpRight, ExternalLinkIcon, GithubIcon } from "./icons";
@@ -19,6 +20,7 @@ export function ProjectView({
   const next = getNextProject(project.slug);
   const projectsHref = localePath(locale, "/projects/");
   const isArabic = locale === "ar";
+  const category = getProjectCategory(project.category);
 
   const sections = [
     { title: t.projectPage.overview, body: copy.overview },
@@ -53,6 +55,61 @@ export function ProjectView({
             </div>
           </header>
 
+          {project.gallery?.length ? (
+            <section className="case-gallery" aria-labelledby="case-gallery-title">
+              <div className="case-gallery__head">
+                <p className="eyebrow">
+                  {isArabic ? "من جوه المشروع" : "Inside the product"}
+                </p>
+                <h2 id="case-gallery-title">{t.projectPage.gallery}</h2>
+              </div>
+
+              <div className="case-gallery__grid">
+                {project.gallery.map((shot, index) => (
+                  <figure
+                    className={`case-gallery__item${
+                      index === 0 ? " case-gallery__item--lead" : ""
+                    }`}
+                    key={shot.src}
+                  >
+                    <div className="case-gallery__frame">
+                      <div className="case-gallery__bar" aria-hidden="true">
+                        <span className="case-gallery__dots">
+                          <span />
+                          <span />
+                          <span />
+                        </span>
+                        <span className="case-gallery__url">
+                          {project.cover.domain ?? project.name}
+                        </span>
+                        <span className="case-gallery__num">
+                          {project.index}/{String(index + 1).padStart(2, "0")}
+                        </span>
+                      </div>
+                      <div className="case-gallery__screen">
+                        <Image
+                          src={shot.src}
+                          alt={shot.alt[locale]}
+                          width={shot.width ?? 1440}
+                          height={shot.height ?? 1000}
+                          sizes="(min-width: 900px) 900px, 100vw"
+                        />
+                      </div>
+                    </div>
+                    {shot.caption ? (
+                      <figcaption>
+                        <span className="case-gallery__caption-num" aria-hidden="true">
+                          {String(index + 1).padStart(2, "0")}
+                        </span>
+                        {shot.caption[locale]}
+                      </figcaption>
+                    ) : null}
+                  </figure>
+                ))}
+              </div>
+            </section>
+          ) : null}
+
           <div className="case-study__layout">
             <div className="case-study__body">
               {sections.map((section) => (
@@ -70,28 +127,6 @@ export function ProjectView({
                   ))}
                 </ul>
               </section>
-
-              {project.gallery?.length ? (
-                <section className="case-study__section">
-                  <h2>{t.projectPage.gallery}</h2>
-                  <div className="case-study__gallery">
-                    {project.gallery.map((shot) => (
-                      <figure className="case-study__shot" key={shot.src}>
-                        <Image
-                          src={shot.src}
-                          alt={shot.alt[locale]}
-                          width={1440}
-                          height={1000}
-                          sizes="(min-width: 900px) 800px, 100vw"
-                        />
-                        {shot.caption ? (
-                          <figcaption>{shot.caption[locale]}</figcaption>
-                        ) : null}
-                      </figure>
-                    ))}
-                  </div>
-                </section>
-              ) : null}
 
               <section className="case-study__section">
                 <h2>{t.projectPage.technical}</h2>
@@ -117,6 +152,14 @@ export function ProjectView({
                 <div className="case-study__fact">
                   <dt>{t.common.status}</dt>
                   <dd>{project.status[locale]}</dd>
+                </div>
+                <div className="case-study__fact">
+                  <dt>{t.projectPage.platform}</dt>
+                  <dd>
+                    <Link href={`${projectsHref}#cat-${project.category}`}>
+                      {category.label[locale]}
+                    </Link>
+                  </dd>
                 </div>
                 <div className="case-study__fact">
                   <dt>{t.common.stack}</dt>

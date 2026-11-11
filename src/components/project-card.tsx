@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { localePath } from "@/content/site";
 import { messages } from "@/content/messages";
+import { getProjectCategory } from "@/content/project-categories";
 import type { Locale, Project } from "@/content/types";
 import { ProjectCover } from "./project-cover";
 import { ArrowUpRight } from "./icons";
@@ -18,6 +19,7 @@ export function ProjectCard({
 }: ProjectCardProps) {
   const t = messages[locale];
   const copy = project.copy[locale];
+  const category = getProjectCategory(project.category);
   const href = localePath(locale, `/projects/${project.slug}/`);
 
   return (
@@ -28,6 +30,7 @@ export function ProjectCard({
           <div className="project-card__meta" aria-hidden="true">
             <span>{project.index}</span>
             <span>{project.year}</span>
+            <span className="project-card__category">{category.label[locale]}</span>
             <span className="project-card__status">
               {project.status[locale]}
             </span>
