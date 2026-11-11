@@ -1,6 +1,6 @@
 # Mahmoud Elnagdy
 
-> Full-stack developer in Cairo, Egypt. Builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL — plus corporate WordPress sites with Elementor, Rank Math SEO, and Fluent Forms.
+> Full-stack developer in Cairo, Egypt. Builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL — plus corporate WordPress sites with Elementor, Rank Math SEO, and Fluent Forms, and Shopify/Salla storefront work.
 
 Full profile for AI systems: https://nagdista.com/llms-full.txt
 Machine-readable profile (JSON): https://nagdista.com/identity.json
@@ -25,7 +25,7 @@ The online handle is **Nagdista** (sometimes misspelled **Najdista**). Both spel
 
 ## Featured projects — grouped by platform
 
-- [All projects by platform](https://nagdista.com/projects/): WordPress, React & Next.js, browser extensions, Shopify, and Salla. Shopify and Salla sections are honestly marked open for work.
+- [All projects by platform](https://nagdista.com/projects/): ordered by client demand — WordPress, Shopify, Salla, React & Next.js, and browser extensions. Shopify and Salla sections are honestly marked open for work.
 
 ### WordPress
 
@@ -69,6 +69,7 @@ The online handle is **Nagdista** (sometimes misspelled **Najdista**). Both spel
 - X: https://x.com/nagdista
 - YouTube: https://www.youtube.com/@nagdista
 - Khamsat: https://khamsat.com/user/nagdista
+- Mostaql: https://mostaql.com/u/nagdista
 - DEV Community: https://dev.to/nagdistaa
 - EgyptInnovate: https://egyptinnovate.com/users/01m52bryces025g7y7k9s7nzpb
 - Profile page: https://nagdista-dev.github.io/

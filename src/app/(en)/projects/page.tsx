@@ -11,21 +11,21 @@ import {
 
 export const metadata: Metadata = buildMetadata({
   locale: "en",
-  title: "Projects by Platform — WordPress, React & Next.js, Extensions",
+  title: "Projects by Platform — WordPress, Shopify, Salla & Next.js",
   description:
-    "Case studies grouped by platform: Bunyan Contracting on WordPress, Wasla, LocalTube, Tarteeb, and Yost on React & Next.js, Hassala as a browser extension, plus every public GitHub repository. Shopify and Salla work is open.",
+    "Case studies grouped by platform and ordered by what clients ask for most: Bunyan Contracting on WordPress, Shopify and Salla storefront work, then Wasla, LocalTube, Tarteeb, and Yost on React & Next.js, Hassala as a browser extension, plus every public GitHub repository.",
   path: "/projects/",
   image: "/og/projects-en.png",
   keywords: [
     "Mahmoud Elnagdy projects",
     "Nagdista projects",
-    "React projects",
-    "Next.js projects",
     "WordPress projects",
-    "browser extension projects",
-    "corporate WordPress case study",
     "Shopify developer Cairo",
     "Salla developer",
+    "React projects",
+    "Next.js projects",
+    "browser extension projects",
+    "corporate WordPress case study",
     "open source projects Cairo",
   ],
 });

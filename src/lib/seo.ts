@@ -183,8 +183,8 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
     jobTitle: locale === "ar" ? "مطور فول ستاك" : "Full-Stack Developer",
     description:
       locale === "ar"
-        ? "مطور فول ستاك في القاهرة، مصر. يبني منتجات ويب ثنائية اللغة بـ React وNext.js وTypeScript وNode.js."
-        : "Full-stack developer in Cairo, Egypt. Builds bilingual web products with React, Next.js, TypeScript, and Node.js.",
+        ? "مطور فول ستاك في القاهرة، مصر. يبني منتجات ويب ثنائية اللغة بـ React وNext.js وTypeScript وNode.js، ومواقع وردبريس للشركات، ومتاجر شوبيفاي وسلة."
+        : "Full-stack developer in Cairo, Egypt. Builds bilingual web products with React, Next.js, TypeScript, and Node.js, plus corporate WordPress sites and Shopify/Salla storefronts.",
     disambiguatingDescription:
       locale === "ar"
         ? "مطور فول ستاك في القاهرة وصاحب مشاريع Wasla وLocalTube وHassala وTarteeb وYost؛ بكالوريوس نظم ومعلومات الأعمال 2026. هذا هو المطور المقصود بالاسم، ومش صانع محتوى العطور اللي بيحمل نفس الاسم."
@@ -236,7 +236,7 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
         name: "Cairo",
       },
       skills:
-        "React, Next.js, TypeScript, Node.js, Express, MongoDB, SQL, Tailwind CSS, WordPress, OpenAI API",
+        "React, Next.js, TypeScript, Node.js, Express, MongoDB, SQL, Tailwind CSS, WordPress, WooCommerce, Shopify, Salla, OpenAI API",
     },
     mainEntityOfPage: pageUrl(locale, "/about/"),
     sameAs: [
@@ -245,6 +245,7 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
       SITE.x,
       SITE.youtube,
       SITE.khamsat,
+      SITE.mostaql,
       SITE.devto,
       SITE.egyptInnovate,
       SITE.githubPages,
@@ -301,6 +302,28 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
           "@type": "Service",
           name:
             locale === "ar"
+              ? "تطوير متاجر شوبيفاي"
+              : "Shopify store development",
+          url: pageUrl(locale, "/projects/#cat-shopify"),
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name:
+            locale === "ar"
+              ? "تطوير متاجر سلة"
+              : "Salla store development",
+          url: pageUrl(locale, "/projects/#cat-salla"),
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name:
+            locale === "ar"
               ? "تطوير تطبيقات ويب مخصصة"
               : "Custom web application development",
           url: pageUrl(locale, "/projects/"),
@@ -320,6 +343,9 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
       "Elementor",
       "Gutenberg",
       "WooCommerce",
+      "Shopify",
+      "Salla",
+      "E-commerce development",
       "Rank Math SEO",
       "Fluent Forms",
       "Corporate website design",
@@ -334,6 +360,10 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
       "AI-assisted language learning",
       "OpenAI API",
       "تطوير الويب",
+      "مواقع وردبريس",
+      "متاجر شوبيفاي",
+      "متاجر سلة",
+      "التجارة الإلكترونية",
       "الذكاء الاصطناعي",
       "البرمجة",
     ],
@@ -535,8 +565,8 @@ export function projectsCollectionJsonLd(
       ? "مشاريع محمود النجدي حسب المنصة"
       : "Mahmoud Elnagdy projects by platform",
     description: ar
-      ? "مشاريع محمود النجدي مقسّمة حسب المنصة: وردبريس، React وNext.js، إكستنشنز المتصفح، شوبيفاي، وسلة."
-      : "Mahmoud Elnagdy's projects grouped by platform: WordPress, React & Next.js, browser extensions, Shopify, and Salla.",
+      ? "مشاريع محمود النجدي مقسّمة حسب المنصة ومرتبة حسب أكتر طلب من العملاء: وردبريس، شوبيفاي، سلة، React وNext.js، وإكستنشنز المتصفح."
+      : "Mahmoud Elnagdy's projects grouped by platform and ordered by client demand: WordPress, Shopify, Salla, React & Next.js, and browser extensions.",
     inLanguage: locale,
     isPartOf: { "@id": `${SITE.url}/#website` },
     about: { "@id": `${SITE.url}/#person` },

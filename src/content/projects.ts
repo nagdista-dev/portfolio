@@ -462,8 +462,230 @@ export const PROJECTS: Project[] = [
     },
   },
   {
-    slug: "hassala",
+    slug: "tarteeb",
     index: "04",
+    name: "Tarteeb",
+    year: "2025",
+    featured: true,
+    category: "react-next",
+    stack: ["React 19", "Tailwind CSS 4", "Netlify", "PWA"],
+    links: {
+      repo: "https://github.com/nagdista-dev/tarteeb",
+    },
+    cover: {
+      bg: "#20324A",
+      fg: "#F7F4EF",
+      accent: "#FF4D00",
+      motif: "schedule",
+      domain: "Tarteeb · prayer-aware planner",
+    },
+    status: {
+      en: "Live · Works offline",
+      ar: "مباشر · بيشتغل أوفلاين",
+    },
+    gallery: [
+      {
+        src: "/images/projects/tarteeb/tasks.webp",
+        alt: {
+          en: "Tarteeb tasks page with the day progress and prayer-based task list",
+          ar: "صفحة المهام في ترتيب وفيها تقدم اليوم وقائمة المهام حسب أوقات الصلاة",
+        },
+        caption: {
+          en: "Tasks — the day's work, ordered around prayer times and progress.",
+          ar: "المهام — شغل اليوم مرتب حول أوقات الصلاة ومعاه نسبة الإنجاز.",
+        },
+      },
+      {
+        src: "/images/projects/tarteeb/stats.webp",
+        alt: {
+          en: "Tarteeb statistics with task completion, prayer status, and habit rings",
+          ar: "إحصائيات ترتيب وفيها إنجاز المهام وحالة الصلاة وحلقات العادات",
+        },
+        caption: {
+          en: "Statistics — task, prayer, and habit progress in one honest view.",
+          ar: "الإحصائيات — تقدم المهام والصلاة والعادات في نظرة واحدة صادقة.",
+        },
+      },
+      {
+        src: "/images/projects/tarteeb/settings.webp",
+        alt: {
+          en: "Tarteeb settings for day start, font size, theme, and time format",
+          ar: "إعدادات ترتيب لبداية اليوم وحجم الخط والسمة وتنسيق الوقت",
+        },
+        caption: {
+          en: "Settings — day start, theme, type scale, and time format, all in reach.",
+          ar: "الإعدادات — بداية اليوم والسمة وحجم الخط وتنسيق الوقت، كله في متناول إيدك.",
+        },
+      },
+    ],
+    copy: {
+      en: {
+        tagline: "A day planned around prayer, not around noise.",
+        summary:
+          "A minimal daily planner that structures your schedule around prayer times and works offline.",
+        overview:
+          "Tarteeb is a daily planner built around a simple constraint: the day already has a rhythm. Instead of starting with an empty calendar, it generates a schedule around prayer times, then lets you shape the rest.",
+        challenge:
+          "Most planners assume the user will build structure from scratch. Tarteeb had to provide a useful default without being rigid — and it had to work offline, because the moments when you need a plan are not always moments when you have a connection.",
+        approach:
+          "I built a React 19 interface with Tailwind CSS 4, kept the visual language quiet, and generated the daily schedule from prayer times. The app is responsive, installable, and functional offline. The goal was a tool that feels calm enough to open every day.",
+        features: [
+          "Prayer-time-aware daily planning",
+          "Automatic schedule generation",
+          "Clean, minimal interface",
+          "Responsive on mobile and desktop",
+          "Works offline",
+        ],
+        technical: [
+          "React 19 + Tailwind CSS 4",
+          "Client-side schedule generation",
+          "Offline-ready PWA behavior",
+          "Deployed on Netlify",
+        ],
+        outcome:
+          "Tarteeb was a lesson in restraint. The hardest part was not adding features — it was deciding which ones would break the calm. It also reinforced how much a single default can do for a daily tool: if the first screen is useful, people come back.",
+        seoTitle: "Tarteeb — Prayer-Aware Daily Planner",
+        seoDescription:
+          "Tarteeb is a minimal daily planner that structures your day around prayer times, works offline, and stays calm. A case study by Mahmoud Elnagdy.",
+      },
+      ar: {
+        tagline: "يوم مرتب حول الصلاة، مش حول الضوضاء.",
+        summary:
+          "منظم يومي بسيط بيبني جدولك حول مواعيد الصلاة وبيشتغل أوفلاين.",
+        overview:
+          "Tarteeb منظم يومي مبني على قيد بسيط: اليوم أصلًا له إيقاع. بدل ما تبدأ بتقويم فاضي، التطبيق بيولّد جدول حول مواعيد الصلاة، وبعدها بتشكّل الباقي.",
+        challenge:
+          "أغلب المنظمات بتفترض إن المستخدم هيبني الهيكل من الصفر. Tarteeb كان لازم يبدأ بـافتراضي مفيد من غير ما يبقى جامد — وكان لازم يشتغل أوفلاين، لأن اللحظات اللي محتاج فيها خطة مش دايمًا فيها نت.",
+        approach:
+          "بنيت واجهة React 19 بـ Tailwind CSS 4، وخليت اللغة البصرية هادية، وولّدت الجدول اليومي من مواعيد الصلاة. التطبيق متجاوب وقابل للتثبيت وبيشتغل أوفلاين. الهدف كان أداة هادية كفاية إنك تفتحها كل يوم.",
+        features: [
+          "تخطيط يومي واعي بمواعيد الصلاة",
+          "توليد جدول أوتوماتيك",
+          "واجهة نظيفة وبسيطة",
+          "متجاوب على الموبايل والديسكتوب",
+          "بيشتغل أوفلاين",
+        ],
+        technical: [
+          "React 19 + Tailwind CSS 4",
+          "توليد الجدول على العميل",
+          "سلوك PWA جاهز للأوفلاين",
+          "النشر على Netlify",
+        ],
+        outcome:
+          "Tarteeb كان درس في ضبط النفس. أصعب حاجة ما كانتش إضافة ميزات — كانت إني أقرر أنهي ميزات هتكسر الهدوء. كمان أكدت لي قد إيه افتراضي واحد ممكن يعمل فرق في أداة يومية: لو أول شاشة مفيدة، الناس بترجع.",
+        seoTitle: "Tarteeb — منظم يومي حول مواعيد الصلاة",
+        seoDescription:
+          "Tarteeb منظم يومي بسيط بيبني يومك حول مواعيد الصلاة، وبيشتغل أوفلاين، وبيحافظ على الهدوء. دراسة حالة من محمود النجدي.",
+      },
+    },
+  },
+  {
+    slug: "yost",
+    index: "05",
+    name: "Yost",
+    year: "2025",
+    featured: true,
+    category: "react-next",
+    stack: [
+      "React 19",
+      "Vite",
+      "Tailwind CSS",
+      "Express",
+      "Puppeteer",
+    ],
+    links: {
+      repo: "https://github.com/nagdista-dev/yost",
+    },
+    cover: {
+      bg: "#2A1E3A",
+      fg: "#F7F4EF",
+      accent: "#FF4D00",
+      motif: "feed",
+      domain: "Yost · local feed",
+    },
+    status: {
+      en: "Live preview · Local-first",
+      ar: "معاينة مباشرة · محلي أولًا",
+    },
+    gallery: [
+      {
+        src: "/images/projects/yost/feed.webp",
+        width: 960,
+        height: 720,
+        alt: {
+          en: "Yost community feed showing posts from a YouTube channel in a clean list",
+          ar: "فيد بوستات مجتمع يوتيوب في Yost، وفيه بوستات قناة في قائمة نظيفة",
+        },
+        caption: {
+          en: "Feed — community posts from your channels, without videos or recommendations.",
+          ar: "الفيد — بوستات مجتمع قنواتك، من غير فيديوهات ولا توصيات.",
+        },
+      },
+    ],
+    copy: {
+      en: {
+        tagline: "No videos. No algorithm. Just posts.",
+        summary:
+          "A local dashboard that pulls YouTube community posts from your favorite channels into one clean feed.",
+        overview:
+          "Yost is a local-first dashboard for YouTube community posts. It collects posts from multiple channels into a single feed, with search and filters, so you can follow what creators are saying without the video feed or the recommendation engine.",
+        challenge:
+          "Community posts are not exposed through a simple public API in the way videos are. Yost needed a scraping layer robust enough to collect posts from multiple channels, plus a front end that made the results feel like a feed rather than a data dump.",
+        approach:
+          "A React 19 + Vite front end talks to an Express backend that uses Puppeteer with a stealth plugin to collect posts. The app is designed to run on your machine, keeping the data local. The interface focuses on reading: a unified feed, search, and filters, with no video player and no algorithmic ranking.",
+        features: [
+          "Collect community posts from multiple channels",
+          "Unified, chronological feed",
+          "Search and filter posts",
+          "Local-first design",
+          "No videos, no recommendations",
+        ],
+        technical: [
+          "React 19 + Vite + Tailwind CSS front end",
+          "Node.js + Express backend",
+          "Puppeteer with stealth plugin for scraping",
+          "Local-first data flow",
+        ],
+        outcome:
+          "Yost taught me to respect the boundary between a demo and a tool. Scraping is fragile, so the backend has to fail gracefully and the UI has to stay honest about what it can load. It also made me think harder about local-first software: the value is not just privacy, it is ownership.",
+        seoTitle: "Yost — YouTube Community Posts Dashboard",
+        seoDescription:
+          "Yost is a local-first dashboard that collects YouTube community posts into one clean, searchable feed. A case study by Mahmoud Elnagdy.",
+      },
+      ar: {
+        tagline: "مفيش فيديوهات. مفيش خوارزمية. بوستات بس.",
+        summary:
+          "داشبورد محلي بيجمع بوستات مجتمع يوتيوب من القنوات اللي بتحبها في فيد واحد نظيف.",
+        overview:
+          "Yost داشبورد محلي أولًا لبوستات مجتمع يوتيوب. بيجمع البوستات من أكتر من قناة في فيد واحد، مع بحث وفلاتر، عشان تتابع اللي صنّاع المحتوى بيقولوه من غير فيد الفيديو أو محرك التوصيات.",
+        challenge:
+          "بوستات المجتمع مش متاحة من خلال API عام بسيط زي الفيديوهات. Yost كان محتاج طبقة scraping قوية كفاية تجمع البوستات من أكتر من قناة، وواجهة تخلي النتايج تحس إنها فيد مش دفعة بيانات.",
+        approach:
+          "واجهة React 19 + Vite بتتكلم مع باك إند Express بيستخدم Puppeteer مع stealth plugin لجمع البوستات. التطبيق مصمم يشتغل على جهازك، وبيحافظ على البيانات محلية. الواجهة بتركز على القراءة: فيد موحد وبحث وفلاتر، من غير مشغل فيديو ومن غير ترتيب خوارزمي.",
+        features: [
+          "جمع بوستات المجتمع من أكتر من قناة",
+          "فيد موحد ومرتب زمنيًا",
+          "بحث وفلترة البوستات",
+          "تصميم محلي أولًا",
+          "مفيش فيديوهات ولا توصيات",
+        ],
+        technical: [
+          "واجهة React 19 + Vite + Tailwind CSS",
+          "باك إند Node.js + Express",
+          "Puppeteer مع stealth plugin للـ scraping",
+          "تدفق بيانات محلي أولًا",
+        ],
+        outcome:
+          "Yost علمني أحترم الحدود بين الديمو والأداة. الـ scraping هش، فالباك إند لازم يفشل بلطف والواجهة تفضل صادقة في اللي تقدر تحمله. كمان خلاني أفكر أعمق في السوفتوير المحلي: القيمة مش بس خصوصية، دي ملكية.",
+        seoTitle: "Yost — داشبورد بوستات مجتمع يوتيوب",
+        seoDescription:
+          "Yost داشبورد محلي بيجمع بوستات مجتمع يوتيوب في فيد واحد نظيف وقابل للبحث. دراسة حالة من محمود النجدي.",
+      },
+    },
+  },
+  {
+    slug: "hassala",
+    index: "06",
     name: "Hassala",
     year: "2025–2026",
     featured: true,
@@ -589,228 +811,6 @@ export const PROJECTS: Project[] = [
         seoTitle: "Hassala — إكستنشن بنك كلمات عربي ↔ إنجليزي",
         seoDescription:
           "Hassala إكستنشن Chrome مجاني ومفتوح المصدر بيترجم عربي ↔ إنجليزي وبيحفظ الكلمات في بنك كلمات محلي خاص. دراسة حالة من محمود النجدي.",
-      },
-    },
-  },
-  {
-    slug: "tarteeb",
-    index: "05",
-    name: "Tarteeb",
-    year: "2025",
-    featured: true,
-    category: "react-next",
-    stack: ["React 19", "Tailwind CSS 4", "Netlify", "PWA"],
-    links: {
-      repo: "https://github.com/nagdista-dev/tarteeb",
-    },
-    cover: {
-      bg: "#20324A",
-      fg: "#F7F4EF",
-      accent: "#FF4D00",
-      motif: "schedule",
-      domain: "Tarteeb · prayer-aware planner",
-    },
-    status: {
-      en: "Live · Works offline",
-      ar: "مباشر · بيشتغل أوفلاين",
-    },
-    gallery: [
-      {
-        src: "/images/projects/tarteeb/tasks.webp",
-        alt: {
-          en: "Tarteeb tasks page with the day progress and prayer-based task list",
-          ar: "صفحة المهام في ترتيب وفيها تقدم اليوم وقائمة المهام حسب أوقات الصلاة",
-        },
-        caption: {
-          en: "Tasks — the day's work, ordered around prayer times and progress.",
-          ar: "المهام — شغل اليوم مرتب حول أوقات الصلاة ومعاه نسبة الإنجاز.",
-        },
-      },
-      {
-        src: "/images/projects/tarteeb/stats.webp",
-        alt: {
-          en: "Tarteeb statistics with task completion, prayer status, and habit rings",
-          ar: "إحصائيات ترتيب وفيها إنجاز المهام وحالة الصلاة وحلقات العادات",
-        },
-        caption: {
-          en: "Statistics — task, prayer, and habit progress in one honest view.",
-          ar: "الإحصائيات — تقدم المهام والصلاة والعادات في نظرة واحدة صادقة.",
-        },
-      },
-      {
-        src: "/images/projects/tarteeb/settings.webp",
-        alt: {
-          en: "Tarteeb settings for day start, font size, theme, and time format",
-          ar: "إعدادات ترتيب لبداية اليوم وحجم الخط والسمة وتنسيق الوقت",
-        },
-        caption: {
-          en: "Settings — day start, theme, type scale, and time format, all in reach.",
-          ar: "الإعدادات — بداية اليوم والسمة وحجم الخط وتنسيق الوقت، كله في متناول إيدك.",
-        },
-      },
-    ],
-    copy: {
-      en: {
-        tagline: "A day planned around prayer, not around noise.",
-        summary:
-          "A minimal daily planner that structures your schedule around prayer times and works offline.",
-        overview:
-          "Tarteeb is a daily planner built around a simple constraint: the day already has a rhythm. Instead of starting with an empty calendar, it generates a schedule around prayer times, then lets you shape the rest.",
-        challenge:
-          "Most planners assume the user will build structure from scratch. Tarteeb had to provide a useful default without being rigid — and it had to work offline, because the moments when you need a plan are not always moments when you have a connection.",
-        approach:
-          "I built a React 19 interface with Tailwind CSS 4, kept the visual language quiet, and generated the daily schedule from prayer times. The app is responsive, installable, and functional offline. The goal was a tool that feels calm enough to open every day.",
-        features: [
-          "Prayer-time-aware daily planning",
-          "Automatic schedule generation",
-          "Clean, minimal interface",
-          "Responsive on mobile and desktop",
-          "Works offline",
-        ],
-        technical: [
-          "React 19 + Tailwind CSS 4",
-          "Client-side schedule generation",
-          "Offline-ready PWA behavior",
-          "Deployed on Netlify",
-        ],
-        outcome:
-          "Tarteeb was a lesson in restraint. The hardest part was not adding features — it was deciding which ones would break the calm. It also reinforced how much a single default can do for a daily tool: if the first screen is useful, people come back.",
-        seoTitle: "Tarteeb — Prayer-Aware Daily Planner",
-        seoDescription:
-          "Tarteeb is a minimal daily planner that structures your day around prayer times, works offline, and stays calm. A case study by Mahmoud Elnagdy.",
-      },
-      ar: {
-        tagline: "يوم مرتب حول الصلاة، مش حول الضوضاء.",
-        summary:
-          "منظم يومي بسيط بيبني جدولك حول مواعيد الصلاة وبيشتغل أوفلاين.",
-        overview:
-          "Tarteeb منظم يومي مبني على قيد بسيط: اليوم أصلًا له إيقاع. بدل ما تبدأ بتقويم فاضي، التطبيق بيولّد جدول حول مواعيد الصلاة، وبعدها بتشكّل الباقي.",
-        challenge:
-          "أغلب المنظمات بتفترض إن المستخدم هيبني الهيكل من الصفر. Tarteeb كان لازم يبدأ بـافتراضي مفيد من غير ما يبقى جامد — وكان لازم يشتغل أوفلاين، لأن اللحظات اللي محتاج فيها خطة مش دايمًا فيها نت.",
-        approach:
-          "بنيت واجهة React 19 بـ Tailwind CSS 4، وخليت اللغة البصرية هادية، وولّدت الجدول اليومي من مواعيد الصلاة. التطبيق متجاوب وقابل للتثبيت وبيشتغل أوفلاين. الهدف كان أداة هادية كفاية إنك تفتحها كل يوم.",
-        features: [
-          "تخطيط يومي واعي بمواعيد الصلاة",
-          "توليد جدول أوتوماتيك",
-          "واجهة نظيفة وبسيطة",
-          "متجاوب على الموبايل والديسكتوب",
-          "بيشتغل أوفلاين",
-        ],
-        technical: [
-          "React 19 + Tailwind CSS 4",
-          "توليد الجدول على العميل",
-          "سلوك PWA جاهز للأوفلاين",
-          "النشر على Netlify",
-        ],
-        outcome:
-          "Tarteeb كان درس في ضبط النفس. أصعب حاجة ما كانتش إضافة ميزات — كانت إني أقرر أنهي ميزات هتكسر الهدوء. كمان أكدت لي قد إيه افتراضي واحد ممكن يعمل فرق في أداة يومية: لو أول شاشة مفيدة، الناس بترجع.",
-        seoTitle: "Tarteeb — منظم يومي حول مواعيد الصلاة",
-        seoDescription:
-          "Tarteeb منظم يومي بسيط بيبني يومك حول مواعيد الصلاة، وبيشتغل أوفلاين، وبيحافظ على الهدوء. دراسة حالة من محمود النجدي.",
-      },
-    },
-  },
-  {
-    slug: "yost",
-    index: "06",
-    name: "Yost",
-    year: "2025",
-    featured: true,
-    category: "react-next",
-    stack: [
-      "React 19",
-      "Vite",
-      "Tailwind CSS",
-      "Express",
-      "Puppeteer",
-    ],
-    links: {
-      repo: "https://github.com/nagdista-dev/yost",
-    },
-    cover: {
-      bg: "#2A1E3A",
-      fg: "#F7F4EF",
-      accent: "#FF4D00",
-      motif: "feed",
-      domain: "Yost · local feed",
-    },
-    status: {
-      en: "Live preview · Local-first",
-      ar: "معاينة مباشرة · محلي أولًا",
-    },
-    gallery: [
-      {
-        src: "/images/projects/yost/feed.webp",
-        width: 960,
-        height: 720,
-        alt: {
-          en: "Yost community feed showing posts from a YouTube channel in a clean list",
-          ar: "فيد بوستات مجتمع يوتيوب في Yost، وفيه بوستات قناة في قائمة نظيفة",
-        },
-        caption: {
-          en: "Feed — community posts from your channels, without videos or recommendations.",
-          ar: "الفيد — بوستات مجتمع قنواتك، من غير فيديوهات ولا توصيات.",
-        },
-      },
-    ],
-    copy: {
-      en: {
-        tagline: "No videos. No algorithm. Just posts.",
-        summary:
-          "A local dashboard that pulls YouTube community posts from your favorite channels into one clean feed.",
-        overview:
-          "Yost is a local-first dashboard for YouTube community posts. It collects posts from multiple channels into a single feed, with search and filters, so you can follow what creators are saying without the video feed or the recommendation engine.",
-        challenge:
-          "Community posts are not exposed through a simple public API in the way videos are. Yost needed a scraping layer robust enough to collect posts from multiple channels, plus a front end that made the results feel like a feed rather than a data dump.",
-        approach:
-          "A React 19 + Vite front end talks to an Express backend that uses Puppeteer with a stealth plugin to collect posts. The app is designed to run on your machine, keeping the data local. The interface focuses on reading: a unified feed, search, and filters, with no video player and no algorithmic ranking.",
-        features: [
-          "Collect community posts from multiple channels",
-          "Unified, chronological feed",
-          "Search and filter posts",
-          "Local-first design",
-          "No videos, no recommendations",
-        ],
-        technical: [
-          "React 19 + Vite + Tailwind CSS front end",
-          "Node.js + Express backend",
-          "Puppeteer with stealth plugin for scraping",
-          "Local-first data flow",
-        ],
-        outcome:
-          "Yost taught me to respect the boundary between a demo and a tool. Scraping is fragile, so the backend has to fail gracefully and the UI has to stay honest about what it can load. It also made me think harder about local-first software: the value is not just privacy, it is ownership.",
-        seoTitle: "Yost — YouTube Community Posts Dashboard",
-        seoDescription:
-          "Yost is a local-first dashboard that collects YouTube community posts into one clean, searchable feed. A case study by Mahmoud Elnagdy.",
-      },
-      ar: {
-        tagline: "مفيش فيديوهات. مفيش خوارزمية. بوستات بس.",
-        summary:
-          "داشبورد محلي بيجمع بوستات مجتمع يوتيوب من القنوات اللي بتحبها في فيد واحد نظيف.",
-        overview:
-          "Yost داشبورد محلي أولًا لبوستات مجتمع يوتيوب. بيجمع البوستات من أكتر من قناة في فيد واحد، مع بحث وفلاتر، عشان تتابع اللي صنّاع المحتوى بيقولوه من غير فيد الفيديو أو محرك التوصيات.",
-        challenge:
-          "بوستات المجتمع مش متاحة من خلال API عام بسيط زي الفيديوهات. Yost كان محتاج طبقة scraping قوية كفاية تجمع البوستات من أكتر من قناة، وواجهة تخلي النتايج تحس إنها فيد مش دفعة بيانات.",
-        approach:
-          "واجهة React 19 + Vite بتتكلم مع باك إند Express بيستخدم Puppeteer مع stealth plugin لجمع البوستات. التطبيق مصمم يشتغل على جهازك، وبيحافظ على البيانات محلية. الواجهة بتركز على القراءة: فيد موحد وبحث وفلاتر، من غير مشغل فيديو ومن غير ترتيب خوارزمي.",
-        features: [
-          "جمع بوستات المجتمع من أكتر من قناة",
-          "فيد موحد ومرتب زمنيًا",
-          "بحث وفلترة البوستات",
-          "تصميم محلي أولًا",
-          "مفيش فيديوهات ولا توصيات",
-        ],
-        technical: [
-          "واجهة React 19 + Vite + Tailwind CSS",
-          "باك إند Node.js + Express",
-          "Puppeteer مع stealth plugin للـ scraping",
-          "تدفق بيانات محلي أولًا",
-        ],
-        outcome:
-          "Yost علمني أحترم الحدود بين الديمو والأداة. الـ scraping هش، فالباك إند لازم يفشل بلطف والواجهة تفضل صادقة في اللي تقدر تحمله. كمان خلاني أفكر أعمق في السوفتوير المحلي: القيمة مش بس خصوصية، دي ملكية.",
-        seoTitle: "Yost — داشبورد بوستات مجتمع يوتيوب",
-        seoDescription:
-          "Yost داشبورد محلي بيجمع بوستات مجتمع يوتيوب في فيد واحد نظيف وقابل للبحث. دراسة حالة من محمود النجدي.",
       },
     },
   },

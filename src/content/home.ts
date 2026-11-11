@@ -76,6 +76,7 @@ export const SKILL_GROUPS: SkillGroup[] = [
       "FFmpeg",
       "WordPress",
       "Shopify",
+      "Salla",
       "OpenAI API",
     ],
   },

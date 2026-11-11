@@ -18,6 +18,7 @@ export const SITE = {
   x: "https://x.com/nagdista",
   youtube: "https://www.youtube.com/@nagdista",
   khamsat: "https://khamsat.com/user/nagdista",
+  mostaql: "https://mostaql.com/u/nagdista",
   devto: "https://dev.to/nagdistaa",
   egyptInnovate: "https://egyptinnovate.com/users/01m52bryces025g7y7k9s7nzpb",
   githubPages: "https://nagdista-dev.github.io/",

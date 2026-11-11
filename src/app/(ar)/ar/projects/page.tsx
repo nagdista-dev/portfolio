@@ -11,21 +11,21 @@ import {
 
 export const metadata: Metadata = buildMetadata({
   locale: "ar",
-  title: "المشاريع حسب المنصة — وردبريس وReact وNext.js وإكستنشنز",
+  title: "المشاريع حسب المنصة — وردبريس وشوبيفاي وسلة وتطبيقات الويب",
   description:
-    "دراسات حالة مرتبة حسب المنصة: Bunyan Contracting على وردبريس، وWasla وLocalTube وTarteeb وYost على React وNext.js، وHassala كإكستنشن متصفح، وكل مستودعات GitHub العامة. شغل شوبيفاي وسلة مفتوح.",
+    "دراسات حالة مرتبة حسب المنصة وحسب أكتر طلب من العملاء: Bunyan Contracting على وردبريس، وشغل شوبيفاي وسلة، وبعده Wasla وLocalTube وTarteeb وYost على React وNext.js، وHassala كإكستنشن متصفح، وكل مستودعات GitHub العامة.",
   path: "/projects/",
   image: "/og/projects-ar.png",
   keywords: [
     "مشاريع محمود النجدي",
     "مشاريع نجديستا",
-    "مشاريع React",
-    "مشاريع Next.js",
     "مشاريع وردبريس",
-    "إكستنشن متصفح",
-    "دراسة حالة موقع شركة",
     "مطور شوبيفاي",
     "مطور سلة",
+    "مشاريع React",
+    "مشاريع Next.js",
+    "إكستنشن متصفح",
+    "دراسة حالة موقع شركة",
     "مشاريع مفتوحة المصدر",
   ],
 });

@@ -58,6 +58,10 @@ export function PressView({ locale }: { locale: Locale }) {
       href: SITE.khamsat,
     },
     {
+      label: isArabic ? "مستقل" : "Mostaql",
+      href: SITE.mostaql,
+    },
+    {
       label: "DEV Community",
       href: SITE.devto,
     },

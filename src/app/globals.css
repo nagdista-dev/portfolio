@@ -4714,11 +4714,49 @@ a.contact__detail-value:hover {
 }
 
 .projects-category__open p {
-  max-width: 48ch;
+  max-width: 58ch;
   margin-top: 0.35rem;
   font-size: 0.85rem;
   line-height: 1.65;
   color: var(--muted);
+}
+
+.projects-category__open-copy {
+  max-width: 62ch;
+}
+
+.projects-category__open-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.9rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.projects-category__open-tags li {
+  padding: 0.22rem 0.5rem;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  font-family: var(--font-mono);
+  font-size: 0.56rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+[dir="rtl"] .projects-category__open-tags li {
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+@media (max-width: 599px) {
+  .projects-category__open .button {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 /* Header — More dropdown */

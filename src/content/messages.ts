@@ -108,7 +108,7 @@ const en = {
     workLabel: "02 — Selected work",
     workTitle: "Projects built to be used.",
     workIntro:
-      "Six case studies across corporate WordPress, learning tools, local-first software, browser extensions, and everyday utilities. Each one taught me something the last one didn't.",
+      "Six case studies across corporate WordPress, learning tools, local-first software, browser extensions, and everyday utilities. Each one taught me something the last one didn't — and Shopify and Salla storefront work is open for your project.",
     workAll: "Explore all projects",
     wpLabel: "WordPress services",
     wpTitle: "Corporate sites that feel custom — and stay editable.",
@@ -195,13 +195,13 @@ const en = {
       "Repositories marked as forks or archived are excluded. Learning repositories are included — they're part of the journey.",
     categoriesTitle: "Browse by platform",
     categoriesIntro:
-      "Six projects across five platforms. Pick the track you care about — and the platforms without published work are open for it.",
+      "Six case studies, grouped by platform and ordered by what clients ask for most — WordPress first, then Shopify and Salla storefronts, then custom React/Next apps and browser extensions.",
     categoryNav: "Jump to a platform",
     projectCountOne: "project",
     projectCountMany: "projects",
     emptyTitle: "Open for work",
     emptyBody:
-      "No published case study here yet. Shopify and Salla builds are work I take on — this space is ready for the next one.",
+      "No published case study here yet. This is work I take on — the space is ready for the next one.",
     emptyCta: "Talk about a project",
   },
   projectPage: {
@@ -408,7 +408,7 @@ const ar: typeof en = {
     workLabel: "02 — أعمال مختارة",
     workTitle: "مشاريع اتبنت عشان تتنستخدم.",
     workIntro:
-      "ست دراسات حالة عبر مواقع الشركات على وردبريس، وأدوات التعلم، والسوفتوير المحلي، وإكستنشنات المتصفح، وتطبيقات اليوم. كل مشروع علّمني حاجة المشروع اللي قبله ما علمهاش.",
+      "ست دراسات حالة عبر مواقع الشركات على وردبريس، وأدوات التعلم، والسوفتوير المحلي، وإكستنشنات المتصفح، وتطبيقات اليوم. كل مشروع علّمني حاجة المشروع اللي قبله ما علمهاش — وكمان شغل شوبيفاي وسلة مفتوح لمشروعك.",
     workAll: "استكشف كل المشاريع",
     wpLabel: "خدمات وردبريس",
     wpTitle: "مواقع شركات شكلها مخصص — ولسه قابلة للتعديل.",
@@ -495,13 +495,13 @@ const ar: typeof en = {
       "المستودعات اللي هي fork أو مؤرشفة مستبعدة. مستودعات التعلم موجودة — هي جزء من الرحلة.",
     categoriesTitle: "اختار البلاتفورم",
     categoriesIntro:
-      "ست مشاريع على خمس منصات. اختار اللي يهمك — والمنصات اللي لسه مفيش فيها شغل منشور، دي شغل بنعمله ومفتوحة ليه.",
+      "ست دراسات حالة، متجمعة حسب المنصة ومرتبة حسب أكتر طلب من العملاء — وردبريس الأول، وبعده شوبيفاي وسلة، وبعدين تطبيقات React وNext.js، وفي الآخر إكستنشنز المتصفح.",
     categoryNav: "اقفز على منصة",
     projectCountOne: "مشروع",
     projectCountMany: "مشاريع",
     emptyTitle: "مفتوحة للشغل",
     emptyBody:
-      "لسه مفيش دراسة حالة منشورة هنا. شغل شوبيفاي وسلة بنعمله — والمكان ده مستني المشروع الجاي.",
+      "لسه مفيش دراسة حالة منشورة هنا. ده شغل بنعمله — والمكان مستني المشروع الجاي.",
     emptyCta: "اتكلم عن مشروعك",
   },
   projectPage: {

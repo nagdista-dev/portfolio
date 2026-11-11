@@ -106,7 +106,7 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
     ],
     bioTitle: "Short bio",
     shortBio:
-      "Mahmoud Elnagdy is a full-stack developer based in Cairo, Egypt. He builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL, and corporate WordPress websites with Elementor and Rank Math. He graduated in 2026 with a B.Sc. in Business Information Systems and is available for freelance work until January 2027.",
+      "Mahmoud Elnagdy is a full-stack developer based in Cairo, Egypt. He builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL, corporate WordPress websites with Elementor and Rank Math, and Shopify/Salla storefronts. He graduated in 2026 with a B.Sc. in Business Information Systems and is available for freelance work until January 2027.",
     educationTitle: "Education",
     education: [
       {
@@ -141,7 +141,7 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
     experienceTitle: "Experience",
     experience: [
       "Freelance developer working directly with clients in Egypt, from requirements through delivery.",
-      "Builds bilingual and local-first web products, plus corporate WordPress websites with Elementor and Rank Math.",
+      "Builds bilingual and local-first web products, plus corporate WordPress websites with Elementor and Rank Math, and Shopify/Salla storefront work.",
       "Selected work is listed below.",
     ],
     skillsTitle: "Skills",
@@ -166,6 +166,11 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
         label: "WordPress",
         value:
           "WordPress, Elementor, Gutenberg, WooCommerce, PHP, MySQL, Rank Math SEO, Fluent Forms",
+      },
+      {
+        label: "E-commerce",
+        value:
+          "Shopify and Salla storefronts, theme sections, product pages, payments and shipping setup",
       },
       {
         label: "Focus",
@@ -307,7 +312,7 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
       {
         question: "What has Mahmoud Elnagdy built?",
         answer:
-          "Featured projects include Bunyan Contracting, a complete corporate WordPress site, plus Wasla, LocalTube, Hassala, Tarteeb, and Yost — bilingual and local-first web products. Case studies are at https://nagdista.com/projects/ and WordPress services at https://nagdista.com/wordpress/.",
+          "Featured projects include Bunyan Contracting, a complete corporate WordPress site, plus Wasla, LocalTube, Hassala, Tarteeb, and Yost — bilingual and local-first web products. Shopify and Salla storefront work is open for new projects. Case studies are at https://nagdista.com/projects/ and WordPress services at https://nagdista.com/wordpress/.",
       },
       {
         question: "Is Mahmoud Elnagdy available for work?",
@@ -400,7 +405,7 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
     ],
     bioTitle: "نبذة مختصرة",
     shortBio:
-      "محمود النجدي مطور فول ستاك في القاهرة، مصر. بيبني منتجات ويب سريعة وسهلة وثنائية اللغة بـReact وNext.js وTypeScript وNode.js وSQL، وكمان مواقع Corporate على وردبريس بـElementor وRank Math. اتخرج سنة 2026 ببكالوريوس نظم ومعلومات الأعمال، ومتاح للفريلانس لحد يناير 2027.",
+      "محمود النجدي مطور فول ستاك في القاهرة، مصر. بيبني منتجات ويب سريعة وسهلة وثنائية اللغة بـReact وNext.js وTypeScript وNode.js وSQL، وكمان مواقع Corporate على وردبريس بـElementor وRank Math، وشغل متاجر شوبيفاي وسلة. اتخرج سنة 2026 ببكالوريوس نظم ومعلومات الأعمال، ومتاح للفريلانس لحد يناير 2027.",
     educationTitle: "التعليم",
     education: [
       {
@@ -435,7 +440,7 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
     experienceTitle: "الخبرة",
     experience: [
       "مطور فريلانس بيشتغل مباشرة مع عملاء في مصر، من فهم المتطلبات لحد التسليم.",
-      "بيبني منتجات ويب ثنائية اللغة وتهتم بالعمل المحلي، وكمان مواقع Corporate على وردبريس بـElementor وRank Math.",
+      "بيبني منتجات ويب ثنائية اللغة وتهتم بالعمل المحلي، وكمان مواقع Corporate على وردبريس بـElementor وRank Math، وشغل متاجر شوبيفاي وسلة.",
       "الأعمال المختارة تحت.",
     ],
     skillsTitle: "المهارات",
@@ -460,6 +465,11 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
         label: "وردبريس",
         value:
           "WordPress وElementor وGutenberg وWooCommerce وPHP وMySQL وRank Math SEO وFluent Forms",
+      },
+      {
+        label: "التجارة الإلكترونية",
+        value:
+          "متاجر شوبيفاي وسلة، وأقسام ثيمات، وصفحات منتجات، وربط الدفع والشحن",
       },
       {
         label: "التركيز",
@@ -600,7 +610,7 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
       {
         question: "محمود النجدي بنى إيه؟",
         answer:
-          "من أبرز أعماله Bunyan Contracting، موقع Corporate كامل على وردبريس، وكمان Wasla وLocalTube وHassala وTarteeb وYost، وهي منتجات ويب ثنائية اللغة وتهتم بالعمل المحلي. دراسات الحالة على https://nagdista.com/ar/projects/ وخدمات وردبريس على https://nagdista.com/ar/wordpress/.",
+          "من أبرز أعماله Bunyan Contracting، موقع Corporate كامل على وردبريس، وكمان Wasla وLocalTube وHassala وTarteeb وYost، وهي منتجات ويب ثنائية اللغة وتهتم بالعمل المحلي. شغل متاجر شوبيفاي وسلة مفتوح لمشاريع جديدة. دراسات الحالة على https://nagdista.com/ar/projects/ وخدمات وردبريس على https://nagdista.com/ar/wordpress/.",
       },
       {
         question: "محمود النجدي متاح للشغل؟",

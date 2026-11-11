@@ -115,9 +115,18 @@ export function ProjectsView({
               </div>
             ) : (
               <div className="projects-category__open">
-                <div>
+                <div className="projects-category__open-copy">
                   <h3>{t.projectsPage.emptyTitle}</h3>
-                  <p>{t.projectsPage.emptyBody}</p>
+                  <p>
+                    {category.openBody?.[locale] ?? t.projectsPage.emptyBody}
+                  </p>
+                  {category.openTags ? (
+                    <ul className="projects-category__open-tags">
+                      {category.openTags[locale].map((tag) => (
+                        <li key={tag}>{tag}</li>
+                      ))}
+                    </ul>
+                  ) : null}
                 </div>
                 <Link
                   href={localePath(locale, "/#contact")}
