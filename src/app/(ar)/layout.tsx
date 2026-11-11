@@ -119,7 +119,7 @@ export default function ArabicLayout({
       </head>
       <body>
         <a href="#main" className="skip-link">
-          تخطَّ إلى المحتوى
+          اتخطى للمحتوى
         </a>
         <SiteHeader locale="ar" />
         <main id="main">{children}</main>

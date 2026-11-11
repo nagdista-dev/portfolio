@@ -204,7 +204,7 @@ export function SiteHeader({ locale }: { locale: Locale }) {
                   href={switchHref}
                   hrefLang="ar"
                   lang="ar"
-                  aria-label="AR — التبديل إلى العربية"
+                  aria-label="AR — غيّر للعربي"
                 >
                   AR
                 </Link>

@@ -111,7 +111,7 @@ export const TIMELINE: TimelineItem[] = [
     },
     description: {
       en: "Graduated in August 2026 with a Very Good cumulative grade. The graduation project was graded Excellent (99%) and focused on databases, systems analysis, and software development.",
-      ar: "تخرج في أغسطس 2026 بتقدير تراكمي جيد جدًا. مشروع التخرج حصل على امتياز بنسبة 99% وكان مركزًا على قواعد البيانات وتحليل النظم وتطوير السوفتوير.",
+      ar: "تخرج في أغسطس 2026 بتقدير تراكمي جيد جدًا. مشروع التخرج خد امتياز بنسبة 99% وكان مركز على قواعد البيانات وتحليل النظم وتطوير السوفتوير.",
     },
     kind: "education",
   },
@@ -137,7 +137,7 @@ export const TIMELINE: TimelineItem[] = [
     org: { en: "Self-directed", ar: "شغل ذاتي" },
     description: {
       en: "Designed and shipped bilingual learning tools, local-first software, browser extensions, and daily utilities — six featured case studies, plus corporate WordPress work.",
-      ar: "صممت ونفذت أدوات تعلم ثنائية اللغة، وسوفتوير محلي، وإكستنشنات متصفح، وأدوات يومية — ست دراسات حالة مميزة، بالإضافة لشغل وردبريس للشركات.",
+      ar: "صممت ونفذت أدوات تعلم ثنائية اللغة، وسوفتوير محلي، وإكستنشنات متصفح، وأدوات يومية — ست دراسات حالة مميزة، وكمان شغل وردبريس للشركات.",
     },
     kind: "project",
   },
