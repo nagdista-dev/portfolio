@@ -101,6 +101,17 @@ export function SiteFooter({ locale }: { locale: Locale }) {
 
         <div className="site-footer__bottom">
           <p>
+            {isArabic ? (
+              <>
+                <Link href="/">Mahmoud Elnagdy</Link> — النسخة الإنجليزية
+              </>
+            ) : (
+              <>
+                Arabic version: <Link href="/ar/">محمود النجدي</Link>
+              </>
+            )}
+          </p>
+          <p>
             © {year}{" "}
             <Link href={homeHref}>{isArabic ? SITE.nameAr : SITE.name}</Link>.{" "}
             {t.footer.rights}
