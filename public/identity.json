@@ -108,6 +108,11 @@
     },
     {
       "@type": "ProfilePage",
+      "url": "https://nagdista.com/ar/press/",
+      "name": "محمود النجدي — ملف صحفي وتعريفي"
+    },
+    {
+      "@type": "ProfilePage",
       "url": "https://nagdista.com/ai/",
       "name": "Mahmoud Elnagdy on AI"
     }

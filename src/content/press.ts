@@ -312,6 +312,11 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
           "Nagdista is the correct spelling of the online handle. Najdista is a common misspelling, but it refers to the same person, Mahmoud Elnagdy, and the same website, https://nagdista.com/.",
       },
       {
+        question: "Where is the official Mahmoud Elnagdy website?",
+        answer:
+          "The official website is https://nagdista.com/. The press kit at https://nagdista.com/press/ lists the official links, bio, name spellings, and contact details for verification.",
+      },
+      {
         question: "Does Mahmoud Elnagdy work with AI?",
         answer:
           "Yes. He writes AI in Brief, a daily LinkedIn newsletter about AI news for developers, and uses AI-assisted tools in his development and language-learning workflow. Read it at https://www.linkedin.com/newsletters/ai-in-brief-7492152374984376320.",
@@ -585,6 +590,11 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
         question: "هل الاسم Nagdista ولا Najdista؟",
         answer:
           "الكتابة الصحيحة هي Nagdista. Najdista كتابة شائعة خاطئة، لكنها تشير إلى نفس الشخص، محمود النجدي، ونفس الموقع https://nagdista.com/.",
+      },
+      {
+        question: "إين الموقع الرسمي لمحمود النجدي؟",
+        answer:
+          "الموقع الرسمي هو https://nagdista.com/. وصفحة الملف الصحفي على https://nagdista.com/ar/press/ فيها الروابط الرسمية والنبذة وطرق كتابة الاسم وبيانات التواصل للتحقق.",
       },
       {
         question: "هل محمود النجدي بيشتغل بالذكاء الاصطناعي؟",

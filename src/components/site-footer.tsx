@@ -101,7 +101,9 @@ export function SiteFooter({ locale }: { locale: Locale }) {
 
         <div className="site-footer__bottom">
           <p>
-            © {year} {SITE.name}. {t.footer.rights}
+            © {year}{" "}
+            <Link href={homeHref}>{isArabic ? SITE.nameAr : SITE.name}</Link>.{" "}
+            {t.footer.rights}
           </p>
           <p>{t.footer.builtWith}</p>
           <p>{t.footer.colophon}</p>

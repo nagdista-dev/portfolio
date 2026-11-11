@@ -109,7 +109,9 @@ export function ArticleView({
               </span>
               <div>
                 <p className="author-card__name">
-                  {locale === "ar" ? SITE.nameAr : SITE.name}
+                  <Link href={localePath(locale, "/about/")}>
+                    {locale === "ar" ? SITE.nameAr : SITE.name}
+                  </Link>
                 </p>
                 <p className="author-card__role">{t.articlePage.authorRole}</p>
               </div>

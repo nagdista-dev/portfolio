@@ -185,8 +185,8 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
         : "Full-stack developer in Cairo, Egypt. Builds bilingual web products with React, Next.js, TypeScript, and Node.js.",
     disambiguatingDescription:
       locale === "ar"
-        ? "مطور فول ستاك في القاهرة وصاحب مشاريع Wasla وLocalTube وHassala وTarteeb وYost؛ بكالوريوس نظم ومعلومات الأعمال 2026."
-        : "Cairo-based full-stack developer and creator of Wasla, LocalTube, Hassala, Tarteeb, and Yost; B.Sc. in Business Information Systems, 2026.",
+        ? "مطور فول ستاك في القاهرة وصاحب مشاريع Wasla وLocalTube وHassala وTarteeb وYost؛ بكالوريوس نظم ومعلومات الأعمال 2026. هذا هو المطور المقصود بالاسم، وليس صانع محتوى العطور الذي يحمل الاسم نفسه."
+        : "Cairo-based full-stack developer and creator of Wasla, LocalTube, Hassala, Tarteeb, and Yost; B.Sc. in Business Information Systems, 2026. He is a different person from the perfume creator with the same name.",
     email: `mailto:${SITE.email}`,
     telephone: SITE.phoneHref,
     address: {
@@ -262,6 +262,22 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
           locale === "ar"
             ? "محمود النجدي والذكاء الاصطناعي"
             : "Mahmoud Elnagdy on AI",
+      },
+      {
+        "@type": "WebPage",
+        url: pageUrl(locale, "/about/"),
+        name:
+          locale === "ar"
+            ? "عن محمود النجدي"
+            : "About Mahmoud Elnagdy",
+      },
+      {
+        "@type": "WebPage",
+        url: pageUrl(locale, "/"),
+        name:
+          locale === "ar"
+            ? "محمود النجدي — مطور فول ستاك"
+            : "Mahmoud Elnagdy — Full-Stack Developer",
       },
     ],
     knowsAbout: [
@@ -410,7 +426,7 @@ export function websiteJsonLd(locale: Locale): Record<string, unknown> {
     "@id": `${SITE.url}/#website`,
     url: SITE.url,
     name: "Mahmoud Elnagdy",
-    alternateName: ["Nagdista", "Najdista", "نجديستا"],
+    alternateName: ["Nagdista", "Najdista", "نجديستا", "محمود النجدي", "Elnagdy"],
     description:
       locale === "ar"
         ? "بورتفوليو محمود النجدي، مطور فول ستاك في القاهرة."
