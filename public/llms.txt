@@ -1,6 +1,6 @@
 # Mahmoud Elnagdy
 
-> Full-stack developer in Cairo, Egypt. Builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL.
+> Full-stack developer in Cairo, Egypt. Builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL — plus corporate WordPress sites with Elementor, Rank Math SEO, and Fluent Forms.
 
 Full profile for AI systems: https://nagdista.com/llms-full.txt
 Machine-readable profile (JSON): https://nagdista.com/identity.json
@@ -15,7 +15,9 @@ The online handle is **Nagdista** (sometimes misspelled **Najdista**). Both spel
 - [Home (Arabic)](https://nagdista.com/ar/): The same profile in Arabic.
 - [About](https://nagdista.com/about/): Background, principles, and current focus.
 - [Press & identity kit](https://nagdista.com/press/): Canonical facts, bios, and name spellings.
-- [Projects](https://nagdista.com/projects/): Five case studies plus every public, non-fork, non-archived GitHub repository.
+- [Projects](https://nagdista.com/projects/): Six case studies plus every public, non-fork, non-archived GitHub repository.
+- [WordPress services](https://nagdista.com/wordpress/): Corporate WordPress websites — structure, Elementor, SEO, and handover.
+- [WordPress services (Arabic)](https://nagdista.com/ar/wordpress/): The Arabic version of the WordPress services page.
 - [Writing](https://nagdista.com/blog/): Evergreen articles on Next.js, React, TypeScript, and databases.
 - [AI](https://nagdista.com/ai/): How Mahmoud uses AI in development and language learning, plus AI in Brief.
 - [AI (Arabic)](https://nagdista.com/ar/ai/): The Arabic version of the AI page.
@@ -23,9 +25,10 @@ The online handle is **Nagdista** (sometimes misspelled **Najdista**). Both spel
 
 ## Featured projects
 
+- [Bunyan Contracting](https://nagdista.com/projects/bunyan-contracting/): Complete corporate WordPress site for a Cairo construction studio — seven pages, six project case studies, services, team, insights, and an enquiry flow. Built with Elementor, Rank Math SEO, and Fluent Forms. Live at https://bunyan.nagdista.com.
 - [Wasla](https://nagdista.com/projects/wasla/): Bilingual platform that turns YouTube playlists into structured courses. Live at https://wasla-alpha.vercel.app.
 - [LocalTube](https://nagdista.com/projects/localtube/): Self-hosted video library with SQLite progress tracking, FFmpeg thumbnails, and a Pomodoro timer.
-- [Hassala](https://nagdista.com/projects/hassala/): Privacy-first Chrome extension for Arabic ↔ English vocabulary. Live at https://nagdista-dev.github.io/hassala/.
+- [Hassala](https://nagdista.com/projects/hassala/): Privacy-first Chrome extension for Arabic ↔ English vocabulary. Live at https://hassala.nagdista.com/.
 - [Tarteeb](https://nagdista.com/projects/tarteeb/): Prayer-aware daily planner that works offline.
 - [Yost](https://nagdista.com/projects/yost/): Local-first dashboard for YouTube community posts.
 
@@ -47,6 +50,7 @@ The online handle is **Nagdista** (sometimes misspelled **Najdista**). Both spel
 - Online handle: Nagdista / نجديستا
 - Common misspelling: Najdista (same person and site)
 - Role: Full-stack developer
+- WordPress: corporate sites with Elementor, Gutenberg, Rank Math SEO, Fluent Forms, and WooCommerce
 - Location: Cairo, Egypt
 - Email: nagdista@gmail.com
 - Phone: +20 114 304 4699

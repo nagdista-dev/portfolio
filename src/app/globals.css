@@ -625,6 +625,11 @@ html.js [data-reveal].is-visible {
 @media (min-width: 860px) {
   .site-nav {
     display: flex;
+    gap: 1rem;
+  }
+
+  .site-nav__link {
+    font-size: 0.78rem;
   }
 
   .menu-button {
@@ -633,6 +638,16 @@ html.js [data-reveal].is-visible {
 
   .site-header__cv {
     display: inline-flex;
+  }
+}
+
+@media (min-width: 1080px) {
+  .site-nav {
+    gap: 1.5rem;
+  }
+
+  .site-nav__link {
+    font-size: 0.82rem;
   }
 }
 
@@ -1408,6 +1423,118 @@ html.js [data-reveal].is-visible {
   flex: 1;
   min-height: 0;
   padding-block: 1rem;
+}
+
+/* Screenshot cover — used by live website case studies */
+
+.project-cover--shot {
+  gap: 0;
+  padding: 0;
+  justify-content: flex-start;
+  background: var(--cover-bg, var(--ink));
+}
+
+.project-cover--shot::before {
+  display: none;
+}
+
+.project-cover__shotbar {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex: 0 0 auto;
+  padding: 0.55rem 0.8rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--cover-fg) 14%, transparent);
+  background: color-mix(in srgb, var(--cover-fg) 5%, var(--cover-bg));
+}
+
+.project-cover__dots {
+  display: flex;
+  gap: 0.26rem;
+}
+
+.project-cover__dots span {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--cover-fg) 28%, transparent);
+}
+
+.project-cover__domain {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.04em;
+  color: color-mix(in srgb, var(--cover-fg) 62%, transparent);
+}
+
+[dir="rtl"] .project-cover__domain {
+  font-family: var(--font-body);
+  letter-spacing: 0;
+}
+
+.project-cover__shotindex {
+  margin-inline-start: auto;
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.08em;
+  color: var(--cover-accent, var(--accent));
+}
+
+.project-cover__shot {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  background: #fff;
+}
+
+.project-cover__shot img {
+  object-fit: cover;
+  object-position: top center;
+}
+
+.project-cover--shot .project-cover__bottom {
+  flex: 0 0 auto;
+  padding: 0.7rem 0.9rem;
+  border-top: 1px solid color-mix(in srgb, var(--cover-fg) 14%, transparent);
+  background: var(--cover-bg);
+}
+
+/* Screenshot gallery on case-study pages */
+
+.case-study__gallery {
+  display: grid;
+  gap: 1rem;
+}
+
+.case-study__shot {
+  margin: 0;
+  border: 1px solid var(--line);
+  background: var(--paper-2);
+}
+
+.case-study__shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.case-study__shot figcaption {
+  padding: 0.7rem 0.85rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.72rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+@media (min-width: 720px) {
+  .case-study__gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .case-study__gallery > :first-child {
+    grid-column: 1 / -1;
+  }
 }
 
 .motif {
@@ -2915,6 +3042,10 @@ a.contact__detail-value:hover {
   aspect-ratio: 21 / 9;
 }
 
+.case-study__cover .project-cover--shot {
+  aspect-ratio: 16 / 10;
+}
+
 .case-study__layout {
   display: grid;
   gap: 2.5rem;
@@ -4022,6 +4153,284 @@ a.contact__detail-value:hover {
   gap: 0.6rem;
   justify-content: center;
   margin-top: 0.75rem;
+}
+
+/* WordPress service page */
+
+.section--alt {
+  background: var(--paper-2);
+}
+
+.wp-hero__aside {
+  display: grid;
+  gap: 1.1rem;
+  justify-items: start;
+}
+
+.wp-hero__aside > p {
+  max-width: 46ch;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  line-height: 1.7;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+[dir="rtl"] .wp-hero__aside > p {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.wp-hero__aside .hero__actions {
+  margin-top: 0;
+}
+
+.wp-work__grid {
+  display: grid;
+}
+
+.wp-work {
+  padding-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+.wp-work .project-card--large .project-cover {
+  aspect-ratio: 16 / 9;
+}
+
+.wp-services {
+  display: grid;
+  border-top: 1px solid var(--line-strong);
+}
+
+.wp-service {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.35rem 1rem;
+  padding-block: 1.35rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.wp-service__index {
+  grid-row: 1 / span 2;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  padding-top: 0.3rem;
+}
+
+.wp-service h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.05rem, 1.7vw, 1.22rem);
+}
+
+.wp-service p {
+  max-width: 56ch;
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.wp-why {
+  display: grid;
+  gap: 0;
+  border-top: 1px solid var(--line-strong);
+}
+
+.wp-why__item {
+  padding-block: 1.4rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.wp-why__item h3 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  margin-bottom: 0.45rem;
+}
+
+.wp-why__item p {
+  max-width: 48ch;
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.wp-process {
+  display: grid;
+  counter-reset: none;
+  border-top: 1px solid var(--line-strong);
+}
+
+.wp-process__step {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 1rem;
+  padding-block: 1.3rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.wp-process__step-number {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  padding-top: 0.32rem;
+}
+
+.wp-process__step h3 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+}
+
+.wp-process__step p {
+  max-width: 64ch;
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.wp-stack {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.wp-stack h2 {
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+}
+
+.wp-stack__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.wp-stack__list li {
+  padding: 0.4rem 0.7rem;
+  border: 1px solid var(--line-strong);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+
+[dir="rtl"] .wp-stack__list li {
+  font-family: var(--font-body);
+  font-size: 0.76rem;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.wp-faq {
+  display: grid;
+  margin: 0;
+  border-top: 1px solid var(--line-strong);
+}
+
+.wp-faq__item {
+  padding-block: 1.25rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.wp-faq dt {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+.wp-faq dd {
+  margin: 0.45rem 0 0;
+  max-width: 62ch;
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.wp-cta {
+  background: var(--ink);
+  color: var(--paper);
+  border-top: 0;
+}
+
+.wp-cta__inner {
+  display: grid;
+  gap: 1.6rem;
+}
+
+.wp-cta .eyebrow {
+  color: var(--accent);
+}
+
+.wp-cta h2 {
+  max-width: 20ch;
+  font-size: clamp(1.9rem, 4.4vw, 3.4rem);
+}
+
+.wp-cta p:not(.eyebrow) {
+  max-width: 56ch;
+  margin-top: 0.9rem;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: color-mix(in srgb, var(--paper) 72%, transparent);
+}
+
+.wp-cta .hero__actions {
+  margin-top: 0;
+  align-self: end;
+  justify-self: start;
+}
+
+.wp-cta .button {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.wp-cta .button--ghost {
+  background: transparent;
+  border-color: color-mix(in srgb, var(--paper) 32%, transparent);
+  color: var(--paper);
+}
+
+.wp-cta .button--ghost:hover {
+  border-color: var(--paper);
+}
+
+@media (min-width: 720px) {
+  .wp-services {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 2.5rem;
+  }
+
+  .wp-why {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 2.5rem;
+  }
+
+  .wp-faq {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 2.5rem;
+  }
+}
+
+@media (min-width: 980px) {
+  .wp-services {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .wp-stack {
+    grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr);
+    align-items: start;
+  }
+
+  .wp-cta__inner {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+    align-items: end;
+  }
 }
 
 /* Print */

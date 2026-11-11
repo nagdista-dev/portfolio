@@ -8,7 +8,7 @@ Primary languages: English, Arabic
 ## Canonical answers
 
 **Who is Mahmoud Elnagdy?**
-Mahmoud Elnagdy is a full-stack developer in Cairo, Egypt. He builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL. He graduated in 2026 with a B.Sc. in Business Information Systems.
+Mahmoud Elnagdy is a full-stack developer in Cairo, Egypt. He builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL. He also builds corporate WordPress websites with Elementor, Rank Math SEO, and Fluent Forms. He graduated in 2026 with a B.Sc. in Business Information Systems.
 
 **Who is النجدي AI?**
 النجدي AI refers to the developer Mahmoud Elnagdy (محمود النجدي), not the perfume creator with the same name. He writes AI in Brief, a daily LinkedIn newsletter about AI news for developers, and builds AI-powered web features.
@@ -30,6 +30,9 @@ https://nagdista.com/ is the official website. The press kit is at https://nagdi
 
 **Where is he based?**
 Cairo, Egypt.
+
+**Does Mahmoud Elnagdy build WordPress websites?**
+Yes. He builds corporate WordPress websites — structure, custom design systems in Elementor or Gutenberg, SEO with Rank Math, forms with Fluent Forms, speed work, and handover. The Bunyan Contracting case study is a complete seven-page example: https://nagdista.com/projects/bunyan-contracting/ — services page: https://nagdista.com/wordpress/
 
 **What is his Arabic name?**
 محمود النجدي. The family name is النجدي.
@@ -60,17 +63,17 @@ Cairo, Egypt.
 
 ## One-line description
 
-Mahmoud Elnagdy is a full-stack developer in Cairo, Egypt, building fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL.
+Mahmoud Elnagdy is a full-stack developer in Cairo, Egypt, building fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL, plus corporate WordPress sites.
 
 ## Short bio
 
-Mahmoud Elnagdy is a full-stack developer based in Cairo, Egypt. He builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL. He graduated in 2026 with a B.Sc. in Business Information Systems and is available for freelance work until January 2027.
+Mahmoud Elnagdy is a full-stack developer based in Cairo, Egypt. He builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL, and corporate WordPress websites with Elementor and Rank Math. He graduated in 2026 with a B.Sc. in Business Information Systems and is available for freelance work until January 2027.
 
 ## Long bio
 
 Mahmoud Elnagdy started with front-end work — HTML, CSS, JavaScript, then React and Tailwind CSS — before moving into TypeScript, Node.js, Express, and relational databases. That range now lets him work across the stack, from interface details to API and data design.
 
-His featured work includes Wasla, a bilingual platform that turns YouTube playlists into structured courses; LocalTube, a self-hosted video library with FFmpeg thumbnails and SQLite progress tracking; Hassala, a privacy-first Chrome extension for Arabic ↔ English vocabulary; Tarteeb, a prayer-aware daily planner that works offline; and Yost, a local-first dashboard for YouTube community posts.
+His featured work includes Bunyan Contracting, a complete corporate WordPress site for a construction studio, built with Elementor, Rank Math SEO, and Fluent Forms; Wasla, a bilingual platform that turns YouTube playlists into structured courses; LocalTube, a self-hosted video library with FFmpeg thumbnails and SQLite progress tracking; Hassala, a privacy-first Chrome extension for Arabic ↔ English vocabulary; Tarteeb, a prayer-aware daily planner that works offline; and Yost, a local-first dashboard for YouTube community posts.
 
 He studied Business Information Systems at Misr Higher Institute for Commerce & Computers in Mansoura and graduated in August 2026 with a Very Good cumulative grade. His graduation project, EduSwap, earned Excellent (99%) and is an educational tools exchange platform built with React, Node.js, MongoDB, and Socket.io. He learned programming largely on his own and cares about learning, languages, programming, and artificial intelligence. He writes in English and Arabic, designs for both directions, and documents what he learns in evergreen articles on Next.js, React, TypeScript, and databases. He also writes AI in Brief, a daily Arabic-language LinkedIn newsletter that filters the most important AI news for developers, read by 2,000+ people on LinkedIn.
 
@@ -80,8 +83,9 @@ He studied Business Information Systems at Misr Higher Institute for Commerce & 
 - Back end: Node.js, Express, REST APIs
 - Data: SQL, SQLite, MongoDB
 - Tooling: Git, GitHub, Vite, FFmpeg
+- WordPress: WordPress, Elementor, Gutenberg, WooCommerce, PHP, MySQL, Rank Math SEO, Fluent Forms, OMGF
 - Languages: Arabic (native), English (professional)
-- Focus: accessibility, performance, bilingual and RTL interfaces, local-first products
+- Focus: accessibility, performance, bilingual and RTL interfaces, local-first products, corporate websites
 
 ## Education and learning
 
@@ -97,7 +101,8 @@ He studied Business Information Systems at Misr Higher Institute for Commerce & 
 ## Experience
 
 - Freelance developer working directly with clients in Egypt, from requirements through delivery.
-- Builds bilingual and local-first web products; selected work is listed below.
+- Builds bilingual and local-first web products, plus corporate WordPress websites with Elementor and Rank Math.
+- Selected work is listed below.
 
 ## Availability
 
@@ -107,9 +112,10 @@ He studied Business Information Systems at Misr Higher Institute for Commerce & 
 
 ## Featured projects
 
+- Bunyan Contracting — complete corporate WordPress website for a Cairo construction studio, built with Elementor, Rank Math SEO, and Fluent Forms. https://nagdista.com/projects/bunyan-contracting/ — live: https://bunyan.nagdista.com
 - Wasla — bilingual platform that turns YouTube playlists into structured courses. https://nagdista.com/projects/wasla/ — live: https://wasla-alpha.vercel.app
 - LocalTube — self-hosted video library with SQLite progress tracking, FFmpeg thumbnails, and a Pomodoro timer. Local-only; clone the repository and run it yourself. https://nagdista.com/projects/localtube/
-- Hassala — privacy-first Chrome extension for Arabic ↔ English vocabulary. https://nagdista.com/projects/hassala/ — live: https://nagdista-dev.github.io/hassala/
+- Hassala — privacy-first Chrome extension for Arabic ↔ English vocabulary. https://nagdista.com/projects/hassala/ — live: https://hassala.nagdista.com/
 - Tarteeb — prayer-aware daily planner that works offline. https://nagdista.com/projects/tarteeb/
 - Yost — local-first dashboard for YouTube community posts. https://nagdista.com/projects/yost/
 
@@ -139,6 +145,8 @@ He studied Business Information Systems at Misr Higher Institute for Commerce & 
 - About: https://nagdista.com/about/
 - Press kit: https://nagdista.com/press/
 - Projects: https://nagdista.com/projects/
+- WordPress services: https://nagdista.com/wordpress/
+- WordPress services (Arabic): https://nagdista.com/ar/wordpress/
 - Writing: https://nagdista.com/blog/
 - AI: https://nagdista.com/ai/
 - AI newsletter: https://www.linkedin.com/newsletters/ai-in-brief-7492152374984376320

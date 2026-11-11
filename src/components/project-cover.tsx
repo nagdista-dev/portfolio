@@ -1,4 +1,5 @@
 import type { CSSProperties } from "react";
+import Image from "next/image";
 import type { Project } from "@/content/types";
 import { CheckIcon, PlayIcon } from "./icons";
 
@@ -115,6 +116,42 @@ export function ProjectCover({
     "--cover-fg": project.cover.fg,
     "--cover-accent": project.cover.accent,
   } as CSSProperties;
+
+  if (project.cover.image) {
+    return (
+      <div
+        className={`project-cover project-cover--shot ${className}`.trim()}
+        style={style}
+        aria-hidden="true"
+      >
+        <div className="project-cover__shotbar">
+          <span className="project-cover__dots">
+            <span />
+            <span />
+            <span />
+          </span>
+          <span className="project-cover__domain">
+            {project.cover.domain ?? project.name}
+          </span>
+          <span className="project-cover__shotindex">{project.index}</span>
+        </div>
+        <div className="project-cover__shot">
+          <Image
+            src={project.cover.image}
+            alt=""
+            fill
+            sizes="(min-width: 1100px) 1200px, 100vw"
+          />
+        </div>
+        <div className="project-cover__bottom">
+          <span className="project-cover__name">{project.name}</span>
+          <span className="project-cover__stack">
+            {project.stack.slice(0, 2).join(" · ")}
+          </span>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div

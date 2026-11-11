@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { messages } from "@/content/messages";
-import { SITE } from "@/content/site";
+import { SITE, localePath } from "@/content/site";
 import { FEATURED_PROJECTS } from "@/content/projects";
 import { SKILL_GROUPS } from "@/content/home";
 import { getArticles } from "@/content/blog";
@@ -27,6 +27,7 @@ export function HomeView({ locale, repoCount }: HomeViewProps) {
   const blogHref = locale === "ar" ? "/ar/blog/" : "/blog/";
   const aiHref = locale === "ar" ? "/ar/ai/" : "/ai/";
   const pressHref = locale === "ar" ? "/ar/press/" : "/press/";
+  const wordpressHref = localePath(locale, "/wordpress/");
   const homeHref = locale === "ar" ? "/ar/" : "/";
 
   return (
@@ -192,6 +193,31 @@ export function HomeView({ locale, repoCount }: HomeViewProps) {
               {t.home.workAll}
               <ArrowRight size={16} />
             </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section--ai" id="wordpress">
+        <div className="container">
+          <div className="ai-callout" data-reveal>
+            <div className="ai-callout__copy">
+              <p className="eyebrow">{t.home.wpLabel}</p>
+              <h2>{t.home.wpTitle}</h2>
+              <p>{t.home.wpBody}</p>
+            </div>
+            <div className="ai-callout__actions">
+              <Link href={wordpressHref} className="button">
+                {t.home.wpCta}
+                <ArrowRight size={16} />
+              </Link>
+              <Link
+                href={localePath(locale, "/projects/bunyan-contracting/")}
+                className="button button--ghost"
+              >
+                {t.common.viewProject}
+                <ArrowUpRight size={16} />
+              </Link>
+            </div>
           </div>
         </div>
       </section>

@@ -78,6 +78,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: pair("/ai/"),
     },
     {
+      url: `${BASE}/wordpress/`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.9,
+      alternates: pair("/wordpress/"),
+    },
+    {
+      url: `${BASE}/ar/wordpress/`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.9,
+      alternates: pair("/wordpress/"),
+    },
+    {
       url: `${BASE}/projects/`,
       lastModified: now,
       changeFrequency: "weekly",

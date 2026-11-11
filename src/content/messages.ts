@@ -1,6 +1,7 @@
 const en = {
   nav: {
     work: "Work",
+    wordpress: "WordPress",
     about: "About",
     writing: "Writing",
     ai: "AI",
@@ -72,6 +73,8 @@ const en = {
       "MongoDB",
       "SQL",
       "Tailwind CSS",
+      "WordPress",
+      "Elementor",
       "Accessibility",
       "Performance",
     ],
@@ -82,7 +85,7 @@ const en = {
     aboutIntro:
       "I'm Mahmoud Elnagdy, a full-stack developer based in Cairo. My work sits between engineering and design: calm interfaces on top, dependable systems underneath.",
     aboutBody:
-      "I studied Business Information Systems at Misr Higher Institute for Commerce & Computers in Mansoura and graduated in 2026 with a Very Good grade. Since then I've been building bilingual learning tools, local-first video libraries, browser extensions, and daily planning apps. I'm available for freelance work until January 2027, before military service.",
+      "I studied Business Information Systems at Misr Higher Institute for Commerce & Computers in Mansoura and graduated in 2026 with a Very Good grade. Since then I've been building bilingual learning tools, local-first video libraries, browser extensions, daily planning apps, and corporate WordPress sites. I'm available for freelance work until January 2027, before military service.",
     aboutQuote:
       "Good interfaces don't shout. They make the next step obvious.",
     aboutQuoteAttr: "Working principle",
@@ -102,8 +105,13 @@ const en = {
     workLabel: "02 — Selected work",
     workTitle: "Projects built to be used.",
     workIntro:
-      "Five case studies across learning tools, local-first software, browser extensions, and everyday utilities. Each one taught me something the last one didn't.",
+      "Six case studies across corporate WordPress, learning tools, local-first software, browser extensions, and everyday utilities. Each one taught me something the last one didn't.",
     workAll: "Explore all projects",
+    wpLabel: "WordPress services",
+    wpTitle: "Corporate sites that feel custom — and stay editable.",
+    wpBody:
+      "I build WordPress sites with a real content model, a restrained design system, and an SEO foundation. Bunyan Contracting is a full seven-page example, from services and project case studies to a working enquiry flow.",
+    wpCta: "Explore WordPress services",
     skillsLabel: "03 — Capabilities",
     skillsTitle: "The tools I reach for.",
     skillsIntro:
@@ -141,7 +149,7 @@ const en = {
       "I'm Mahmoud Elnagdy — a full-stack developer from Cairo. I build web products that feel considered from the first pixel to the last API call.",
     body: [
       "My path started with front-end work: HTML, CSS, JavaScript, then React and Tailwind CSS. The more I built, the more I wanted to understand what happened behind the interface. That curiosity pulled me into TypeScript, Node.js, Express, databases, and the decisions that make an application fast and maintainable.",
-      "Today I work across the stack. I've built Wasla, a bilingual platform that turns YouTube playlists into structured courses; LocalTube, a self-hosted video library with FFmpeg thumbnails and SQLite; Hassala, a privacy-first Chrome extension for Arabic ↔ English learners; Tarteeb, a planner built around prayer times; and Yost, a local dashboard for YouTube community posts.",
+      "Today I work across the stack. I've built Bunyan Contracting, a seven-page corporate WordPress site for a construction studio; Wasla, a bilingual platform that turns YouTube playlists into structured courses; LocalTube, a self-hosted video library with FFmpeg thumbnails and SQLite; Hassala, a privacy-first Chrome extension for Arabic ↔ English learners; Tarteeb, a planner built around prayer times; and Yost, a local dashboard for YouTube community posts.",
       "I studied Business Information Systems at Misr Higher Institute for Commerce & Computers in Mansoura and graduated in August 2026 with a Very Good grade. My graduation project, EduSwap, earned Excellent (99%). I'm based in Cairo and available for freelance work until January 2027, when I begin military service. After that, I'll return to full-time work where I can keep learning from strong engineers while shipping work that matters.",
     ],
     principlesTitle: "How I work",
@@ -189,6 +197,7 @@ const en = {
     challenge: "The challenge",
     approach: "The approach",
     features: "What it does",
+    gallery: "Screenshots",
     technical: "Technical notes",
     outcome: "What I learned",
     links: "Links",
@@ -196,6 +205,7 @@ const en = {
     repo: "Source code",
     nextProject: "Next project",
     allProjects: "All projects",
+    wordpressCta: "WordPress website services",
     caseStudy: "Case study",
   },
   blogPage: {
@@ -278,6 +288,7 @@ const en = {
 const ar: typeof en = {
   nav: {
     work: "أعمالي",
+    wordpress: "وردبريس",
     about: "عني",
     writing: "مقالات",
     ai: "الذكاء الاصطناعي",
@@ -349,6 +360,8 @@ const ar: typeof en = {
       "MongoDB",
       "SQL",
       "Tailwind CSS",
+      "وردبريس",
+      "Elementor",
       "إتاحة",
       "أداء",
     ],
@@ -359,7 +372,7 @@ const ar: typeof en = {
     aboutIntro:
       "أنا محمود النجدي، مطور فول ستاك مقيم في القاهرة. شغلي واقع بين الهندسة والتصميم: واجهات هادية فوق، وأنظمة تعتمد عليها تحت.",
     aboutBody:
-      "درست نظم ومعلومات الأعمال في معهد مصر العالي للتجارة والحاسبات بالمنصورة وتخرجت سنة 2026 بتقدير جيد جدًا. من ساعتها وأنا ببني أدوات تعلم ثنائية اللغة، ومكتبات فيديو محلية، وإكستنشن للمتصفح، وتطبيقات لتنظيم اليوم. متاح للفريلانس حتى يناير 2027، قبل الخدمة العسكرية.",
+      "درست نظم ومعلومات الأعمال في معهد مصر العالي للتجارة والحاسبات بالمنصورة وتخرجت سنة 2026 بتقدير جيد جدًا. من ساعتها وأنا ببني أدوات تعلم ثنائية اللغة، ومكتبات فيديو محلية، وإكستنشن للمتصفح، وتطبيقات لتنظيم اليوم، ومواقع Corporate على وردبريس. متاح للفريلانس حتى يناير 2027، قبل الخدمة العسكرية.",
     aboutQuote: "الواجهات الحلوة مش بتعلي صوتها. بتخلي الخطوة الجاية واضحة.",
     aboutQuoteAttr: "مبدأ عمل",
     aboutCta: "اعرف أكتر عني",
@@ -378,8 +391,13 @@ const ar: typeof en = {
     workLabel: "02 — أعمال مختارة",
     workTitle: "مشاريع اتبنت عشان تتنستخدم.",
     workIntro:
-      "خمس دراسات حالة في أدوات التعلم، والسوفتوير المحلي، وإكستنشنات المتصفح، وتطبيقات اليوم. كل مشروع علّمني حاجة المشروع اللي قبله ما علمهاش.",
+      "ست دراسات حالة عبر مواقع الشركات على وردبريس، وأدوات التعلم، والسوفتوير المحلي، وإكستنشنات المتصفح، وتطبيقات اليوم. كل مشروع علّمني حاجة المشروع اللي قبله ما علمهاش.",
     workAll: "استكشف كل المشاريع",
+    wpLabel: "خدمات وردبريس",
+    wpTitle: "مواقع شركات شكلها مخصص — ولسه قابلة للتعديل.",
+    wpBody:
+      "ببني مواقع وردبريس بموديل محتوى حقيقي، وdesign system هادي، وأساس SEO. Bunyan Contracting مثال كامل من سبع صفحات، من الخدمات ودراسات المشاريع لنموذج تواصل شغال.",
+    wpCta: "استكشف خدمات وردبريس",
     skillsLabel: "03 — القدرات",
     skillsTitle: "الأدوات اللي برجع لها.",
     skillsIntro:
@@ -417,7 +435,7 @@ const ar: typeof en = {
       "أنا محمود النجدي — مطور فول ستاك من القاهرة. ببني منتجات ويب محسوبة من أول بكسل لآخر API call.",
     body: [
       "بدأت من الواجهات: HTML وCSS وJavaScript، بعدين React وTailwind CSS. كل ما بنيت أكتر، كل ما حبيت أفهم اللي بيحصل وراء الواجهة. الفضول ده سحبني لـ TypeScript وNode.js وExpress وقواعد البيانات والقرارات اللي بتخلي التطبيق سريع وسهل الصيانة.",
-      "اليوم بشتغل على الستاك كله. بنيت Wasla، منصة ثنائية اللغة بتحول قوائم تشغيل يوتيوب لكورسات منظمة؛ وLocalTube، مكتبة فيديو self-hosted بتستخدم FFmpeg وSQLite؛ وHassala، إكستنشن Chrome بيحترم الخصوصية لمتعلمي العربي ↔ الإنجليزي؛ وTarteeb، منظم يومي مبني حول مواعيد الصلاة؛ وYost، داشبورد محلي لبوستات مجتمع يوتيوب.",
+      "اليوم بشتغل على الستاك كله. بنيت Bunyan Contracting، موقع Corporate على وردبريس من سبع صفحات لشركة مقاولات؛ وWasla، منصة ثنائية اللغة بتحول قوائم تشغيل يوتيوب لكورسات منظمة؛ وLocalTube، مكتبة فيديو self-hosted بتستخدم FFmpeg وSQLite؛ وHassala، إكستنشن Chrome بيحترم الخصوصية لمتعلمي العربي ↔ الإنجليزي؛ وTarteeb، منظم يومي مبني حول مواعيد الصلاة؛ وYost، داشبورد محلي لبوستات مجتمع يوتيوب.",
       "درست نظم ومعلومات الأعمال في معهد مصر العالي للتجارة والحاسبات بالمنصورة وتخرجت في أغسطس 2026 بتقدير جيد جدًا. مشروع التخرج، EduSwap، حصل على امتياز بنسبة 99%. مقيم في القاهرة ومتاح للفريلانس حتى يناير 2027، وبعدها أبدأ الخدمة العسكرية. بعد انتهائها هرجع للعمل بدوام كامل عشان أتعلم من مهندسين قويين وأسلّم شغل يستاهل.",
     ],
     principlesTitle: "طريقة شغلي",
@@ -465,6 +483,7 @@ const ar: typeof en = {
     challenge: "التحدي",
     approach: "الطريقة",
     features: "بيعمل إيه",
+    gallery: "صور من الموقع",
     technical: "ملاحظات تقنية",
     outcome: "اتعلمت إيه",
     links: "اللينكات",
@@ -472,6 +491,7 @@ const ar: typeof en = {
     repo: "الكود المصدري",
     nextProject: "المشروع الجاي",
     allProjects: "كل المشاريع",
+    wordpressCta: "خدمات مواقع وردبريس",
     caseStudy: "دراسة حالة",
   },
   blogPage: {

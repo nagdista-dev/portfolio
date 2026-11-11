@@ -22,6 +22,25 @@ export const SKILL_GROUPS: SkillGroup[] = [
     ],
   },
   {
+    id: "wordpress",
+    label: { en: "WordPress & CMS", ar: "وردبريس وأنظمة المحتوى" },
+    note: {
+      en: "Corporate sites that feel custom, stay editable, and ship with a real SEO foundation.",
+      ar: "مواقع شركات شكلها مخصص، ولسه قابلة للتعديل، ومعاها أساس SEO حقيقي.",
+    },
+    skills: [
+      "WordPress",
+      "Elementor",
+      "Gutenberg",
+      "WooCommerce",
+      "PHP",
+      "MySQL",
+      "Rank Math SEO",
+      "Fluent Forms",
+      "OMGF",
+    ],
+  },
+  {
     id: "backend",
     label: { en: "Backend & data", ar: "الباك إند والبيانات" },
     note: {
@@ -117,8 +136,8 @@ export const TIMELINE: TimelineItem[] = [
     },
     org: { en: "Self-directed", ar: "شغل ذاتي" },
     description: {
-      en: "Designed and shipped bilingual learning tools, local-first software, browser extensions, and daily utilities — the five featured projects live here.",
-      ar: "صممت ونفذت أدوات تعلم ثنائية اللغة، وسوفتوير محلي، وإكستنشنات متصفح، وأدوات يومية — المشاريع الخمسة المميزة جزء من الرحلة دي.",
+      en: "Designed and shipped bilingual learning tools, local-first software, browser extensions, and daily utilities — six featured case studies, plus corporate WordPress work.",
+      ar: "صممت ونفذت أدوات تعلم ثنائية اللغة، وسوفتوير محلي، وإكستنشنات متصفح، وأدوات يومية — ست دراسات حالة مميزة، بالإضافة لشغل وردبريس للشركات.",
     },
     kind: "project",
   },

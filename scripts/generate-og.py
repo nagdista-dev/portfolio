@@ -321,10 +321,18 @@ def generate_section(
 
     lines = lines_ar if locale == "ar" else lines_en
     y = 178
-    f = display(locale, 128)
+    size = 128
+    f = display(locale, size)
+    while size > 64 and any(
+        measure(draw, line, f, "rtl" if locale == "ar" else "ltr") > W - 144
+        for line in lines
+    ):
+        size -= 4
+        f = display(locale, size)
     direction = "rtl" if locale == "ar" else "ltr"
     x = W - 72 if locale == "ar" else 72
     anchor = "ra" if locale == "ar" else "la"
+    line_height = int(size * (1.36 if locale == "ar" else 1.05))
     for line in lines:
         draw.text(
             (x, y),
@@ -335,7 +343,7 @@ def generate_section(
             direction=direction,
             language="ar" if locale == "ar" else "en",
         )
-        y += 134
+        y += line_height
 
     draw.rectangle((72, 492, 92, 512), fill=ACCENT)
     draw.text(
@@ -359,8 +367,11 @@ def generate_project(project: dict) -> None:
 
     locale = project["locale"]
     name_size = 168 if len(project["name"]) <= 8 else 132
-    f = display("en", name_size)
-    draw.text((72, 190), project["name"], font=f, fill=fg)
+    name_font = display("en", name_size)
+    while name_size > 64 and measure(draw, project["name"], name_font, "ltr") > W - 144:
+        name_size -= 4
+        name_font = display("en", name_size)
+    draw.text((72, 190), project["name"], font=name_font, fill=fg)
 
     tagline = project["tagline"]
     direction = "rtl" if locale == "ar" else "ltr"
@@ -378,8 +389,8 @@ def generate_project(project: dict) -> None:
         draw,
         fg,
         fg,
-        f"Case study · {project['index']} / 05",
-        "next.js · react · typescript",
+        f"Case study · {project['index']} / 06",
+        project.get("meta", "next.js · react · typescript"),
         "en",
     )
     image.save(OUT / f"project-{project['slug']}-{locale}.png", optimize=True)
@@ -440,8 +451,19 @@ def generate_article(slug: str, locale: str, title: str, category: str) -> None:
 
 PROJECTS = [
     {
-        "slug": "wasla",
+        "slug": "bunyan-contracting",
         "index": "01",
+        "name": "Bunyan Contracting",
+        "bg": "#EDE7DC",
+        "fg": "#14110D",
+        "accent": "#F04E23",
+        "tagline_en": "A construction studio that looks as solid as it builds.",
+        "tagline_ar": "شركة مقاولات شكلها قد شغلها.",
+        "meta": "wordpress · elementor · rank math",
+    },
+    {
+        "slug": "wasla",
+        "index": "02",
         "name": "Wasla",
         "bg": "#17332D",
         "fg": "#F7F4EF",
@@ -451,7 +473,7 @@ PROJECTS = [
     },
     {
         "slug": "localtube",
-        "index": "02",
+        "index": "03",
         "name": "LocalTube",
         "bg": "#1B1B1F",
         "fg": "#F7F4EF",
@@ -461,7 +483,7 @@ PROJECTS = [
     },
     {
         "slug": "hassala",
-        "index": "03",
+        "index": "04",
         "name": "Hassala",
         "bg": "#E8DFC8",
         "fg": "#17211F",
@@ -471,7 +493,7 @@ PROJECTS = [
     },
     {
         "slug": "tarteeb",
-        "index": "04",
+        "index": "05",
         "name": "Tarteeb",
         "bg": "#20324A",
         "fg": "#F7F4EF",
@@ -481,7 +503,7 @@ PROJECTS = [
     },
     {
         "slug": "yost",
-        "index": "05",
+        "index": "06",
         "name": "Yost",
         "bg": "#2A1E3A",
         "fg": "#F7F4EF",
@@ -513,6 +535,20 @@ def main() -> None:
     generate_section("ar", "projects", "أعمال مختارة · 2022—2026", [], ["أعمال", "مختارة."])
     generate_section("en", "blog", "Writing · notes from the build", ["Notes from", "the build."], [])
     generate_section("ar", "blog", "مقالات · ملاحظات من البناء", [], ["ملاحظات", "من البناء."])
+    generate_section(
+        "en",
+        "wordpress",
+        "WordPress services · corporate sites that stay editable",
+        ["Corporate", "WordPress."],
+        [],
+    )
+    generate_section(
+        "ar",
+        "wordpress",
+        "خدمات وردبريس · مواقع شركات قابلة للتعديل",
+        [],
+        ["وردبريس", "للشركات."],
+    )
 
     for project in PROJECTS:
         for locale in ("en", "ar"):

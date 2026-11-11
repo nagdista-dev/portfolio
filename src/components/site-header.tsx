@@ -36,6 +36,11 @@ export function SiteHeader({ locale }: { locale: Locale }) {
       match: isArabic ? "/ar/projects" : "/projects",
     },
     {
+      label: t.nav.wordpress,
+      href: isArabic ? "/ar/wordpress/" : "/wordpress/",
+      match: isArabic ? "/ar/wordpress" : "/wordpress",
+    },
+    {
       label: t.nav.about,
       href: isArabic ? "/ar/about/" : "/about/",
       match: isArabic ? "/ar/about" : "/about",

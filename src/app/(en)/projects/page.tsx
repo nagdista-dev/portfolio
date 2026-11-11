@@ -6,9 +6,9 @@ import { breadcrumbJsonLd, buildMetadata, pageUrl } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
   locale: "en",
-  title: "Projects — Web Apps & Open Source",
+  title: "Projects — Web Apps, WordPress & Open Source",
   description:
-    "Case studies and open-source projects by Mahmoud Elnagdy: Wasla, LocalTube, Hassala, Tarteeb, Yost, and every public GitHub repository.",
+    "Case studies and open-source projects by Mahmoud Elnagdy: Bunyan Contracting, a corporate WordPress site, plus Wasla, LocalTube, Hassala, Tarteeb, Yost, and every public GitHub repository.",
   path: "/projects/",
   image: "/og/projects-en.png",
   keywords: [
@@ -16,6 +16,8 @@ export const metadata: Metadata = buildMetadata({
     "Nagdista projects",
     "React projects",
     "Next.js projects",
+    "WordPress projects",
+    "corporate WordPress case study",
     "open source projects Cairo",
   ],
 });

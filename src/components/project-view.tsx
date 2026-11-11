@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { messages } from "@/content/messages";
 import { localePath } from "@/content/site";
 import { getNextProject } from "@/content/projects";
@@ -70,6 +71,28 @@ export function ProjectView({
                 </ul>
               </section>
 
+              {project.gallery?.length ? (
+                <section className="case-study__section">
+                  <h2>{t.projectPage.gallery}</h2>
+                  <div className="case-study__gallery">
+                    {project.gallery.map((shot) => (
+                      <figure className="case-study__shot" key={shot.src}>
+                        <Image
+                          src={shot.src}
+                          alt={shot.alt[locale]}
+                          width={1440}
+                          height={1000}
+                          sizes="(min-width: 900px) 800px, 100vw"
+                        />
+                        {shot.caption ? (
+                          <figcaption>{shot.caption[locale]}</figcaption>
+                        ) : null}
+                      </figure>
+                    ))}
+                  </div>
+                </section>
+              ) : null}
+
               <section className="case-study__section">
                 <h2>{t.projectPage.technical}</h2>
                 <ul className="case-study__list case-study__list--technical">
@@ -122,18 +145,31 @@ export function ProjectView({
                     <ArrowUpRight size={15} />
                   </a>
                 ) : null}
-                <a
-                  href={project.links.repo}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="case-study__link"
-                >
-                  <span style={{ display: "inline-flex", alignItems: "center", gap: "0.4rem" }}>
-                    <GithubIcon size={15} />
-                    {t.projectPage.repo}
-                  </span>
-                  <ArrowUpRight size={15} />
-                </a>
+                {project.links.repo ? (
+                  <a
+                    href={project.links.repo}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="case-study__link"
+                  >
+                    <span style={{ display: "inline-flex", alignItems: "center", gap: "0.4rem" }}>
+                      <GithubIcon size={15} />
+                      {t.projectPage.repo}
+                    </span>
+                    <ArrowUpRight size={15} />
+                  </a>
+                ) : null}
+                {project.kind === "website" ? (
+                  <Link
+                    href={localePath(locale, "/wordpress/")}
+                    className="case-study__link"
+                  >
+                    <span style={{ display: "inline-flex", alignItems: "center", gap: "0.4rem" }}>
+                      {t.projectPage.wordpressCta}
+                    </span>
+                    <ArrowUpRight size={15} />
+                  </Link>
+                ) : null}
                 <Link href={projectsHref} className="case-study__link">
                   <span style={{ display: "inline-flex", alignItems: "center", gap: "0.4rem" }}>
                     {isArabic ? <ArrowRight size={15} /> : <ArrowLeft size={15} />}

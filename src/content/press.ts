@@ -106,7 +106,7 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
     ],
     bioTitle: "Short bio",
     shortBio:
-      "Mahmoud Elnagdy is a full-stack developer based in Cairo, Egypt. He builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL. He graduated in 2026 with a B.Sc. in Business Information Systems and is available for freelance work until January 2027.",
+      "Mahmoud Elnagdy is a full-stack developer based in Cairo, Egypt. He builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL, and corporate WordPress websites with Elementor and Rank Math. He graduated in 2026 with a B.Sc. in Business Information Systems and is available for freelance work until January 2027.",
     educationTitle: "Education",
     education: [
       {
@@ -141,7 +141,8 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
     experienceTitle: "Experience",
     experience: [
       "Freelance developer working directly with clients in Egypt, from requirements through delivery.",
-      "Builds bilingual and local-first web products; selected work is listed below.",
+      "Builds bilingual and local-first web products, plus corporate WordPress websites with Elementor and Rank Math.",
+      "Selected work is listed below.",
     ],
     skillsTitle: "Skills",
     skills: [
@@ -162,15 +163,27 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
         value: "Git, GitHub, Vite, FFmpeg, Vercel, Netlify",
       },
       {
+        label: "WordPress",
+        value:
+          "WordPress, Elementor, Gutenberg, WooCommerce, PHP, MySQL, Rank Math SEO, Fluent Forms",
+      },
+      {
         label: "Focus",
         value:
-          "Accessibility, performance, bilingual and RTL interfaces, local-first products",
+          "Accessibility, performance, bilingual and RTL interfaces, local-first products, corporate websites",
       },
     ],
     workTitle: "Selected work",
     workIntro:
-      "Five featured case studies, plus the graduation project. Each project links to the full write-up.",
+      "Six featured case studies, plus the graduation project. Each project links to the full write-up.",
     work: [
+      {
+        name: "Bunyan Contracting",
+        description:
+          "Complete corporate WordPress site for a construction studio — seven pages, six project case studies, and an enquiry flow. Built with Elementor, Rank Math SEO, and Fluent Forms.",
+        href: "https://nagdista.com/projects/bunyan-contracting/",
+        linkLabel: "Case study",
+      },
       {
         name: "Wasla",
         description:
@@ -294,7 +307,7 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
       {
         question: "What has Mahmoud Elnagdy built?",
         answer:
-          "Featured projects include Wasla, LocalTube, Hassala, Tarteeb, and Yost — bilingual and local-first web products. Case studies are at https://nagdista.com/projects/.",
+          "Featured projects include Bunyan Contracting, a complete corporate WordPress site, plus Wasla, LocalTube, Hassala, Tarteeb, and Yost — bilingual and local-first web products. Case studies are at https://nagdista.com/projects/ and WordPress services at https://nagdista.com/wordpress/.",
       },
       {
         question: "Is Mahmoud Elnagdy available for work?",
@@ -387,7 +400,7 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
     ],
     bioTitle: "نبذة مختصرة",
     shortBio:
-      "محمود النجدي مطور فول ستاك في القاهرة، مصر. يبني منتجات ويب سريعة وسهلة الاستخدام وثنائية اللغة باستخدام React وNext.js وTypeScript وNode.js وSQL. تخرج عام 2026 بدرجة بكالوريوس في نظم ومعلومات الأعمال، وهو متاح للفريلانس حتى يناير 2027.",
+      "محمود النجدي مطور فول ستاك في القاهرة، مصر. يبني منتجات ويب سريعة وسهلة الاستخدام وثنائية اللغة باستخدام React وNext.js وTypeScript وNode.js وSQL، ومواقع Corporate على وردبريس بـElementor وRank Math. تخرج عام 2026 بدرجة بكالوريوس في نظم ومعلومات الأعمال، وهو متاح للفريلانس حتى يناير 2027.",
     educationTitle: "التعليم",
     education: [
       {
@@ -422,7 +435,8 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
     experienceTitle: "الخبرة",
     experience: [
       "مطور فريلانس يعمل مباشرة مع عملاء في مصر، من فهم المتطلبات حتى التسليم.",
-      "يبني منتجات ويب ثنائية اللغة وتهتم بالعمل المحلي؛ الأعمال المختارة بالأسفل.",
+      "يبني منتجات ويب ثنائية اللغة وتهتم بالعمل المحلي، بالإضافة لمواقع Corporate على وردبريس بـElementor وRank Math.",
+      "الأعمال المختارة بالأسفل.",
     ],
     skillsTitle: "المهارات",
     skills: [
@@ -443,15 +457,27 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
         value: "Git وGitHub وVite وFFmpeg وVercel وNetlify",
       },
       {
+        label: "وردبريس",
+        value:
+          "WordPress وElementor وGutenberg وWooCommerce وPHP وMySQL وRank Math SEO وFluent Forms",
+      },
+      {
         label: "التركيز",
         value:
-          "الإتاحة والأداء والواجهات ثنائية اللغة وRTL والمنتجات المحلية أولًا",
+          "الإتاحة والأداء والواجهات ثنائية اللغة وRTL والمنتجات المحلية أولًا ومواقع الشركات",
       },
     ],
     workTitle: "أعمال مختارة",
     workIntro:
-      "خمس دراسات حالة مميزة، بالإضافة إلى مشروع التخرج. كل مشروع مرتبط بالتفاصيل الكاملة.",
+      "ست دراسات حالة مميزة، بالإضافة إلى مشروع التخرج. كل مشروع مرتبط بالتفاصيل الكاملة.",
     work: [
+      {
+        name: "Bunyan Contracting",
+        description:
+          "موقع Corporate كامل على وردبريس لشركة مقاولات — سبع صفحات وست دراسات مشاريع ونموذج تواصل، مبني بـElementor وRank Math SEO وFluent Forms.",
+        href: "https://nagdista.com/ar/projects/bunyan-contracting/",
+        linkLabel: "دراسة الحالة",
+      },
       {
         name: "Wasla",
         description:
@@ -574,7 +600,7 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
       {
         question: "ما الذي بناه محمود النجدي؟",
         answer:
-          "من أبرز أعماله Wasla وLocalTube وHassala وTarteeb وYost، وهي منتجات ويب ثنائية اللغة وتهتم بالعمل المحلي. دراسات الحالة على https://nagdista.com/ar/projects/.",
+          "من أبرز أعماله Bunyan Contracting، موقع Corporate كامل على وردبريس، بالإضافة لـWasla وLocalTube وHassala وTarteeb وYost، وهي منتجات ويب ثنائية اللغة وتهتم بالعمل المحلي. دراسات الحالة على https://nagdista.com/ar/projects/ وخدمات وردبريس على https://nagdista.com/ar/wordpress/.",
       },
       {
         question: "هل محمود النجدي متاح للعمل؟",

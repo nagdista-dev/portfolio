@@ -17,6 +17,10 @@ export function SiteFooter({ locale }: { locale: Locale }) {
       href: isArabic ? "/ar/projects/" : "/projects/",
     },
     {
+      label: t.nav.wordpress,
+      href: isArabic ? "/ar/wordpress/" : "/wordpress/",
+    },
+    {
       label: t.nav.about,
       href: isArabic ? "/ar/about/" : "/about/",
     },

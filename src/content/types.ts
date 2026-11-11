@@ -7,18 +7,27 @@ export type ProjectMotif =
   | "video"
   | "wordbank"
   | "schedule"
-  | "feed";
+  | "feed"
+  | "corporate";
 
 export type ProjectCover = {
   bg: string;
   fg: string;
   accent: string;
   motif: ProjectMotif;
+  image?: string;
+  domain?: string;
 };
 
 export type ProjectLinks = {
-  repo: string;
+  repo?: string;
   live?: string;
+};
+
+export type ProjectShot = {
+  src: string;
+  alt: Localized<string>;
+  caption?: Localized<string>;
 };
 
 export type ProjectCopy = {
@@ -44,6 +53,8 @@ export type Project = {
   links: ProjectLinks;
   cover: ProjectCover;
   status: Localized<string>;
+  kind?: "software" | "website";
+  gallery?: ProjectShot[];
   copy: Localized<ProjectCopy>;
 };
 

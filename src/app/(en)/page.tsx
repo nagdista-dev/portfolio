@@ -8,7 +8,7 @@ export const metadata: Metadata = buildMetadata({
   locale: "en",
   title: "Mahmoud Elnagdy — Full-Stack Developer in Cairo",
   description:
-    "Mahmoud Elnagdy is a full-stack developer in Cairo, Egypt, building fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL.",
+    "Mahmoud Elnagdy is a full-stack developer in Cairo, Egypt, building fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, SQL, and corporate WordPress sites with Elementor and Rank Math.",
   path: "/",
   image: "/og/home-en-square.png",
   imageWidth: 1200,
@@ -25,6 +25,9 @@ export const metadata: Metadata = buildMetadata({
     "نجديستا",
     "full-stack developer Cairo",
     "Next.js developer Egypt",
+    "WordPress developer Cairo",
+    "corporate WordPress website Egypt",
+    "Elementor developer",
   ],
 });
 

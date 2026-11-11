@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { AI_PAGE } from "@/content/ai";
 import { PRESS } from "@/content/press";
+import { WORDPRESS_PAGE } from "@/content/wordpress";
 import { NAME_VARIANTS, SITE } from "@/content/site";
 import type { Article, Locale, Project } from "@/content/types";
 
@@ -281,6 +282,30 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
             : "Mahmoud Elnagdy — Full-Stack Developer",
       },
     ],
+    makesOffer: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name:
+            locale === "ar"
+              ? "تصميم وبناء مواقع وردبريس للشركات"
+              : "Corporate WordPress website design and development",
+          url: pageUrl(locale, "/wordpress/"),
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name:
+            locale === "ar"
+              ? "تطوير تطبيقات ويب مخصصة"
+              : "Custom web application development",
+          url: pageUrl(locale, "/projects/"),
+        },
+      },
+    ],
     knowsAbout: [
       "React",
       "Next.js",
@@ -291,6 +316,12 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
       "SQL",
       "Tailwind CSS",
       "WordPress",
+      "Elementor",
+      "Gutenberg",
+      "WooCommerce",
+      "Rank Math SEO",
+      "Fluent Forms",
+      "Corporate website design",
       "Web accessibility",
       "Search engine optimization",
       "Self-taught programming",
@@ -444,6 +475,7 @@ export function siteNavigationJsonLd(
   const ar = locale === "ar";
   const items = [
     { name: ar ? "أعمالي" : "Work", path: "/projects/" },
+    { name: ar ? "وردبريس" : "WordPress", path: "/wordpress/" },
     { name: ar ? "عني" : "About", path: "/about/" },
     { name: ar ? "مقالات" : "Writing", path: "/blog/" },
     { name: ar ? "الذكاء الاصطناعي" : "AI", path: "/ai/" },
@@ -485,6 +517,102 @@ export function breadcrumbJsonLd(
   };
 }
 
+export function wordpressPageJsonLd(
+  locale: Locale,
+): Record<string, unknown> {
+  const url = pageUrl(locale, "/wordpress/");
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${url}#webpage`,
+    url,
+    name:
+      locale === "ar"
+        ? "تصميم مواقع وردبريس للشركات — محمود النجدي"
+        : "Corporate WordPress Websites — Mahmoud Elnagdy",
+    description: WORDPRESS_PAGE[locale].intro,
+    inLanguage: locale === "ar" ? "ar" : "en",
+    isPartOf: { "@id": `${SITE.url}/#website` },
+    about: { "@id": `${url}#service` },
+    primaryImageOfPage: `${SITE.url}/og/wordpress-${locale}.png`,
+    dateModified: isoDateTime(SITE.lastUpdated),
+    mainEntity: { "@id": `${url}#service` },
+    author: { "@id": `${SITE.url}/#person` },
+    breadcrumb: { "@id": `${url}#breadcrumb` },
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: [".page-intro__title", ".page-intro__intro"],
+    },
+  };
+}
+
+export function wordpressServiceJsonLd(
+  locale: Locale,
+): Record<string, unknown> {
+  const url = pageUrl(locale, "/wordpress/");
+  const content = WORDPRESS_PAGE[locale];
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${url}#service`,
+    name:
+      locale === "ar"
+        ? "تصميم وبناء مواقع وردبريس للشركات"
+        : "Corporate WordPress website design and development",
+    serviceType:
+      locale === "ar"
+        ? "مواقع وردبريس للشركات"
+        : "Corporate WordPress websites",
+    description: content.intro,
+    url,
+    provider: { "@id": `${SITE.url}/#person` },
+    areaServed: [
+      { "@type": "Country", name: "Egypt" },
+      { "@type": "Country", name: "Saudi Arabia" },
+      { "@type": "Country", name: "United Arab Emirates" },
+      { "@type": "Place", name: "Remote worldwide" },
+    ],
+    availableChannel: {
+      "@type": "ServiceChannel",
+      serviceUrl: pageUrl(locale, "/#contact"),
+      servicePhone: SITE.phoneHref,
+    },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name:
+        locale === "ar"
+          ? "خدمات مواقع وردبريس"
+          : "WordPress website services",
+      itemListElement: content.services.map((service) => ({
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: service.title,
+          description: service.text,
+        },
+      })),
+    },
+  };
+}
+
+export function wordpressFaqJsonLd(locale: Locale): Record<string, unknown> {
+  const url = pageUrl(locale, "/wordpress/");
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": `${url}#faq`,
+    inLanguage: locale === "ar" ? "ar" : "en",
+    mainEntity: WORDPRESS_PAGE[locale].faq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+}
+
 export function articleJsonLd(article: Article): Record<string, unknown> {
   const url = pageUrl(article.locale, `/blog/${article.slug}/`);
   return {
@@ -510,17 +638,35 @@ export function projectJsonLd(
   locale: Locale,
 ): Record<string, unknown> {
   const url = pageUrl(locale, `/projects/${project.slug}/`);
-  return {
+  const base = {
     "@context": "https://schema.org",
-    "@type": "SoftwareSourceCode",
     "@id": `${url}#project`,
     name: project.name,
     description: project.copy[locale].summary,
     url,
-    codeRepository: project.links.repo,
     image: `${SITE.url}/og/project-${project.slug}-${locale}.png`,
-    programmingLanguage: project.stack,
     author: { "@id": `${SITE.url}/#person` },
     inLanguage: locale,
+    keywords: project.stack.join(", "),
+  };
+
+  if (project.kind === "website") {
+    return {
+      ...base,
+      "@type": "WebSite",
+      publisher: { "@id": `${SITE.url}/#person` },
+      about: {
+        "@type": "Organization",
+        name: project.name,
+        url: project.links.live,
+      },
+    };
+  }
+
+  return {
+    ...base,
+    "@type": "SoftwareSourceCode",
+    codeRepository: project.links.repo,
+    programmingLanguage: project.stack,
   };
 }

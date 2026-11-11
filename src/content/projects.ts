@@ -2,8 +2,179 @@ import type { Project } from "./types";
 
 export const PROJECTS: Project[] = [
   {
-    slug: "wasla",
+    slug: "bunyan-contracting",
     index: "01",
+    name: "Bunyan Contracting",
+    year: "2026",
+    featured: true,
+    kind: "website",
+    stack: [
+      "WordPress",
+      "Elementor",
+      "Rank Math SEO",
+      "Fluent Forms",
+      "PHP",
+      "MySQL",
+    ],
+    links: {
+      live: "https://bunyan.nagdista.com",
+    },
+    cover: {
+      bg: "#EDE7DC",
+      fg: "#14110D",
+      accent: "#F04E23",
+      motif: "corporate",
+      image: "/images/projects/bunyan/home.webp",
+      domain: "bunyan.nagdista.com",
+    },
+    status: {
+      en: "Live · WordPress",
+      ar: "مباشر · وردبريس",
+    },
+    gallery: [
+      {
+        src: "/images/projects/bunyan/home.webp",
+        alt: {
+          en: "Bunyan Contracting homepage with the headline Built to outlast",
+          ar: "الصفحة الرئيسية لـ Bunyan Contracting بعنوان Built to outlast",
+        },
+        caption: {
+          en: "Home — an editorial hero with the studio's proof points in the first screen.",
+          ar: "الرئيسية — هيرو تحريري وأرقام الاستوديو في أول شاشة.",
+        },
+      },
+      {
+        src: "/images/projects/bunyan/services.webp",
+        alt: {
+          en: "Bunyan services page listing residential, workplace, hospitality, and industrial work",
+          ar: "صفحة خدمات Bunyan وفيها قطاعات السكني والمكاتب والضيافة والصناعي",
+        },
+        caption: {
+          en: "Services — four sectors, one standard, each with its own detail section.",
+          ar: "الخدمات — أربع قطاعات بمعيار واحد، وكل قطاع له تفاصيله.",
+        },
+      },
+      {
+        src: "/images/projects/bunyan/projects.webp",
+        alt: {
+          en: "Bunyan selected projects page with project counts by sector",
+          ar: "صفحة مشاريع Bunyan المختارة وعدد المشاريع في كل قطاع",
+        },
+        caption: {
+          en: "Selected work — project proof with sector counts and case-study links.",
+          ar: "المشاريع — إثبات الشغل بعدد المشاريع لكل قطاع ولينكات دراسات الحالة.",
+        },
+      },
+      {
+        src: "/images/projects/bunyan/project-fold.webp",
+        alt: {
+          en: "The Fold project case study page with location, year, sector, status, and scope",
+          ar: "دراسة مشروع The Fold وفيها الموقع والسنة والقطاع والحالة ونطاق العمل",
+        },
+        caption: {
+          en: "The Fold — a case study with location, year, sector, status, and scope.",
+          ar: "The Fold — دراسة مشروع بالموقع والسنة والقطاع والحالة ونطاق العمل.",
+        },
+      },
+      {
+        src: "/images/projects/bunyan/contact.webp",
+        alt: {
+          en: "Bunyan contact page with direct lines and a project enquiry form",
+          ar: "صفحة تواصل Bunyan وفيها بيانات مباشرة ونموذج استفسار مشروع",
+        },
+        caption: {
+          en: "Contact — direct lines and a project enquiry form in one place.",
+          ar: "التواصل — خطوط مباشرة ونموذج استفسار مشروع في مكان واحد.",
+        },
+      },
+      {
+        src: "/images/projects/bunyan/about.webp",
+        alt: {
+          en: "Bunyan about page with the studio's rules and five-stage process",
+          ar: "صفحة عن Bunyan وفيها قواعد الاستوديو ومراحله الخمس",
+        },
+        caption: {
+          en: "About — the studio's rules, stages, and point of view.",
+          ar: "عن الشركة — قواعد الاستوديو ومراحله ووجهة نظره.",
+        },
+      },
+    ],
+    copy: {
+      en: {
+        tagline: "A construction studio that looks as solid as it builds.",
+        summary:
+          "A complete corporate WordPress website for a Cairo construction studio: services, project proof, team, insights, and a working enquiry flow — built with Elementor and a clean SEO foundation.",
+        overview:
+          "Bunyan Contracting is a self-initiated corporate website for a fictional construction studio in New Cairo. The brief was simple: make a contractor look established, specific, and trustworthy — without the stock-photo corporate language that makes so many construction sites forgettable. The result is a seven-page WordPress site with six project case studies, a services structure, a team page, insights, and a contact flow that feels like a real studio.",
+        challenge:
+          "Corporate WordPress sites usually fail in one of two ways: a bought theme with the client's text poured in, or a page-builder experiment that the client can never edit safely. Bunyan had to avoid both. The design needed to feel custom and editorial, while every section had to stay editable by a non-technical team. The content also had to carry the credibility — numbers, process, project facts, named people — instead of decorative claims.",
+        approach:
+          "I started with the content model: services, sectors, project facts, team roles, and the questions a real client asks before hiring a contractor. Then I built a small design system in Elementor — a warm paper palette, one strong orange accent, large editorial type, rules instead of cards, and consistent fact tables. Every page is assembled from reusable sections, so the client can change copy, images, and project details without touching layout. Rank Math handles titles, descriptions, schema, and the sitemap; Fluent Forms powers the enquiry form; OMGF serves fonts locally.",
+        features: [
+          "Seven-page corporate structure: home, about, services, projects, team, insights, contact",
+          "Six project case studies with location, year, sector, status, and scope",
+          "Reusable Elementor sections the client can edit without breaking layout",
+          "Service and sector pages built around how clients actually choose a contractor",
+          "Working project enquiry form with Fluent Forms",
+          "Rank Math SEO: per-page titles, descriptions, schema, and XML sitemap",
+          "Locally hosted fonts via OMGF for speed and privacy",
+          "Responsive layouts and a mobile navigation built into the design",
+        ],
+        technical: [
+          "WordPress with Elementor",
+          "Custom design system built from global colors, type, and reusable sections",
+          "PHP and MySQL on shared hosting",
+          "Rank Math SEO for metadata, schema, and sitemaps",
+          "Fluent Forms for the project enquiry flow",
+          "OMGF for local font delivery",
+          "No custom plugin lock-in: the site stays editable in the WordPress admin",
+        ],
+        outcome:
+          "Bunyan made the case for WordPress as a serious corporate tool, not a compromise. The hard part was not the page builder; it was the editorial structure — deciding what a contractor should prove, in what order, and with which numbers. That structure is portable: the same approach works for clinics, law firms, logistics companies, agencies, and any business that needs to look credible before the first call. I can take this pattern into a new corporate niche and rebuild the content model around it.",
+        seoTitle: "Bunyan Contracting — Corporate WordPress Website",
+        seoDescription:
+          "A complete corporate WordPress website for a Cairo construction studio, built with Elementor, Rank Math SEO, and Fluent Forms. A case study by Mahmoud Elnagdy.",
+      },
+      ar: {
+        tagline: "شركة مقاولات شكلها قد شغلها.",
+        summary:
+          "موقع Corporate كامل على وردبريس لشركة مقاولات في القاهرة: خدمات، ومشاريع موثقة، وفريق، ومقالات، ونموذج تواصل شغال — مبني بـ Elementor وأساس SEO نضيف.",
+        overview:
+          "Bunyan Contracting موقع Corporate عملته بنفسي لشركة مقاولات خيالية في القاهرة الجديدة. البريف كان بسيط: خلي المقاول يبان راسخ ومحدد وموثوق — من غير لغة الشركات الجاهزة والصور المخزنة اللي بتخلي معظم مواقع المقاولات متشابهة. النتيجة موقع وردبريس من سبع صفحات، فيه ست دراسات مشاريع، وهيكل خدمات، وصفحة فريق، ومقالات، ونموذج تواصل حاسس إنه استوديو حقيقي.",
+        challenge:
+          "مواقع الشركات على وردبريس عادةً بتفشل بطريقتين: ثيم مشترى والنص بتاع العميل اتصب فيه، أو تجربة page builder العميل عمره ما يقدر يعدلها بأمان. Bunyan كان لازم يتجنب الاتنين. التصميم لازم يحس إنه مخصص وتحريري، وفي نفس الوقت كل قسم يفضل قابل للتعديل لفريق مش تقني. والمحتوى نفسه لازم يشيل المصداقية — أرقام، وعملية، وحقائق مشاريع، وناس بأسمائها — بدل الادعاءات الديكورية.",
+        approach:
+          "بدأت بموديل المحتوى: الخدمات، والقطاعات، وحقائق المشاريع، وأدوار الفريق، والأسئلة اللي العميل الحقيقي بيسألها قبل ما يختار مقاول. بعدها بنيت design system صغير في Elementor — باليت ورقي دافي، لون برتقالي واحد قوي، تايبوجرافي تحريري كبير، خطوط بدل الكروت، وجداول حقائق ثابتة. كل صفحة بتتبني من أقسام قابلة لإعادة الاستخدام، فالعميل يقدر يغير النص والصور وتفاصيل المشاريع من غير ما يلمس التخطيط. Rank Math بيتعامل مع العناوين والأوصاف والـ schema والـ sitemap؛ وFluent Forms بيشغل نموذج التواصل؛ وOMGF بيقدم الخطوط محليًا.",
+        features: [
+          "هيكل Corporate من سبع صفحات: الرئيسية، عن الشركة، الخدمات، المشاريع، الفريق، المقالات، التواصل",
+          "ست دراسات مشاريع بالموقع والسنة والقطاع والحالة ونطاق العمل",
+          "أقسام Elementor قابلة لإعادة الاستخدام والعميل يقدر يعدلها من غير ما يكسر التخطيط",
+          "صفحات خدمات وقطاعات مبنية على طريقة اختيار العميل للمقاول فعليًا",
+          "نموذج استفسار مشروع شغال بـ Fluent Forms",
+          "SEO بـ Rank Math: عناوين وأوصاف وschema وXML sitemap لكل صفحة",
+          "خطوط محلية عبر OMGF للسرعة والخصوصية",
+          "تخطيطات متجاوبة وملاحة موبايل جزء من التصميم",
+        ],
+        technical: [
+          "وردبريس مع Elementor",
+          "Design system مخصص من ألوان وخطوط وأقسام قابلة لإعادة الاستخدام",
+          "PHP وMySQL على استضافة مشتركة",
+          "Rank Math SEO للميتاداتا والـ schema والـ sitemaps",
+          "Fluent Forms لنموذج استفسار المشروع",
+          "OMGF لتقديم الخطوط محليًا",
+          "من غير قفل على plugin مخصص: الموقع يفضل قابل للتعديل من لوحة وردبريس",
+        ],
+        outcome:
+          "Bunyan أثبت إن وردبريس أداة Corporate جدية، مش حل وسط. الصعب ما كانش الـ page builder؛ الصعب كان الهيكل التحريري — تقرر المقاول يثبت إيه، وبأي ترتيب، وبأنهي أرقام. الهيكل ده قابل للنقل: نفس الطريقة تشتغل مع عيادات، ومكاتب محامين، وشركات لوجستيك، ووكالات، وأي بيزنس محتاج يبان موثوق قبل أول مكالمة. أقدر آخد النمط ده لأي قطاع وأعيد بناء موديل المحتوى حوله.",
+        seoTitle: "Bunyan Contracting — موقع Corporate على وردبريس",
+        seoDescription:
+          "موقع Corporate كامل على وردبريس لشركة مقاولات في القاهرة، مبني بـ Elementor وRank Math SEO وFluent Forms. دراسة حالة من محمود النجدي.",
+      },
+    },
+  },
+  {
+    slug: "wasla",
+    index: "02",
     name: "Wasla",
     year: "2025",
     featured: true,
@@ -94,7 +265,7 @@ export const PROJECTS: Project[] = [
   },
   {
     slug: "localtube",
-    index: "02",
+    index: "03",
     name: "LocalTube",
     year: "2025",
     featured: true,
@@ -188,7 +359,7 @@ export const PROJECTS: Project[] = [
   },
   {
     slug: "hassala",
-    index: "03",
+    index: "04",
     name: "Hassala",
     year: "2025–2026",
     featured: true,
@@ -201,7 +372,7 @@ export const PROJECTS: Project[] = [
     ],
     links: {
       repo: "https://github.com/nagdista-dev/hassala",
-      live: "https://nagdista-dev.github.io/hassala/",
+      live: "https://hassala.nagdista.com/",
     },
     cover: {
       bg: "#E8DFC8",
@@ -280,7 +451,7 @@ export const PROJECTS: Project[] = [
   },
   {
     slug: "tarteeb",
-    index: "04",
+    index: "05",
     name: "Tarteeb",
     year: "2025",
     featured: true,
@@ -361,7 +532,7 @@ export const PROJECTS: Project[] = [
   },
   {
     slug: "yost",
-    index: "05",
+    index: "06",
     name: "Yost",
     year: "2025",
     featured: true,

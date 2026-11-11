@@ -24,8 +24,8 @@
     "height": 800
   },
   "jobTitle": "Full-Stack Developer",
-  "description": "Mahmoud Elnagdy is a full-stack developer in Cairo, Egypt. He builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL.",
-  "disambiguatingDescription": "Cairo-based full-stack developer and creator of Wasla, LocalTube, Hassala, Tarteeb, and Yost; B.Sc. in Business Information Systems, 2026. He is a different person from the perfume creator with the same name.",
+  "description": "Mahmoud Elnagdy is a full-stack developer in Cairo, Egypt. He builds fast, accessible, bilingual web products with React, Next.js, TypeScript, Node.js, and SQL, plus corporate WordPress websites with Elementor and Rank Math.",
+  "disambiguatingDescription": "Cairo-based full-stack developer and creator of Bunyan Contracting, Wasla, LocalTube, Hassala, Tarteeb, and Yost; B.Sc. in Business Information Systems, 2026. He is a different person from the perfume creator with the same name.",
   "email": "mailto:nagdista@gmail.com",
   "telephone": "+201143044699",
   "address": {
@@ -61,7 +61,7 @@
       "@type": "City",
       "name": "Cairo"
     },
-    "skills": "React, Next.js, TypeScript, Node.js, Express, MongoDB, SQL, Tailwind CSS, WordPress, OpenAI API"
+    "skills": "React, Next.js, TypeScript, Node.js, Express, MongoDB, SQL, Tailwind CSS, WordPress, Elementor, PHP, MySQL, Rank Math SEO, Fluent Forms, OpenAI API"
   },
   "knowsAbout": [
     "React",
@@ -73,6 +73,14 @@
     "SQL",
     "Tailwind CSS",
     "WordPress",
+    "Elementor",
+    "Gutenberg",
+    "WooCommerce",
+    "PHP",
+    "MySQL",
+    "Rank Math SEO",
+    "Fluent Forms",
+    "Corporate website design",
     "Web accessibility",
     "Search engine optimization",
     "Artificial Intelligence",
@@ -115,6 +123,11 @@
       "@type": "ProfilePage",
       "url": "https://nagdista.com/ai/",
       "name": "Mahmoud Elnagdy on AI"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://nagdista.com/wordpress/",
+      "name": "Corporate WordPress Websites — Mahmoud Elnagdy"
     }
   ],
   "mainEntityOfPage": "https://nagdista.com/about/",
