@@ -11,9 +11,9 @@ import {
 
 export const metadata: Metadata = buildMetadata({
   locale: "ar",
-  title: "المشاريع حسب المنصة — وردبريس وشوبيفاي وسلة وتطبيقات الويب",
+  title: "المشاريع — وردبريس وشوبيفاي وسلة",
   description:
-    "دراسات حالة مرتبة حسب المنصة وحسب أكتر طلب من العملاء: Bunyan Contracting على وردبريس، وشغل شوبيفاي وسلة، وبعده Wasla وLocalTube وTarteeb وYost على React وNext.js، وHassala كإكستنشن متصفح، وكل مستودعات GitHub العامة.",
+    "دراسات حالة مرتبة حسب أكتر طلب من العملاء: مواقع وردبريس، ومتاجر شوبيفاي وسلة، وتطبيقات React وNext.js، وإكستنشنز المتصفح.",
   path: "/projects/",
   image: "/og/projects-ar.png",
   keywords: [

@@ -11,9 +11,9 @@ import {
 
 export const metadata: Metadata = buildMetadata({
   locale: "en",
-  title: "Projects by Platform — WordPress, Shopify, Salla & Next.js",
+  title: "Projects — WordPress, Shopify & Salla",
   description:
-    "Case studies grouped by platform and ordered by what clients ask for most: Bunyan Contracting on WordPress, Shopify and Salla storefront work, then Wasla, LocalTube, Tarteeb, and Yost on React & Next.js, Hassala as a browser extension, plus every public GitHub repository.",
+    "Case studies ordered by client demand: WordPress corporate sites, Shopify and Salla storefronts, React/Next apps, and browser extensions.",
   path: "/projects/",
   image: "/og/projects-en.png",
   keywords: [
