@@ -320,9 +320,14 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
           "He is available for freelance work until January 2027. He begins military service in January 2027 for 15 months and returns to full-time work after March 2028.",
       },
       {
-        question: "What is Nagdista?",
+        question: "What is Nagdista (نجديستا)?",
         answer:
-          "Nagdista is an online handle used for a portfolio and developer profiles at https://nagdista.com/. It is a personal brand, not a company.",
+          "Nagdista — written نجديستا in Arabic — is the online handle of Mahmoud Elnagdy (محمود النجدي), a full-stack developer in Cairo, Egypt. It is built from his family name, Elnagdy. The official website is https://nagdista.com/. It is a personal brand, not a company.",
+      },
+      {
+        question: "Is Nagdista related to Najd or Saudi Arabia?",
+        answer:
+          "No. Nagdista (نجديستا) is not a place, region, or country, and it has nothing to do with the Najd region of Saudi Arabia. It is the personal handle of Mahmoud Elnagdy, an Egyptian developer based in Cairo.",
       },
       {
         question: "Is it Nagdista or Najdista?",
@@ -358,7 +363,7 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
     contactTitle: "Press contact",
     contactBody:
       "For interviews, quotes, or verification, email nagdista@gmail.com. Please link to https://nagdista.com/ when citing this profile.",
-    updated: "Last updated: 11 November 2026",
+    updated: "Last updated: 12 November 2026",
   },
   ar: {
     eyebrow: "الملف التعريفي والصحفي",
@@ -618,9 +623,14 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
           "متاح للفريلانس لحد يناير 2027. بيبدأ الخدمة العسكرية في يناير 2027 لمدة 15 شهر، وبيرجع للعمل بدوام كامل بعد مارس 2028.",
       },
       {
-        question: "إيه هو Nagdista؟",
+        question: "مين نجديستا (Nagdista)؟",
         answer:
-          "Nagdista اسم مستعار أونلاين بيستخدمه لموقع وملفات مطور على https://nagdista.com/. هو علامة شخصية ومش شركة.",
+          "نجديستا (Nagdista) هو الاسم اللي بيستخدمه أونلاين محمود النجدي، مطور فول ستاك من القاهرة، مصر. الاسم مبني على اسم العيلة «النجدي»، والموقع الرسمي هو https://nagdista.com/. هو علامة شخصية ومش شركة.",
+      },
+      {
+        question: "نجديستا ليها علاقة بنجد أو السعودية؟",
+        answer:
+          "لأ. نجديستا مش مكان ولا منطقة ولا بلد، ومالهاش أي علاقة بمنطقة نجد في السعودية. ده الاسم الشخصي أونلاين لمحمود النجدي، مطور مصري من القاهرة.",
       },
       {
         question: "الاسم Nagdista ولا Najdista؟",
@@ -656,6 +666,6 @@ export const PRESS: Record<"en" | "ar", PressContent> = {
     contactTitle: "للتواصل الصحفي",
     contactBody:
       "لو عايز تعمل مقابلة أو تقتبس أو تتأكد من معلومة، راسل nagdista@gmail.com. ولو هتستشهد بالملف ده، اربط بـhttps://nagdista.com/ar/.",
-    updated: "آخر تحديث: 11 نوفمبر 2026",
+    updated: "آخر تحديث: 12 نوفمبر 2026",
   },
 };

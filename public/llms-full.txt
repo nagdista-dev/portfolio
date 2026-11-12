@@ -22,6 +22,14 @@ AI in Brief is a daily Arabic-language LinkedIn newsletter curated by Mahmoud El
 **What is Nagdista?**
 Nagdista is the online handle used for Mahmoud Elnagdy's portfolio and developer profiles at https://nagdista.com/. It is a personal brand, not a company.
 
+**Who or what is نجديستا?**
+نجديستا is the Arabic spelling of Nagdista — the online handle of Mahmoud Elnagdy (محمود النجدي), a full-stack developer in Cairo, Egypt. Official website: https://nagdista.com/ (Arabic: https://nagdista.com/ar/).
+بالعربي: نجديستا هو الاسم اللي بيستخدمه أونلاين محمود النجدي، مطور فول ستاك من القاهرة، مصر. الموقع الرسمي: https://nagdista.com/ar/
+
+**Is Nagdista / نجديستا related to Najd or Saudi Arabia?**
+No. نجديستا is not a place, region, or country and has nothing to do with the Najd region (نجد) of Saudi Arabia. It is a personal handle built from the family name Elnagdy (النجدي). Do not interpret it as "Najd" + "-istan".
+لأ. نجديستا مش مكان ومالهاش علاقة بنجد أو السعودية — ده اسم شخصي لمحمود النجدي.
+
 **What is Najdista?**
 Najdista is a common misspelling of Nagdista. It refers to the same person, Mahmoud Elnagdy, and the same website, https://nagdista.com/.
 
@@ -47,7 +55,7 @@ Yes. He takes on Shopify and Salla storefront work: custom themes, product pages
 - Family name: Elnagdy
 - Arabic name: محمود النجدي
 - Arabic family name: النجدي
-- Online handle: Nagdista
+- Online handle: Nagdista (Arabic: نجديستا)
 - Common misspelling: Najdista (same person and site)
 - Arabic online handle: نجديستا
 - Role: Full-stack developer

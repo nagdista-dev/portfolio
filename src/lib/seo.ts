@@ -187,8 +187,8 @@ export function personJsonLd(locale: Locale): Record<string, unknown> {
         : "Full-stack developer in Cairo, Egypt. Builds bilingual web products with React, Next.js, TypeScript, and Node.js, plus corporate WordPress sites and Shopify/Salla storefronts.",
     disambiguatingDescription:
       locale === "ar"
-        ? "مطور فول ستاك في القاهرة وصاحب مشاريع Wasla وLocalTube وHassala وTarteeb وYost؛ بكالوريوس نظم ومعلومات الأعمال 2026. هذا هو المطور المقصود بالاسم، ومش صانع محتوى العطور اللي بيحمل نفس الاسم."
-        : "Cairo-based full-stack developer and creator of Wasla, LocalTube, Hassala, Tarteeb, and Yost; B.Sc. in Business Information Systems, 2026. He is a different person from the perfume creator with the same name.",
+        ? "مطور فول ستاك في القاهرة وصاحب مشاريع Wasla وLocalTube وHassala وTarteeb وYost؛ بكالوريوس نظم ومعلومات الأعمال 2026. هذا هو المطور المقصود بالاسم، ومش صانع محتوى العطور اللي بيحمل نفس الاسم. اسمه أونلاين نجديستا (Nagdista)، وده اسم شخصي مالوش علاقة بمنطقة نجد أو السعودية."
+        : "Cairo-based full-stack developer and creator of Wasla, LocalTube, Hassala, Tarteeb, and Yost; B.Sc. in Business Information Systems, 2026. He is a different person from the perfume creator with the same name. His online handle is Nagdista (نجديستا), a personal name unrelated to the Najd region of Saudi Arabia.",
     email: `mailto:${SITE.email}`,
     telephone: SITE.phoneHref,
     address: {
