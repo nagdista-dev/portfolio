@@ -8,7 +8,7 @@ export const metadata: Metadata = buildMetadata({
   locale: "ar",
   title: "محمود النجدي — مطور فول ستاك في القاهرة",
   description:
-    "محمود النجدي مطور فول ستاك في القاهرة، مصر. بكالوريوس نظم ومعلومات الأعمال 2026. يبني منتجات ويب سريعة وثنائية اللغة بـ React وNext.js وTypeScript وNode.js، ومواقع Corporate على وردبريس بـ Elementor وRank Math.",
+    "محمود النجدي (نجديستا) مطور فول ستاك في القاهرة، مصر. بيبني مواقع وتطبيقات ويب سريعة بالعربي والإنجليزي بـ React وNext.js وTypeScript، ومواقع شركات على وردبريس.",
   path: "/",
   image: "/og/home-ar-square.png",
   imageWidth: 1200,

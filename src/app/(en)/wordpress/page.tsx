@@ -14,7 +14,7 @@ export const metadata: Metadata = buildMetadata({
   locale: "en",
   title: "Corporate WordPress Websites",
   description:
-    "Mahmoud Elnagdy builds corporate WordPress websites with Elementor, Rank Math SEO, and Fluent Forms — custom design, clean structure, and a site your team can edit. See the Bunyan Contracting case study.",
+    "Corporate WordPress websites built with Elementor, Rank Math SEO, and Fluent Forms — custom design, clean structure, and a site your team can edit.",
   path: "/wordpress/",
   image: "/og/wordpress-en.png",
   keywords: [
