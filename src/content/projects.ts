@@ -468,9 +468,10 @@ export const PROJECTS: Project[] = [
     year: "2025",
     featured: true,
     category: "react-next",
-    stack: ["React 19", "Tailwind CSS 4", "Netlify", "PWA"],
+    stack: ["React 19", "Vite", "Tailwind CSS 4", "PWA"],
     links: {
       repo: "https://github.com/nagdista-dev/tarteeb",
+      live: "https://tarteeb-xi.vercel.app",
     },
     cover: {
       bg: "#20324A",
@@ -524,23 +525,28 @@ export const PROJECTS: Project[] = [
         summary:
           "A minimal daily planner that structures your schedule around prayer times and works offline.",
         overview:
-          "Tarteeb is a daily planner built around a simple constraint: the day already has a rhythm. Instead of starting with an empty calendar, it generates a schedule around prayer times, then lets you shape the rest.",
+          "Tarteeb (from the Arabic ترتيب, \"arrangement\") is a daily planner built around a simple constraint: the day already has a rhythm. Instead of starting with an empty midnight-to-midnight calendar, it runs the day Maghrib to Maghrib and splits it into five prayer periods — Evening, Night, Morning, Afternoon, and Late Afternoon. Tasks, habits, notes, and trackers all live inside those periods, so planning follows the same order the day already has.",
         challenge:
-          "Most planners assume the user will build structure from scratch. Tarteeb had to provide a useful default without being rigid — and it had to work offline, because the moments when you need a plan are not always moments when you have a connection.",
+          "Most planners assume a 9-to-5 day and leave the user to map work around five prayer times that shift with the sun every day. Tarteeb had to make prayer the backbone of the schedule without becoming rigid, keep tasks from colliding as times move, and work offline without an account — because the moments when you need a plan are not always moments when you have a connection.",
         approach:
-          "I built a React 19 interface with Tailwind CSS 4, kept the visual language quiet, and generated the daily schedule from prayer times. The app is responsive, installable, and functional offline. The goal was a tool that feels calm enough to open every day.",
+          "I built a React 19 + Vite interface with Tailwind CSS 4 and kept the visual language quiet. The day renders as a time-scaled vertical timeline with labelled prayer markers and a \"now\" line that scrolls into view on load. The five prayers and morning/evening adhkar are fixed tasks that stay in sync with the prayer tracker, and the time pickers only offer free 5-minute slots, so tasks never overlap. Everything runs client-side as an installable PWA, so it opens offline with no sign-up.",
         features: [
-          "Prayer-time-aware daily planning",
-          "Automatic schedule generation",
-          "Clean, minimal interface",
-          "Responsive on mobile and desktop",
-          "Works offline",
+          "Maghrib-to-Maghrib timeline split into five prayer periods",
+          "Collision-free task scheduling in 5-minute slots, with recurring tasks",
+          "Prayer tracker (on time, late, missed) synced with fixed prayer tasks",
+          "Habit tracker with streaks, plus sleep, drinks, and mood logging",
+          "Daily journal and per-period study notes",
+          "Pulse dashboard with a weighted productivity score and a comparison with yesterday",
+          "History log for reopening past days, plus Markdown export",
+          "Separate alternative plan for days that don't follow the prayer layout",
+          "Bilingual (Arabic / English), responsive, and works offline",
         ],
         technical: [
-          "React 19 + Tailwind CSS 4",
-          "Client-side schedule generation",
-          "Offline-ready PWA behavior",
-          "Deployed on Netlify",
+          "React 19 + Vite + Tailwind CSS 4",
+          "Client-side schedule generation from daily prayer times",
+          "Service worker for installable, offline-first PWA behavior",
+          "Local-first data with no account or backend required",
+          "SVG progress rings and bar charts on the Pulse dashboard",
         ],
         outcome:
           "Tarteeb was a lesson in restraint. The hardest part was not adding features — it was deciding which ones would break the calm. It also reinforced how much a single default can do for a daily tool: if the first screen is useful, people come back.",
@@ -553,23 +559,28 @@ export const PROJECTS: Project[] = [
         summary:
           "منظم يومي بسيط بيبني جدولك حول مواعيد الصلاة وبيشتغل أوفلاين.",
         overview:
-          "Tarteeb منظم يومي مبني على قيد بسيط: اليوم أصلًا له إيقاع. بدل ما تبدأ بتقويم فاضي، التطبيق بيولّد جدول حول مواعيد الصلاة، وبعدها بتشكّل الباقي.",
+          "Tarteeb (ترتيب) منظم يومي مبني على قيد بسيط: اليوم أصلًا له إيقاع. بدل تقويم فاضي من نص الليل لنص الليل، اليوم في التطبيق بيبدأ من المغرب للمغرب ومتقسم لخمس فترات حسب الصلاة — المسا، والليل، والصبح، والضهر، والعصر. المهام والعادات والملاحظات كلها جوه الفترات دي، فالتخطيط بيمشي بنفس ترتيب يومك.",
         challenge:
-          "أغلب المنظمات بتفترض إن المستخدم هيبني الهيكل من الصفر. Tarteeb كان لازم يبدأ بـافتراضي مفيد من غير ما يبقى جامد — وكان لازم يشتغل أوفلاين، لأن اللحظات اللي محتاج فيها خطة مش دايمًا فيها نت.",
+          "أغلب المنظمات معمولة على يوم شغل 9 لـ 5، وبتسيبك ترتب شغلك بنفسك حوالين خمس صلوات مواعيدها بتتغير كل يوم مع الشمس. Tarteeb كان لازم يخلي الصلاة هي العمود الفقري للجدول من غير ما يبقى جامد، ويمنع المهام إنها تتداخل لما المواعيد تتحرك، ويشتغل أوفلاين من غير حساب — لأن اللحظات اللي محتاج فيها خطة مش دايمًا فيها نت.",
         approach:
-          "بنيت واجهة React 19 بـ Tailwind CSS 4، وخليت اللغة البصرية هادية، وولّدت الجدول اليومي من مواعيد الصلاة. التطبيق متجاوب وقابل للتثبيت وبيشتغل أوفلاين. الهدف كان أداة هادية كفاية إنك تفتحها كل يوم.",
+          "بنيت الواجهة بـ React 19 و Vite و Tailwind CSS 4، وخليت الشكل هادي. اليوم بيظهر كتايم لاين رأسي متقسم بالوقت، عليه علامات الصلوات وخط \"دلوقتي\" بينزل لوحده للوقت الحالي أول ما تفتح. الصلوات الخمس وأذكار الصباح والمسا مهام ثابتة متزامنة مع متتبع الصلاة، واختيار الوقت بيعرض بس الفترات الفاضية كل 5 دقايق، فمفيش مهمتين بيتداخلوا. كل حاجة شغالة على الجهاز كـ PWA تتثبت وتفتح أوفلاين من غير تسجيل.",
         features: [
-          "تخطيط يومي واعي بمواعيد الصلاة",
-          "توليد جدول أوتوماتيك",
-          "واجهة نظيفة وبسيطة",
-          "متجاوب على الموبايل والديسكتوب",
-          "بيشتغل أوفلاين",
+          "تايم لاين من المغرب للمغرب متقسم لخمس فترات حسب الصلاة",
+          "جدولة مهام من غير تداخل كل 5 دقايق، ومهام بتتكرر",
+          "متتبع صلاة (في وقتها، متأخرة، فايتة) متزامن مع مهام الصلاة الثابتة",
+          "متتبع عادات بالـ streak، وكمان تسجيل النوم والمشروبات والمود",
+          "يوميات وملاحظات مذاكرة لكل فترة",
+          "داشبورد Pulse فيه سكور إنتاجية موزون ومقارنة بإمبارح",
+          "سجل للأيام اللي فاتت تفتحها تاني، وتصدير Markdown",
+          "خطة بديلة منفصلة للأيام اللي مش ماشية على ترتيب الصلاة",
+          "عربي وإنجليزي، متجاوب، وبيشتغل أوفلاين",
         ],
         technical: [
-          "React 19 + Tailwind CSS 4",
-          "توليد الجدول على العميل",
-          "سلوك PWA جاهز للأوفلاين",
-          "النشر على Netlify",
+          "React 19 + Vite + Tailwind CSS 4",
+          "توليد الجدول على الجهاز من مواعيد الصلاة",
+          "Service worker عشان PWA تتثبت وتشتغل أوفلاين",
+          "البيانات محلية من غير حساب ولا باك إند",
+          "حلقات تقدم SVG ورسوم أعمدة في داشبورد Pulse",
         ],
         outcome:
           "Tarteeb كان درس في ضبط النفس. أصعب حاجة ما كانتش إضافة ميزات — كانت إني أقرر أنهي ميزات هتكسر الهدوء. كمان أكدت لي قد إيه افتراضي واحد ممكن يعمل فرق في أداة يومية: لو أول شاشة مفيدة، الناس بترجع.",
